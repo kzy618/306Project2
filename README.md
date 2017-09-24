@@ -6,7 +6,7 @@
 * Yao Jian Yap (RemRinRamChi) - yyap601@aucklanduni.ac.nz - 983729282
 * Mason Shi (tshi206) - tshi206@aucklanduni.ac.nz - 313368828
 * Alex Yoo (SuhoNova) - syu680@aucklanduni.ac.nz -
-* Joseph Dumogho (Scorpiris3196) -  -
+* Joseph Dumogho (Scorpiris3196) - jdum654@aucklanduni.ac.nz - 8855273
 * Andy Tang (ponchotang) - atan932@aucklanduni.ac.nz - 
 * Vincent Chen (bche722) - bche722@aucklanduni.ac.nz -
 

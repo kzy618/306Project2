@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class InteractionController : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class InteractionController : MonoBehaviour
     private bool guipick = false;
     private bool picked = false;
 
+    public int spawnBoxLimit; // initialized as 1s
+    private List<GameObject> cubes;
+
+    private int c;
+
     private GameObject pickref;
 
     // Use this for initialization
@@ -34,6 +40,8 @@ public class InteractionController : MonoBehaviour
         pickref = GameObject.FindWithTag("pickedref");
         pickObj = pickref;
         fpsCam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        spawnBoxLimit = 1;
+        cubes = new List<GameObject>();
     }
 	
     // Update is called once per frame
@@ -60,6 +68,12 @@ public class InteractionController : MonoBehaviour
         }else if (Input.GetKeyDown(KeyCode.F) && !isLoaded)
         {
             Debug.Log("can create cubes");
+            if (cubes.Count == spawnBoxLimit)
+            {
+                GameObject removeThisCube = cubes[0];
+                DestroyObject(removeThisCube);
+                cubes.Remove(removeThisCube);
+            }
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cube.transform.position = holdingPlace.transform.position;
             Renderer rend = cube.GetComponent<Renderer>();
@@ -67,6 +81,7 @@ public class InteractionController : MonoBehaviour
             cube.AddComponent<Rigidbody>();
             cube.AddComponent<PickableObjController>();
             cube.tag = "pickable";
+            cubes.Add(cube);
         }
         else
         {

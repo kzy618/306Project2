@@ -25,7 +25,7 @@ public class DoorButtonController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+		if (other.gameObject.CompareTag("Player"))
         {
             transform.localPosition = pushedDownPosition;
             isPressed = true;
@@ -35,7 +35,7 @@ public class DoorButtonController : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+		if (other.gameObject.CompareTag("Player"))
         {
             transform.localPosition = originalPosition;
             isPressed = false;

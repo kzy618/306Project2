@@ -32,7 +32,7 @@ public class InteractionController : MonoBehaviour
 
     private Vector3 respawnPoint = new Vector3(0.0f, 0.25f, 0.0f);
 
-    public int spawnBoxLimit; // initialized as 1s
+    public int spawnBoxLimit = 1; // initialized as 1s
     private List<GameObject> cubes;
 
     private int c;
@@ -44,7 +44,6 @@ public class InteractionController : MonoBehaviour
         pickref = GameObject.FindWithTag("pickedref");
         pickObj = pickref;
         fpsCam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-        spawnBoxLimit = 1;
         cubes = new List<GameObject>();
     }
 	
@@ -57,7 +56,7 @@ public class InteractionController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.F) )
         {
             Debug.Log("can create cubes");
-            if (cubes.Count == spawnBoxLimit)
+            if (cubes.Count >= spawnBoxLimit)
             {
                 GameObject removeThisCube = cubes[0];
                 DestroyObject(removeThisCube);

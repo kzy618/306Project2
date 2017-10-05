@@ -51,6 +51,7 @@
      <Compile Include="Assets\CustomScripts\ElectoPanelController.cs" />
      <Compile Include="Assets\CustomScripts\InteractionController.cs" />
      <Compile Include="Assets\CustomScripts\PickableObjController.cs" />
+     <Compile Include="Assets\LaserAndMirror\Scripts\LaserScript.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\SciFi_Door\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

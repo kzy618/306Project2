@@ -3,11 +3,30 @@ guid: 65fb86f734ce568408b3eaad4fca1b60
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: base
+    100002: door
+    100004: frame
+    100006: frame_col
+    100008: //RootNode
+    400000: base
+    400002: door
+    400004: frame
+    400006: frame_col
+    400008: //RootNode
+    2300000: base
+    2300002: door
+    2300004: frame
+    2300006: frame_col
+    3300000: base
+    3300002: door
+    3300004: frame
+    3300006: frame_col
     4300000: frame_col
     4300002: Cylinder.004
     4300004: door
     4300006: frame
     4300008: base
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

@@ -68,7 +68,7 @@ public class InteractionController : MonoBehaviour
 			cube.AddComponent<BoxCollider>();
 			BoxCollider boxCollider = cube.GetComponent<BoxCollider>();
 			if(boxCollider != null){
-				boxCollider.size = new Vector3 (2f, 2f, 2f);
+				boxCollider.size = new Vector3 (1f, 1f, 1f);
 				boxCollider.isTrigger = true;
 			}
             cube.transform.position = holdingPlace.transform.position;

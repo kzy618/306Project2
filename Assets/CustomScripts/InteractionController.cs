@@ -4,29 +4,33 @@ using System.Collections.Generic;
 
 public class InteractionController : MonoBehaviour
 {
-
     private bool hasKey = false;
     private bool hasTurnedOnPower = false;
     private bool isLoaded = false;
-    
+
     public bool keyFound = false;
     public bool panelFound = false;
+
     public Material CubeMaterial;
-	
+
     public float PickableRange = 2f;
     public int throwingForce = 8000;
     public GameObject holdingPlace;
- 
-    private Camera fpsCam; 
- 
+
+    private Camera fpsCam;
+
     private Vector3 objectPos;
     private Quaternion objectRot;
     private GameObject pickObj;
- 	
+
     private bool canpick = true;
     private bool picking = false;
     private bool guipick = false;
     private bool picked = false;
+
+    private bool canSwitchPlaces = true;
+
+    private Vector3 respawnPoint = new Vector3(0.0f, 0.25f, 0.0f);
 
     public int spawnBoxLimit; // initialized as 1s
     private List<GameObject> cubes;
@@ -46,26 +50,11 @@ public class InteractionController : MonoBehaviour
 	
     // Update is called once per frame
     void Update () {
-        if (keyFound && !isLoaded && !hasKey)
+        if (transform.position.y < -200f)
         {
-            Debug.Log("he finds the key");
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                Debug.Log("access key is picked");
-                hasKey = !hasKey;
-                Destroy(GameObject.FindWithTag("key"));
-            }
-        }else if (panelFound && !isLoaded && !hasTurnedOnPower)
-        {
-            Debug.Log("he finds the panel");
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                GameObject.FindWithTag("panel").GetComponent<ElectoPanelController>().isTurnedOn = true;
-                GameObject.FindWithTag("lamp").GetComponent<Light>().enabled = true;
-                hasTurnedOnPower = !hasTurnedOnPower;
-                Debug.Log("power is restored for the entrance");
-            }
-        }else if (Input.GetKeyDown(KeyCode.F) && !isLoaded)
+            transform.position = respawnPoint;
+        }
+        else if (Input.GetKeyDown(KeyCode.F) )
         {
             Debug.Log("can create cubes");
             if (cubes.Count == spawnBoxLimit)
@@ -82,6 +71,22 @@ public class InteractionController : MonoBehaviour
             cube.AddComponent<PickableObjController>();
             cube.tag = "pickable";
             cubes.Add(cube);
+        }
+        else if (canSwitchPlaces && !picked && Input.GetKeyDown(KeyCode.T))
+        {
+            Debug.Log("try switch places");
+            if(cubes.Count != 0)
+            {
+                GameObject latestCube = cubes[cubes.Count - 1];
+                Vector3 latestCubePosition = new Vector3(latestCube.transform.position.x, latestCube.transform.position.y + 0.25f, latestCube.transform.position.z);
+
+                transform.position = latestCubePosition;
+
+                DestroyObject(latestCube);
+                cubes.Remove(latestCube);
+
+
+            }
         }
         else
         {
@@ -138,7 +143,6 @@ public class InteractionController : MonoBehaviour
 
                 picked = true;
 
-                isLoaded = true;
             }
 		
             if(Input.GetKeyDown(KeyCode.Mouse0) && !canpick && !pickObj.GetComponent<PickableObjController>().isRefusethrow()){
@@ -157,7 +161,6 @@ public class InteractionController : MonoBehaviour
  
                 picked = false;
                 
-                isLoaded = false;
                 
                 canpick = true;
 			
@@ -176,8 +179,6 @@ public class InteractionController : MonoBehaviour
                 pickObj = pickref;
 			
                 picked = false;
-                
-                isLoaded = false;
                 
                 canpick = true;
                 

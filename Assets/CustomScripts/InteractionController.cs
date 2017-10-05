@@ -62,11 +62,14 @@ public class InteractionController : MonoBehaviour
                 DestroyObject(removeThisCube);
                 cubes.Remove(removeThisCube);
             }
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-			cube.AddComponent ("BoxCollider");
-			var boxCollider = cube.collider;
+			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			cube.tag = "Player";
+			Debug.Log ("tag is: "+cube.tag.ToString());
+			cube.AddComponent (typeof(BoxCollider));
+			BoxCollider boxCollider = cube.GetComponent<BoxCollider>();
 			if(boxCollider != null){
-				boxCollider.size = new Vector (1.1f, 1.1f, 1.1f);
+				boxCollider.size = new Vector3 (2f, 2f, 2f);
+				boxCollider.isTrigger = true;
 			}
             cube.transform.position = holdingPlace.transform.position;
             Renderer rend = cube.GetComponent<Renderer>();

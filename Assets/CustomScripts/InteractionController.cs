@@ -63,6 +63,11 @@ public class InteractionController : MonoBehaviour
                 cubes.Remove(removeThisCube);
             }
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			cube.AddComponent ("BoxCollider");
+			var boxCollider = cube.collider;
+			if(boxCollider != null){
+				boxCollider.size = new Vector (1.1f, 1.1f, 1.1f);
+			}
             cube.transform.position = holdingPlace.transform.position;
             Renderer rend = cube.GetComponent<Renderer>();
             rend.material = CubeMaterial;

@@ -65,10 +65,10 @@ public class InteractionController : MonoBehaviour
 			GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 			cube.tag = "Player";
 			Debug.Log ("tag is: "+cube.tag.ToString());
-			cube.AddComponent (typeof(BoxCollider));
+			cube.AddComponent<BoxCollider>();
 			BoxCollider boxCollider = cube.GetComponent<BoxCollider>();
 			if(boxCollider != null){
-				boxCollider.size = new Vector3 (4f, 4f, 4f);
+				boxCollider.size = new Vector3 (2f, 2f, 2f);
 				boxCollider.isTrigger = true;
 			}
             cube.transform.position = holdingPlace.transform.position;

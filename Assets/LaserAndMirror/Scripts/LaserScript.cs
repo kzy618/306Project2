@@ -35,7 +35,7 @@ public class LaserScript : MonoBehaviour {
             GameObject hitObject = hit.collider.gameObject;
             print(hitObject.name);
 
-            if (hitObject.CompareTag("Reflective Surface"))
+            if (hitObject.CompareTag("Reflective Surface") || hitObject.CompareTag("pickable"))
             {
 
                 hitCount++;

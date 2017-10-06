@@ -55,6 +55,13 @@ public class LaserScript : MonoBehaviour {
                 
             } 
 
+            else if (hitObject.CompareTag("Player"))
+            {
+                hitObject.GetComponent<PlayerLifeController>().takeDamage();
+                line.SetPosition(hitCount + 1, hit.point);
+                break;
+            }
+
             else
             {
                 print("No reflection");

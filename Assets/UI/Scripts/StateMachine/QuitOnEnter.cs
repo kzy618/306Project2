@@ -15,7 +15,7 @@ public class QuitOnEnter : StateMachineBehaviour
     public void Quit()
     {
         // save player preferences when quitting the game
-        new LoadOrSave().SavePlayerPref();
+        SaveStateController.controller.SavePlayerPref();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

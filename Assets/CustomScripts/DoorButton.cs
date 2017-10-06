@@ -15,7 +15,7 @@ public class DoorButton : MonoBehaviour
 	private float openDoorHeight;
 	private Vector3 doorPosition;
 
-	public float doorSpeed = 0.035f;
+	public float doorSpeed = 0.1f;
 
 	void Start()
 	{

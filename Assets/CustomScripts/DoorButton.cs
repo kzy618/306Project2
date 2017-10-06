@@ -26,7 +26,7 @@ public class DoorButton : MonoBehaviour
 		openDoorHeight = doorPosition.y + _shedDoor.GetComponent<Renderer> ().bounds.size.y;
 	}
 
-    void Update()
+    void FixedUpdate()
     {
         if(triggered && !other)
         {

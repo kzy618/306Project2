@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
+/*
+ * Class meant for menu button selection with keyboard
+ */ 
 public class SelectOnInput : MonoBehaviour
 {
 
@@ -9,12 +12,6 @@ public class SelectOnInput : MonoBehaviour
     public GameObject selectedObject;
 
     private bool buttonSelected;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()

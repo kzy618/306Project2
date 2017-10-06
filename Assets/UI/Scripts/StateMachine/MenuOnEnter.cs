@@ -2,10 +2,13 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+/*
+ * Class with method that loads the main menu scene when entering Menu state in an animation 
+ */
 public class MenuOnEnter : StateMachineBehaviour
 {
 
-    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+    // when menu state is reached
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Menu();

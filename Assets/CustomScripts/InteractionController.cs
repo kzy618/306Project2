@@ -75,7 +75,7 @@ public class InteractionController : MonoBehaviour
             Renderer rend = cube.GetComponent<Renderer>();
             rend.material = CubeMaterial;
             cube.AddComponent<Rigidbody>();
-            cube.AddComponent<PickableObjController>();
+			cube.AddComponent<PickableObjController>();
             cube.tag = "pickable";
             cubes.Add(cube);
         }

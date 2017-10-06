@@ -50,8 +50,11 @@
      <Compile Include="Assets\CustomScripts\DoorController.cs" />
      <Compile Include="Assets\CustomScripts\ElectoPanelController.cs" />
      <Compile Include="Assets\CustomScripts\InteractionController.cs" />
+     <Compile Include="Assets\CustomScripts\MovingPlatform\HolderScript.cs" />
      <Compile Include="Assets\CustomScripts\MovingPlatform\MovingPlatformScript.cs" />
      <Compile Include="Assets\CustomScripts\PickableObjController.cs" />
+     <Compile Include="Assets\CustomScripts\PlayerLifeController.cs" />
+     <Compile Include="Assets\LaserAndMirror\Scripts\LaserReceiverController.cs" />
      <Compile Include="Assets\LaserAndMirror\Scripts\LaserScript.cs" />
      <Compile Include="Assets\SlidingDoor\DoorButtonController.cs" />
      <Compile Include="Assets\SlidingDoor\SlidingDoorController.cs" />

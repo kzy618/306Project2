@@ -13,8 +13,8 @@ public class MovingPlatformScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		radian += 0.01f;
-		transform.position = new Vector3 (defaultPos.x + Mathf.Sin(radian)*5f, defaultPos.y, defaultPos.z);
+		radian += 0.005f;
+		transform.position = new Vector3 (defaultPos.x + Mathf.Pow(Mathf.Sin(radian), 2)*25f, defaultPos.y, defaultPos.z);
 		
 	}
 }

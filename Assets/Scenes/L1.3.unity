@@ -416,7 +416,6 @@ GameObject:
   - 224: {fileID: 1273749828}
   - 222: {fileID: 1273749830}
   - 114: {fileID: 1273749829}
-  - 95: {fileID: 1273749832}
   m_Layer: 5
   m_Name: Guy
   m_TagString: Untagged
@@ -461,7 +460,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8b74c789f84b6a34da93f39aa5ad9232, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -475,23 +474,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273749827}
---- !u!95 &1273749832
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1273749827}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4cd65024d5f68c40a8a3290e46c5230, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1314822054
 Prefab:
   m_ObjectHideFlags: 0
@@ -499,6 +481,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 788655700}
     m_Modifications:
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 22479980, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -595,6 +585,38 @@ Prefab:
       propertyPath: sceneName
       value: L1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: charA
+      value: 
+      objectReference: {fileID: 1273749829}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: charB
+      value: 
+      objectReference: {fileID: 1412434795}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8b74c789f84b6a34da93f39aa5ad9232,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: bddbcded1c3d66341a6db2e27481a2af,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c02687168348184c94958028e182cc5,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: d5a8cd51236813741afcfa493e9a7220,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
   m_IsPrefabParent: 0
@@ -613,7 +635,6 @@ GameObject:
   - 224: {fileID: 1412434793}
   - 222: {fileID: 1412434796}
   - 114: {fileID: 1412434795}
-  - 95: {fileID: 1412434794}
   m_Layer: 5
   m_Name: Girl
   m_TagString: Untagged
@@ -639,23 +660,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1412434794
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412434792}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6583473736fae954faee9a9a58931e5f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1412434795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +679,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d5a8cd51236813741afcfa493e9a7220, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -705,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2097776320
 MonoBehaviour:
   m_ObjectHideFlags: 0

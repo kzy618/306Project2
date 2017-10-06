@@ -8,7 +8,11 @@ public class DialogueController : MonoBehaviour {
 
     public Text dText;
     public Text nextText;
+    public Image charA;
+    public Image charB;
     public List<string> dLines;
+    public List<Sprite> imagesA;
+    public List<Sprite> imagesB;
     private int count;
     //public LoadOnScreenClick loader;
     //public LoadOrSave saveLoader;
@@ -40,7 +44,18 @@ public class DialogueController : MonoBehaviour {
         if (count < dLines.Count)
         {
             dText.text = dLines[count];
+            if (imagesA[count] != null)
+            {
+                Debug.Log("chg");
+                charA.sprite = imagesA[count];
+            }
+            if (imagesB[count] != null)
+            {
+                charB.sprite = imagesB[count];
+            }
+
             count++;
+            
             if (count == dLines.Count)
             {
                 nextText.text = "Press Any Key to Return...";

@@ -33,7 +33,7 @@ public class LaserScript : MonoBehaviour {
             line.SetPosition(hitCount + 1, hit.point);
 
             GameObject hitObject = hit.collider.gameObject;
-            print(hitObject.name);
+            print("Laser is hitting: " + hitObject.name);
 
             if (hitObject.CompareTag("Reflective Surface") || hitObject.CompareTag("pickable"))
             {
@@ -54,6 +54,20 @@ public class LaserScript : MonoBehaviour {
                 ray = new Ray(hit.point, reflectedPos);
                 
             } 
+
+            else if (hitObject.CompareTag("Player"))
+            {
+                hitObject.GetComponent<PlayerLifeController>().takeDamage();
+                line.SetPosition(hitCount + 1, hit.point);
+                break;
+            }
+
+            else if (hitObject.CompareTag("laser receiver"))
+            {
+                hitObject.GetComponent<LaserReceiverController>().activate();
+                line.SetPosition(hitCount + 1, hit.point);
+                break;
+            }
 
             else
             {

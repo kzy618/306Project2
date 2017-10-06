@@ -14,7 +14,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
-        [SerializeField] private float m_JumpSpeed = 7f;
+        [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
         [SerializeField] private float m_GravityMultiplier;
         [SerializeField] private MouseLook m_MouseLook;
@@ -42,6 +42,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public GameObject Protagonist;
+        private int couchingHash = Animator.StringToHash("Base Layer.Couching");
+        private int crawlingHash = Animator.StringToHash("Base Layer.Crawling");
+        private Animator anim;
+        private float normalHeight;
+        private float normalRadius;
+        private Vector3 normalCenter;
+        
         // Use this for initialization
         private void Start()
         {
@@ -55,6 +63,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            anim = Protagonist.GetComponent<Animator>();
+            normalHeight = m_CharacterController.height;
+            normalRadius = m_CharacterController.radius;
+            normalCenter = m_CharacterController.center;
         }
 
 
@@ -63,7 +75,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             RotateView();
             // the jump state needs to read here to make sure it is not missed
-            if (!m_Jump)
+            if (!m_Jump && anim.GetCurrentAnimatorStateInfo(0).fullPathHash != crawlingHash)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
@@ -108,11 +120,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MoveDir.x = desiredMove.x*speed;
             m_MoveDir.z = desiredMove.z*speed;
 
-
+            
             if (m_CharacterController.isGrounded)
             {
                 m_MoveDir.y = -m_StickToGroundForce;
-
+                
                 if (m_Jump)
                 {
                     m_MoveDir.y = m_JumpSpeed;
@@ -197,7 +209,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
             }
-            m_Camera.transform.localPosition = newCameraPosition;
+            if (anim.GetCurrentAnimatorStateInfo(0).fullPathHash == couchingHash)
+            {
+                //m_Camera.transform.localPosition = new Vector3(newCameraPosition.x, newCameraPosition.y * 0.005f, 0.1f);
+                m_Camera.transform.localPosition = Vector3.MoveTowards(m_Camera.transform.localPosition, new Vector3(newCameraPosition.x, newCameraPosition.y * 0.005f, 0.1f), 5f);
+                m_CharacterController.height = normalHeight * 0.6f;
+                m_CharacterController.radius = normalRadius * 0.5f;
+                m_CharacterController.center = new Vector3(normalCenter.x, normalCenter.y - 0.4f, normalCenter.z);
+            }
+            else if (anim.GetCurrentAnimatorStateInfo(0).fullPathHash == crawlingHash)
+            {
+                //m_Camera.transform.localPosition = new Vector3(newCameraPosition.x, newCameraPosition.y * 0.005f - 0.5f, 0.2f);
+                m_Camera.transform.localPosition = Vector3.MoveTowards(m_Camera.transform.localPosition, new Vector3(newCameraPosition.x, newCameraPosition.y * 0.005f - 0.5f, 0.2f), 5f);
+                m_CharacterController.height = normalHeight * 0.35f;
+                m_CharacterController.radius = normalRadius * 0.2f;
+                m_CharacterController.center = new Vector3(normalCenter.x, normalCenter.y - 0.7f, normalCenter.z);
+            }
+            else
+            {
+                //m_Camera.transform.localPosition = newCameraPosition;
+                m_Camera.transform.localPosition = Vector3.MoveTowards(m_Camera.transform.localPosition, newCameraPosition, 5f);
+                m_CharacterController.height = normalHeight;
+                m_CharacterController.radius = normalRadius;
+                m_CharacterController.center = normalCenter;
+            }
         }
 
 

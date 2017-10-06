@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class PlayerController : MonoBehaviour
     private bool quitMenuOpen;
     private Animator quitter;
     private Rigidbody rb;
+
+    public string mem1;
+    public string mem2;
+    public string mem3;
 
     void Start()
     {
@@ -67,6 +72,22 @@ public class PlayerController : MonoBehaviour
             SaveStateController.controller.health += 1;
             SetCountText(SaveStateController.controller.health);
             pingu.Play();
+
+            if (other.gameObject.name == "Memory 1")
+            {
+                Time.timeScale = 0;
+                SceneManager.LoadScene(mem1, LoadSceneMode.Additive);
+            }
+            else if (other.gameObject.name == "Memory 2")
+            {
+                Time.timeScale = 0;
+                SceneManager.LoadScene(mem2, LoadSceneMode.Additive);
+            }
+            else if (other.gameObject.name == "Memory 3")
+            {
+                Time.timeScale = 0;
+                SceneManager.LoadScene(mem3, LoadSceneMode.Additive);
+            }
         }
     }
 

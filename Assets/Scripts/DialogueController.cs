@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour {
 
@@ -9,8 +10,9 @@ public class DialogueController : MonoBehaviour {
     public Text nextText;
     public List<string> dLines;
     private int count;
-    public LoadOnScreenClick loader;
-    public LoadOrSave saveLoader;
+    //public LoadOnScreenClick loader;
+    //public LoadOrSave saveLoader;
+    public string sceneName;
 
     // Use this for initialization
     void Start () {
@@ -22,8 +24,10 @@ public class DialogueController : MonoBehaviour {
 	void Update () {
         if (count == dLines.Count && Input.anyKeyDown)
         {
-            saveLoader.Load();
-            loader.LoadByIndex();
+            SceneManager.UnloadScene(sceneName);
+            Time.timeScale = 1;
+            //saveLoader.Load();
+            //loader.LoadByIndex();
         }else if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log(count);

@@ -6,7 +6,6 @@ public class PlayerLifeController : MonoBehaviour {
 
     public int maxLives;
     public float invincibilityTime;
-    public Text text;
 
     private int currentLives;
     private float currentInvincibilityTime;
@@ -20,7 +19,6 @@ public class PlayerLifeController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        text.text = "Lives: " + currentLives;
         if (invincible)
         {
             currentInvincibilityTime += Time.deltaTime;
@@ -34,10 +32,14 @@ public class PlayerLifeController : MonoBehaviour {
 
         if (currentLives <= 0)
         {
-            // replace with game over screen??
-            text.text = "ur ded";
+            // handle death
         }
 	}
+
+    public int lives()
+    {
+        return currentLives;
+    }
 
     public void takeDamage()
     {

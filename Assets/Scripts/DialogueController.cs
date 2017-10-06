@@ -21,6 +21,9 @@ public class DialogueController : MonoBehaviour {
     public float delay = 0.1f;
     private Coroutine cr;
     private Boolean cr_running;
+    private Color faded = new Color(1f, 1f, 1f, 0.5f);
+    private Color shaded = new Color(1f, 1f, 1f, 1.0f);
+    private Boolean charAInFocus = true;
 
     // Use this for initialization
     void Start () {
@@ -54,15 +57,7 @@ public class DialogueController : MonoBehaviour {
         } else if (count < dLines.Count)
         {
             cr = StartCoroutine(ShowText(dLines[count]));
-            if (imagesA[count] != null)
-            {
-                Debug.Log("chg");
-                charA.sprite = imagesA[count];
-            }
-            if (imagesB[count] != null)
-            {
-                charB.sprite = imagesB[count];
-            }
+            updateImages();
 
             count++;
             
@@ -70,6 +65,31 @@ public class DialogueController : MonoBehaviour {
             {
                 nextText.text = "Press Any Key to Return...";
             }
+        }
+    }
+
+    private void updateImages()
+    {
+        if (imagesA[count] != null)
+        {
+            Debug.Log("chg");
+            charA.sprite = imagesA[count];
+            charAInFocus = true;
+        } 
+        if (imagesB[count] != null)
+        {
+            charB.sprite = imagesB[count];
+            charAInFocus = false;
+        }
+
+        if (charAInFocus)
+        {
+            charA.color = shaded;
+            charB.color = faded;
+        } else
+        {
+            charA.color = faded;
+            charB.color = shaded;
         }
     }
 

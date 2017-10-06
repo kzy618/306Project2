@@ -19,6 +19,7 @@ public class SaveStateController : MonoBehaviour {
 
     // PLAYER DATA
     // player's health
+    public string playerName;
     public int health;
 
     // PLAYER PREFERENCES
@@ -48,6 +49,7 @@ public class SaveStateController : MonoBehaviour {
         PlayerData data = new PlayerData();
         // Save the data here
         data.health = health;
+        data.playerName = playerName;
 
         bf.Serialize(file, data);
         file.Close();
@@ -62,6 +64,7 @@ public class SaveStateController : MonoBehaviour {
 
             // Load the data here
             health = data.health;
+            playerName = data.playerName;
 
         }
     }
@@ -118,6 +121,7 @@ public class SaveStateController : MonoBehaviour {
 [Serializable]
 class PlayerData {
     public int health;
+    public string playerName;
 }
 
 [Serializable]

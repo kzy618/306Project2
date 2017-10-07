@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,11 +10,15 @@ public class PlayerController : MonoBehaviour
     public Text countText;
     public Text winText;
 
-
     public AudioSource pingu;
-
-
     private Rigidbody rb;
+
+    public string mem1;
+    public string mem2;
+    public string mem3;
+
+    public Animator anim;
+    public float animDuration;
 
     void Start()
     {
@@ -44,6 +49,22 @@ public class PlayerController : MonoBehaviour
             SetCountText(SaveStateController.controller.health);
             pingu.Play();
         }
+
+        if (other.gameObject.name == "Memory 1")
+            {
+                Time.timeScale = 0;
+                StartCoroutine(playFade(mem1));
+            }
+            else if (other.gameObject.name == "Memory 2")
+            {
+                Time.timeScale = 0;
+                StartCoroutine(playFade(mem2));
+            }
+            else if (other.gameObject.name == "Memory 3")
+            {
+                Time.timeScale = 0;
+                StartCoroutine(playFade(mem3));
+            }
     }
 
     void SetCountText(int count)
@@ -54,5 +75,14 @@ public class PlayerController : MonoBehaviour
         {
             //winText.text = "\\(You . Win)/";
         }
+    }
+
+    IEnumerator playFade(string memoryToLoad)
+    {
+        anim.SetTrigger("FadeToMemory");
+        var scene = SceneManager.LoadSceneAsync(memoryToLoad, LoadSceneMode.Additive);
+        scene.allowSceneActivation = false;
+        yield return CoroutineUtilities.WaitForRealTime(animDuration);
+        scene.allowSceneActivation = true;
     }
 }

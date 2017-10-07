@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class PlayerController : MonoBehaviour
     public string mem1;
     public string mem2;
     public string mem3;
+
+    public Animator anim;
+    public float animDuration;
 
     void Start()
     {
@@ -76,17 +80,17 @@ public class PlayerController : MonoBehaviour
             if (other.gameObject.name == "Memory 1")
             {
                 Time.timeScale = 0;
-                SceneManager.LoadScene(mem1, LoadSceneMode.Additive);
+                StartCoroutine(playFade(mem1));
             }
             else if (other.gameObject.name == "Memory 2")
             {
                 Time.timeScale = 0;
-                SceneManager.LoadScene(mem2, LoadSceneMode.Additive);
+                StartCoroutine(playFade(mem2));
             }
             else if (other.gameObject.name == "Memory 3")
             {
                 Time.timeScale = 0;
-                SceneManager.LoadScene(mem3, LoadSceneMode.Additive);
+                StartCoroutine(playFade(mem3));
             }
         }
     }
@@ -99,5 +103,12 @@ public class PlayerController : MonoBehaviour
         {
             //winText.text = "\\(You . Win)/";
         }
+    }
+
+    IEnumerator playFade(string memoryToLoad)
+    {
+        anim.SetTrigger("FadeToMemory");
+        yield return CoroutineUtilities.WaitForRealTime(animDuration);
+        SceneManager.LoadScene(memoryToLoad, LoadSceneMode.Additive);
     }
 }

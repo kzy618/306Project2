@@ -97,14 +97,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dText: {fileID: 11464594}
   nextText: {fileID: 11474262}
+  charA: {fileID: 0}
+  charB: {fileID: 0}
   dLines:
   - Welcome
   - To
   - School
   - Hello
   - Last Text
-  loader: {fileID: 11488462}
-  saveLoader: {fileID: 11403284}
+  imagesA: []
+  imagesB: []
+  sceneName: 
+  delay: 0.1
+  anim: {fileID: 0}
+  animDuration: 0
 --- !u!114 &11454030
 MonoBehaviour:
   m_ObjectHideFlags: 1

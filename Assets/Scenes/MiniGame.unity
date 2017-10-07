@@ -1602,6 +1602,8 @@ MonoBehaviour:
   mem1: L1.1
   mem2: L1.2
   mem3: L1.3
+  anim: {fileID: 1864067155}
+  animDuration: 0.9
 --- !u!54 &1152608486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2548,7 +2550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1562171441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,7 +2878,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4c14f48ac47be484b9290c1613ec12fc, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -2905,7 +2907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:

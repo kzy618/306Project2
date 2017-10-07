@@ -24,6 +24,8 @@ public class DialogueController : MonoBehaviour {
     private Color faded = new Color(1f, 1f, 1f, 0.5f);
     private Color shaded = new Color(1f, 1f, 1f, 1.0f);
     private Boolean charAInFocus = true;
+    public Animator anim;
+    public float animDuration = 0.9f;
 
     // Use this for initialization
     void Start () {
@@ -35,8 +37,7 @@ public class DialogueController : MonoBehaviour {
 	void Update () {
         if (count == dLines.Count && Input.anyKeyDown && !cr_running)
         {
-            SceneManager.UnloadScene(sceneName);
-            Time.timeScale = 1;
+            StartCoroutine(fadeOut());
             //saveLoader.Load();
             //loader.LoadByIndex();
         }else if (Input.GetKeyDown(KeyCode.Space))
@@ -103,5 +104,13 @@ public class DialogueController : MonoBehaviour {
         }
         Debug.Log("false");
         cr_running = false;
+    }
+
+    IEnumerator fadeOut()
+    {
+        anim.SetTrigger("FadeToMemory");
+        yield return CoroutineUtilities.WaitForRealTime(animDuration);
+        SceneManager.UnloadScene(sceneName);
+        Time.timeScale = 1;
     }
 }

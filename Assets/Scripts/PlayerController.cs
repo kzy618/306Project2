@@ -108,7 +108,9 @@ public class PlayerController : MonoBehaviour
     IEnumerator playFade(string memoryToLoad)
     {
         anim.SetTrigger("FadeToMemory");
+        var scene = SceneManager.LoadSceneAsync(memoryToLoad, LoadSceneMode.Additive);
+        scene.allowSceneActivation = false;
         yield return CoroutineUtilities.WaitForRealTime(animDuration);
-        SceneManager.LoadScene(memoryToLoad, LoadSceneMode.Additive);
+        scene.allowSceneActivation = true;
     }
 }

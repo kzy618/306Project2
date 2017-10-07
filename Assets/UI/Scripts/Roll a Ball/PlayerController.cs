@@ -8,11 +8,11 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Text countText;
     public Text winText;
-    public GameObject quitPanel;
+
+
     public AudioSource pingu;
 
-    private bool quitMenuOpen;
-    private Animator quitter;
+
     private Rigidbody rb;
 
     void Start()
@@ -20,32 +20,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         SetCountText(SaveStateController.controller.health);
         winText.text = "";
-        quitMenuOpen = false;
-        quitter = quitPanel.GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!quitMenuOpen)
-            {
-                quitMenuOpen = true;
-                quitter.SetTrigger("Open");
-            }
-            else {
-                quitter.SetTrigger("Close");
-                quitMenuOpen = false;
-            }
-        }
-    }
-
-    public void closeQuitMenu()
-    {
-        quitter.SetTrigger("Close");
-        quitMenuOpen = false;
-
-    }
 
     void FixedUpdate()
     {

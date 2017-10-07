@@ -1871,7 +1871,7 @@ GameObject:
   - 222: {fileID: 775799646}
   - 114: {fileID: 775799645}
   m_Layer: 5
-  m_Name: MasterVolLabel
+  m_Name: SettingsLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2695,7 +2695,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b6a1cf4e3eeaf9a4ca38bf8acb910a6d, type: 2}
       propertyPath: m_Name
-      value: MasterVolSlider
+      value: VolSlider
       objectReference: {fileID: 0}
     - target: {fileID: 22400008, guid: b6a1cf4e3eeaf9a4ca38bf8acb910a6d, type: 2}
       propertyPath: m_LocalScale.y

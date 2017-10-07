@@ -39,9 +39,11 @@ public class InteractionController : MonoBehaviour {
     public bool canSwitchPlaces = false;
 
     private Queue<GameObject> cubes;
-	
-	// Use this for initialization
-	void Start () {
+    // how many memories are found
+    public int _memories;
+
+    // Use this for initialization
+    void Start () {
 		pickref = GameObject.FindWithTag("pickedref");
 		throwref = GameObject.FindWithTag("throwref");
 		pickObj = pickref;
@@ -50,6 +52,7 @@ public class InteractionController : MonoBehaviour {
 		cubes = new Queue<GameObject>();
         // set spawn point as check point initially, have to update as user  progress
         respawnPoint = transform.position;
+        _memories = 0;
     }
 	
 	// Update is called once per frame
@@ -226,4 +229,15 @@ public class InteractionController : MonoBehaviour {
 			GUI.Label (new Rect (Screen.width/2,Screen.height/2,Screen.width/2,Screen.height/2), "press Mouse LB to throw or Mouse RB to release"); 
 		}
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.ToString());
+        if (other.gameObject.CompareTag("memoryFragment"))
+        {
+            other.gameObject.SetActive(false);
+            _memories++;
+        }
+    }
+
 }

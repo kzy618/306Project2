@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText(int count)
     {
 
-        countText.text = "Health: " + count.ToString();
+        countText.text = "x " + count.ToString();
         if (count >= 12)
         {
             //winText.text = "\\(You . Win)/";

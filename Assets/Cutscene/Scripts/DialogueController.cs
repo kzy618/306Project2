@@ -26,6 +26,7 @@ public class DialogueController : MonoBehaviour {
     private Boolean charAInFocus = true;
     public Animator anim;
     public float animDuration = 0.9f;
+    public string exitText = "Press Any Key to Return...";
 
     // Use this for initialization
     void Start () {
@@ -64,7 +65,7 @@ public class DialogueController : MonoBehaviour {
             
             if (count == dLines.Count)
             {
-                nextText.text = "Press Any Key to Return...";
+                nextText.text = exitText;
             }
         }
     }

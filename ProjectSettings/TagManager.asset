@@ -13,6 +13,8 @@ TagManager:
   - ground
   - throwref
   - pickable
+  - Fire
+  - memoryFragment
   layers:
   - Default
   - TransparentFX

@@ -16,6 +16,6 @@ public class MenuOnEnter : StateMachineBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 }

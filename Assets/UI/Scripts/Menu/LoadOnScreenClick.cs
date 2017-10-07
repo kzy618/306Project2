@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
  */ 
 public class LoadOnScreenClick : MonoBehaviour
 {
-    public int sceneNo;
+    public string sceneName;
     public void LoadByIndex()
     {
-        SceneManager.LoadScene(sceneNo);
+        SceneManager.LoadScene(sceneName);
     }
 }

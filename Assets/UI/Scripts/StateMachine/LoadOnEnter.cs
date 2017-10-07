@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
  */
 public class LoadOnEnter : StateMachineBehaviour
 {
-    public int sceneNo;
+    public string sceneName;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        SceneManager.LoadScene(sceneNo);
+        SceneManager.LoadScene(sceneName);
     }
 }

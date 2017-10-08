@@ -17,7 +17,7 @@ public class MemoryRotator : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && Time.timeScale != 0)
         {
             _memoryChecker._memoryFound = true;
             Time.timeScale = 0;

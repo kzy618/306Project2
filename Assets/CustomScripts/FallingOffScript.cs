@@ -7,7 +7,7 @@ public class FallingOffScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = gameObject.GetComponent<Rigidbody> ();
-		rb.constraints = RigidbodyConstraints.FreezePosition;
+		rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
 	}
 	
@@ -18,6 +18,7 @@ public class FallingOffScript : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider col){
+		if(col.gameObject.CompareTag("Player"))
 		rb.constraints = RigidbodyConstraints.None;
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
 
 
@@ -14,9 +15,10 @@ public class GameUIController : MonoBehaviour {
 
     public Toggle hintTextToggle;
     public Text hintText;
+    public GameObject fpsController;
 
     private bool escMenuOpen;
-
+    public GameObject a_camera;
 
     // Use this for initialization
     void Start () {
@@ -25,6 +27,8 @@ public class GameUIController : MonoBehaviour {
         hintTextToggle.isOn = SaveStateController.controller.hintTextToggle;
         // initially not settings panel open
         escMenuOpen = false;
+        //a_camera = GameObject.FindGameObjectWithTag("AnotherCamera");
+        Debug.Log(a_camera);
     }
 
 
@@ -47,6 +51,9 @@ public class GameUIController : MonoBehaviour {
         escBlur.gameObject.SetActive(false);
         escMenuOpen = false;
         Time.timeScale = 1;
+        fpsController.GetComponent<FirstPersonController>().enabled = true;
+        fpsController.GetComponent<FirstPersonController>().getMouseLook().lockCursor = true;
+        Cursor.visible = false;
     }
 
     void Update()
@@ -57,11 +64,21 @@ public class GameUIController : MonoBehaviour {
             {
                 if (!escMenuOpen)
                 {
+                    //a_camera.SetActive(true);
+                    //fpsController.SetActive(false);
+                    fpsController.GetComponent<FirstPersonController>().enabled = false;
+                    fpsController.GetComponent<FirstPersonController>().getMouseLook().lockCursor = false;
+                    Cursor.visible = true;
                     Time.timeScale = 0;
                     escBlur.gameObject.SetActive(true);
                     escMenuOpen = true;
                     settingsPanel.GetComponent<Animator>().SetTrigger("Open");
-                }
+                } 
+            }
+            else
+            {
+                Debug.Log("Close settings");
+                closeSettingsPanel();
             }
         }
     }

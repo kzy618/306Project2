@@ -17,3 +17,9 @@ EditorBuildSettings:
     path: Assets/Scenes/L1.2.unity
   - enabled: 1
     path: Assets/Scenes/L1.3.unity
+  - enabled: 1
+    path: Assets/Scenes/Level01/Level01_01_Spawn.unity
+  - enabled: 1
+    path: Assets/Scenes/Level01/Level01_02_FirstFloor.unity
+  - enabled: 1
+    path: Assets/Scenes/Level01/level01_03_SecondFloor.unity

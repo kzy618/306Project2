@@ -82,6 +82,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
+                gameObject.GetComponent<Rigidbody>().isKinematic = true; // re-enable iskinematic when landing from air
+                //gameObject.GetComponent<CharacterController>().enabled = true; // re-enable CharacterController when landing from air
                 StartCoroutine(m_JumpBob.DoBobCycle());
                 PlayLandingSound();
                 m_MoveDir.y = 0f;
@@ -145,6 +147,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.UpdateCursorLock();
         }
 
+        public float GetStickToGroundForce()
+        {
+            return m_StickToGroundForce;
+        }
+        
+        public void SetJumpValue(float y)
+        {
+            m_MoveDir.y = y;
+        }
 
         private void PlayJumpSound()
         {

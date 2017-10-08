@@ -75,11 +75,6 @@ public class GameUIController : MonoBehaviour {
                     settingsPanel.GetComponent<Animator>().SetTrigger("Open");
                 } 
             }
-            else
-            {
-                Debug.Log("Close settings");
-                closeSettingsPanel();
-            }
         }
     }
 }

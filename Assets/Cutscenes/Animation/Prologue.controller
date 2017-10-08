@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6f7892668219341b97b2e40d82c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MiniGame
+  sceneName: Level01_01_Spawn
 --- !u!1101 &110133064
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

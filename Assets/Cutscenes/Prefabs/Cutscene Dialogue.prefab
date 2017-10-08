@@ -108,9 +108,10 @@ MonoBehaviour:
   imagesA: []
   imagesB: []
   sceneName: 
-  delay: 0.1
+  delay: 0.04
   anim: {fileID: 0}
   animDuration: 0
+  exitText: Press Any Key to Return...
 --- !u!114 &11454030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,7 +162,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
     m_FontSize: 80
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 90
     m_Alignment: 0
@@ -169,7 +170,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 0.75
   m_Text: Text
 --- !u!114 &11473994
 MonoBehaviour:
@@ -230,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033475808b5ab2a47b59843622ff5fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNo: 2
+  sceneName: 
 --- !u!222 &22217432
 CanvasRenderer:
   m_ObjectHideFlags: 1

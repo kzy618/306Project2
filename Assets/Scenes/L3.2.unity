@@ -572,7 +572,6 @@ MonoBehaviour:
   nextText: {fileID: 787695498}
   charA: {fileID: 2114404205}
   charB: {fileID: 1258088486}
-  blank: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   dLines:
   - A
   - B
@@ -582,18 +581,18 @@ MonoBehaviour:
   - E
   - F
   imagesA:
-  - {fileID: 21300000, guid: 516e3e11165ef1d4cb2b052eef0ba435, type: 3}
+  - {fileID: 21300000, guid: a7d421f7ff17af24eb387a047f7d6ad7, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: db02009f9a2c1584494d1a5ebaeb81ce, type: 3}
+  - {fileID: 21300000, guid: 493401c8f2f32ec4da538b290fa425a1, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: db02009f9a2c1584494d1a5ebaeb81ce, type: 3}
-  - {fileID: 21300000, guid: 21cb264b111ea934da6e22592f996c8d, type: 3}
-  - {fileID: 21300000, guid: a3e207cfbf9d8b9479815a08552821d9, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: faec0d20850c7744e87d9fce459096e0, type: 3}
+  - {fileID: 21300000, guid: 2cd58e52e9d534a448ec1580a118e50f, type: 3}
   imagesB:
   - {fileID: 0}
-  - {fileID: 21300000, guid: c0358217157866d4abe1df8b483a7cfa, type: 3}
+  - {fileID: 21300000, guid: dcc4a27b6c2e5694ebebd11ab15b94a8, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: 67c754caaf38f7949bb1bd6116f72644, type: 3}
+  - {fileID: 21300000, guid: 4f363ea6dafe02048804f985db251706, type: 3}
   - {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   - {fileID: 0}
   - {fileID: 0}
@@ -732,7 +731,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a4a255080806fee4bac50559b7243101, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd7497aceb1024e43a1b6d358bcdf3ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -30,9 +30,9 @@ public class TrampolineScript : MonoBehaviour
 			GameObject player = col.gameObject;
 			Vector3 up = mainCamera.transform.up;
 			Vector3 forward = mainCamera.transform.forward;
+			//projectile equation might be wrong
 			Vector3 projectile = new Vector3((float) Math.Sqrt(up.x*up.x + forward.x*forward.x), (float) Math.Sqrt(up.y*up.y + forward.y*forward.y), (float) Math.Sqrt(up.z*up.z + forward.z*forward.z));
-			Rigidbody rb = player.GetComponent<Rigidbody>();
-			player.GetComponent<ImpactReceiver>().AddImpact(projectile, bouncingForce);
+			player.GetComponent<ImpactReceiver>().AddImpact(up, bouncingForce);
 			Debug.Log ("add force on player");
 			bouncing = !bouncing;
 		}

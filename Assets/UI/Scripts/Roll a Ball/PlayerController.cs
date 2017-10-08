@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public float animDuration;
+    public Animator death;
+    public Animator clear;
 
     void Start()
     {
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             //count = count + 1;
             Debug.Log(SaveStateController.controller.health);
-            SaveStateController.controller.health += 1;
+            SaveStateController.controller.health--;
             SetCountText(SaveStateController.controller.health);
             pingu.Play();
         }
@@ -71,9 +73,10 @@ public class PlayerController : MonoBehaviour
     {
 
         countText.text = "x " + count.ToString();
-        if (count >= 12)
+        if (SaveStateController.controller.health <= 0)
         {
-            //winText.text = "\\(You . Win)/";
+            Time.timeScale = 0;
+            death.SetTrigger("PlayerDeath");
         }
     }
 

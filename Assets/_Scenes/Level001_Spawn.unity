@@ -427,7 +427,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1779228309}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!23 &279067036
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1312,10 +1312,27 @@ Prefab:
     - target: {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: _memoryChecker
       value: 
-      objectReference: {fileID: 1295866181}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &800866611 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 173780, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
+  m_PrefabInternal: {fileID: 800866610}
+--- !u!114 &800866612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 800866611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b297a5ddd80604da4eb27c72a933d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _memoryChecker: {fileID: 1295866181}
 --- !u!1 &815212608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +1943,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 1779228309}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!23 &1041421286
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2381,13 +2398,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1295866179}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 86.5, y: 24, z: -13.5}
+  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.500008, y: 30.5, z: 51.50003}
   m_LocalScale: {x: 6, y: 0.1, z: 2}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 1779228309}
-  m_RootOrder: 16
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!114 &1295866181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2396,10 +2413,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295866179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98eeaca96328a8746bff97e03a22dd91, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9ef1e7fe49dd94d83e73ba76fab0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _door: {fileID: 71033907}
   _memoryFound: 0
 --- !u!23 &1295866182
 MeshRenderer:
@@ -3155,7 +3171,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 1779228309}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!23 &1703437803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3243,7 +3259,6 @@ Transform:
   - {fileID: 1366924152}
   - {fileID: 71033908}
   - {fileID: 961875598}
-  - {fileID: 1295866180}
   - {fileID: 1703437802}
   - {fileID: 1041421285}
   - {fileID: 279067035}

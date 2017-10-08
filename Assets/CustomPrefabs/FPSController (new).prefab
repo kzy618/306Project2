@@ -4181,6 +4181,7 @@ MonoBehaviour:
   spawningInterval: 1
   maxNumCube: 1
   canSwitchPlaces: 0
+  _memories: 0
 --- !u!114 &11427660
 MonoBehaviour:
   m_ObjectHideFlags: 1

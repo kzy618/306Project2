@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/Level001_Spawn.unity
+  - enabled: 1
+    path: Assets/_Scenes/Lvl01Puzzle04.unity
+  - enabled: 1
+    path: Assets/_Scenes/level001_second_floor.unity

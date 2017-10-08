@@ -21,6 +21,7 @@ public class SaveStateController : MonoBehaviour {
     // player's health
     public string playerName;
     public int health;
+    public int startingHealth;
 
     // PLAYER PREFERENCES
     // master volume
@@ -28,6 +29,7 @@ public class SaveStateController : MonoBehaviour {
 
     // When the object gets loaded
     void Awake () {
+        Time.timeScale = 1;
         if (controller == null)
         {
             DontDestroyOnLoad(gameObject); // make the obj stay around forever
@@ -37,6 +39,10 @@ public class SaveStateController : MonoBehaviour {
         }
         else if (controller != this)
         {
+            if (controller.health <= 0)
+            {
+                controller.health = startingHealth;
+            }
             // remove any other instances controller that's not the first one
             Destroy(gameObject);
         }

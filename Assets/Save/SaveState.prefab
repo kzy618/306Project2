@@ -41,7 +41,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
-  health: 0
+  health: 5
+  startingHealth: 5
   masterVol: 0
 --- !u!1001 &100100000
 Prefab:

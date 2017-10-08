@@ -35,17 +35,22 @@ public class GameUIController : MonoBehaviour {
         settingsPanel.GetComponent<Animator>().SetTrigger("Close");
         escBlur.gameObject.SetActive(false);
         escMenuOpen = false;
+        Time.timeScale = 1;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!escMenuOpen)
+            if (Time.timeScale != 0)
             {
-                escBlur.gameObject.SetActive(true);
-                escMenuOpen = true;
-                settingsPanel.GetComponent<Animator>().SetTrigger("Open");
+                if (!escMenuOpen)
+                {
+                    Time.timeScale = 0;
+                    escBlur.gameObject.SetActive(true);
+                    escMenuOpen = true;
+                    settingsPanel.GetComponent<Animator>().SetTrigger("Open");
+                }
             }
         }
     }

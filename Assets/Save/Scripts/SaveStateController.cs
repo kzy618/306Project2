@@ -29,7 +29,6 @@ public class SaveStateController : MonoBehaviour {
 
     // When the object gets loaded
     void Awake () {
-        Time.timeScale = 1;
         if (controller == null)
         {
             DontDestroyOnLoad(gameObject); // make the obj stay around forever

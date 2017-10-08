@@ -220,6 +220,7 @@ GameObject:
   - 223: {fileID: 102996155}
   - 114: {fileID: 102996154}
   - 114: {fileID: 102996153}
+  - 225: {fileID: 102996157}
   m_Layer: 5
   m_Name: Clear Screen
   m_TagString: Untagged
@@ -302,6 +303,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &102996157
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102996152}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &159145306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,6 +2141,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1153520566}
+    - target: {fileID: 130182, guid: 997215f3e5782ca48a1ac59f058cedd4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 997215f3e5782ca48a1ac59f058cedd4, type: 2}
   m_IsPrefabParent: 0

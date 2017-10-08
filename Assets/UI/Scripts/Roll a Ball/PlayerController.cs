@@ -77,6 +77,10 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0;
             death.SetTrigger("PlayerDeath");
+        } else
+        {
+           // Time.timeScale = 0;
+          //  clear.SetTrigger("LevelClear");
         }
     }
 

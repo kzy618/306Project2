@@ -153,7 +153,7 @@ public class InteractionController : MonoBehaviour {
 
                 hit.rigidbody.isKinematic = true;
 
-                hit.collider.isTrigger = true;
+                hit.collider.isTrigger = false;
 
                 hit.transform.parent = holdingPlace.transform;
 

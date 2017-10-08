@@ -18,7 +18,6 @@ public class GameUIController : MonoBehaviour {
     public GameObject fpsController;
 
     private bool escMenuOpen;
-    public GameObject a_camera;
 
     // Use this for initialization
     void Start () {
@@ -27,8 +26,6 @@ public class GameUIController : MonoBehaviour {
         hintTextToggle.isOn = SaveStateController.controller.hintTextToggle;
         // initially not settings panel open
         escMenuOpen = false;
-        //a_camera = GameObject.FindGameObjectWithTag("AnotherCamera");
-        Debug.Log(a_camera);
     }
 
 
@@ -64,8 +61,6 @@ public class GameUIController : MonoBehaviour {
             {
                 if (!escMenuOpen)
                 {
-                    //a_camera.SetActive(true);
-                    //fpsController.SetActive(false);
                     fpsController.GetComponent<FirstPersonController>().enabled = false;
                     fpsController.GetComponent<FirstPersonController>().getMouseLook().lockCursor = false;
                     Cursor.visible = true;

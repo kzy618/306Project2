@@ -1,0 +1,7 @@
+
+Alex's List: 08/10/17
+Name			[Author]			(Details)
+Medieval Fence Pack [ArtTI]				(Spawn Fence)
+High Quality Bricks & Walls [Alessio Regalbuto]		(Wall and floor textures)
+Nature Starter Kit 2 [Shapes]				(grass)
+Water FX Pack [Unity Technologies] 			(ice block)

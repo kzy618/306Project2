@@ -20,7 +20,7 @@ public class PlayerLifeController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        print(currentLives);
+        //print(currentLives);
 
         if (invincible)
         {

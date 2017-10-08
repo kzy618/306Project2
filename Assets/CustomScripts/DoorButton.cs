@@ -30,11 +30,7 @@ public class DoorButton : MonoBehaviour
     {
         if(triggered && !other)
         {
-            Debug.Log("Button triggered: off");
-            //transform.Translate(0, GetComponent<Renderer>().bounds.size.y, 0);
 			transform.position = defaultPosition;
-            //_shedDoor.gameObject.SetActive(true);
-			//_shedDoor.transform.position = closedPosition;
             triggered = false;
         }
 		if (triggered) {
@@ -54,23 +50,14 @@ public class DoorButton : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        Debug.Log("Button triggered: on");
-		//transform.Translate(0, -(GetComponent<Renderer>().bounds.size.y), 0);
 		transform.position = pressedPosition;
-		//_shedDoor.gameObject.SetActive(false);
-		//_shedDoor.transform.position = openPosition;
         this.other = other;
         this.triggered = true;
     }
 
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("Button triggered: off");
-        //transform.Translate(0, GetComponent<Renderer>().bounds.size.y, 0);
-
 		transform.position = defaultPosition;
-		//_shedDoor.gameObject.SetActive(true);
-		//_shedDoor.transform.position = closedPosition;
         triggered = false;
     }
 

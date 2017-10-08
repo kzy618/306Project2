@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MemoryRotator : MonoBehaviour {
 
-    public NextScene _memoryChecker;
+    public NextSceneMemory _memoryChecker;
 	// Update is called once per frame
 	void Update ()
     {

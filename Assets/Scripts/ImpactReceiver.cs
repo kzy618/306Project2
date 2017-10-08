@@ -18,6 +18,7 @@ public class ImpactReceiver : MonoBehaviour {
 		// consumes the impact energy each cycle:
 		impact = Vector3.Lerp(impact, Vector3.zero, 5*Time.deltaTime);
 	}
+	
 	// call this function to add an impact force:
 	public void AddImpact(Vector3 dir, float force){
 		dir.Normalize();

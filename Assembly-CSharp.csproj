@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\CustomScripts\CheckMemoryFragment.cs" />
     <Compile Include="Assets\CustomScripts\DoorButton.cs" />
+    <Compile Include="Assets\CustomScripts\FallingOffScript.cs" />
     <Compile Include="Assets\CustomScripts\MemoryRotator.cs" />
     <Compile Include="Assets\CustomScripts\MovingPlatform\HolderScript.cs" />
     <Compile Include="Assets\CustomScripts\MovingPlatform\MovingPlatformScript.cs" />

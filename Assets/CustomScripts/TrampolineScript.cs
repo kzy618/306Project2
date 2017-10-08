@@ -57,12 +57,4 @@ public class TrampolineScript : MonoBehaviour
 			}
 		}
 	}
-
-	void OnTriggerExit(Collider col){
-		Debug.Log ("TAMPOLINE off "+col.gameObject.tag);
-		Rigidbody rb = col.gameObject.GetComponent<Rigidbody> ();
-		if (rb != null) {
-			Debug.Log ("EXIT - "+rb.velocity.ToString ("F3"));
-		}
-	}
 }

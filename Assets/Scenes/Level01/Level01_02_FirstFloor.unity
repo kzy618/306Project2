@@ -3266,7 +3266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c833e5f60ea6d41b3074d4687e252f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextScene: level01_03_SecondFloor
+  _nextScene: Level01_03_SecondFloor
 --- !u!1 &628857299
 GameObject:
   m_ObjectHideFlags: 0

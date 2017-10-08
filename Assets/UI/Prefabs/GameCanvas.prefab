@@ -3488,7 +3488,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11493476}
+        m_MethodName: reconfigureHintText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
@@ -3723,6 +3734,8 @@ MonoBehaviour:
   settingsPanel: {fileID: 117684}
   masterVolumeSlider: {fileID: 11473216}
   confirmPanel: {fileID: 184748}
+  hintTextToggle: {fileID: 11484444}
+  hintText: {fileID: 11438204}
 --- !u!114 &11493988
 MonoBehaviour:
   m_ObjectHideFlags: 1

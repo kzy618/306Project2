@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerLifeController : MonoBehaviour {
@@ -19,6 +20,8 @@ public class PlayerLifeController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        print(currentLives);
+
         if (invincible)
         {
             currentInvincibilityTime += Time.deltaTime;

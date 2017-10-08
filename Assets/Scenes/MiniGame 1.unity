@@ -747,7 +747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 161668, guid: d627c0092a32e074aa5b9c02f7b60d00, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d627c0092a32e074aa5b9c02f7b60d00, type: 2}
@@ -1576,6 +1576,8 @@ MonoBehaviour:
   mem3: L1.3
   anim: {fileID: 271067872}
   animDuration: 0.85
+  death: {fileID: 0}
+  clear: {fileID: 0}
 --- !u!54 &1152608486
 Rigidbody:
   m_ObjectHideFlags: 0

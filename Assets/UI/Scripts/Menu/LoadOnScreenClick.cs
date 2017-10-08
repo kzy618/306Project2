@@ -10,6 +10,7 @@ public class LoadOnScreenClick : MonoBehaviour
     public string sceneName;
     public void LoadByIndex()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 }

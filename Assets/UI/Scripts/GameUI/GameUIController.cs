@@ -12,6 +12,9 @@ public class GameUIController : MonoBehaviour {
 
     public GameObject confirmPanel;
 
+    public Toggle hintTextToggle;
+    public Text hintText;
+
     private bool escMenuOpen;
 
 
@@ -19,8 +22,16 @@ public class GameUIController : MonoBehaviour {
     void Start () {
         AudioListener.volume = SaveStateController.controller.masterVol;
         masterVolumeSlider.value = SaveStateController.controller.masterVol;
+        hintTextToggle.isOn = SaveStateController.controller.hintTextToggle;
         // initially not settings panel open
         escMenuOpen = false;
+    }
+
+
+    public void reconfigureHintText() {
+        hintText.gameObject.SetActive(hintTextToggle.isOn);
+        SaveStateController.controller.hintTextToggle = hintTextToggle.isOn;
+
     }
 
     // Updates master volume based on slider value

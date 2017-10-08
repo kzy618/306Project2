@@ -26,14 +26,15 @@ public class SaveStateController : MonoBehaviour {
     // PLAYER PREFERENCES
     // master volume
     public float masterVol;
+    public bool hintTextToggle;
 
     // When the object gets loaded
     void Awake () {
-        Time.timeScale = 1;
         if (controller == null)
         {
             DontDestroyOnLoad(gameObject); // make the obj stay around forever
             controller = this; // the first created game controller will be the singleton
+            hintTextToggle = true;
             masterVol = 0.75F;
             LoadPlayerPref(); // loads player preferences at the start
         }
@@ -92,6 +93,7 @@ public class SaveStateController : MonoBehaviour {
 
         // Save the data here
         pref.masterVol = masterVol;
+        pref.hintTextToggle = hintTextToggle;
 
         bf.Serialize(file, pref);
         file.Close();
@@ -108,6 +110,7 @@ public class SaveStateController : MonoBehaviour {
 
             // Load the data here
             masterVol = pref.masterVol;
+            hintTextToggle = pref.hintTextToggle;
 
         }
     }
@@ -120,6 +123,7 @@ public class SaveStateController : MonoBehaviour {
 
             // Reset the data here
             masterVol = 1;
+            hintTextToggle = true;
         }
     }
 }
@@ -134,5 +138,6 @@ class PlayerData {
 class PlayerPref
 {
     public float masterVol;
+    public bool hintTextToggle;
 }
 

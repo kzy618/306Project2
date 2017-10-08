@@ -340,7 +340,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 847307765}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -757,12 +757,16 @@ Prefab:
     m_TransformParent: {fileID: 788655700}
     m_Modifications:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22479980, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: m_LocalPosition.x
@@ -855,7 +859,8 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: cbbd379c341af99429f712de58fcf175,
+        type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[2]
       value: 
@@ -868,7 +873,8 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 67456e89c3abd704999f0aae53eb8709,
+        type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[1]
       value: 
@@ -897,11 +903,14 @@ Prefab:
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
-      value: Where am I... Why do I feel like I'm forgetting something...
+      value: Mr. @ I have completed your body check-up. Everything seems fine, you
+        may leave now.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[2]
-      value: fk u gimme my memories back
+      value: 'Who is that person? She seems strangely familiar... Why does that screen
+        over there say "Extraction Complete"? I thought this was a check-up? What
+        did he do to me? '
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[4]
@@ -909,22 +918,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[1]
-      value: U are in my lab,  i have taken ur memories
+      value: 'Ugh... I have a headache, It feels like I''m forgetting something very
+        important. '
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[3]
-      value: 'Only if you complete all of these VR levels '
+      value: "This device looks suspicious\u2026 maybe I should try it on. "
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: cbbd379c341af99429f712de58fcf175,
+      objectReference: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: cbbd379c341af99429f712de58fcf175,
-        type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11488462, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
     - {fileID: 11403284, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}

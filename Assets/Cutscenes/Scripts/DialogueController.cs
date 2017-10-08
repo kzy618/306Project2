@@ -58,6 +58,7 @@ public class DialogueController : MonoBehaviour {
 
         } else if (count < dLines.Count)
         {
+            processText();
             cr = StartCoroutine(ShowText(dLines[count]));
             updateImages();
 
@@ -70,20 +71,28 @@ public class DialogueController : MonoBehaviour {
         }
     }
 
+    private void processText()
+    {
+        Debug.Log(SaveStateController.controller.playerName + " name");
+        Debug.Log(dLines[count]);
+        dLines[count] = dLines[count].Replace("@", SaveStateController.controller.playerName);
+    }
+
     private void updateImages()
     {
-        if (imagesA[count] != null)
-        {
-            Debug.Log("chg");
-            charA.sprite = imagesA[count];
-            charAInFocus = true;
-        } 
         if (imagesB[count] != null)
         {
             charB.sprite = imagesB[count];
             charAInFocus = false;
         }
 
+        if (imagesA[count] != null)
+        {
+            Debug.Log("chg");
+            charA.sprite = imagesA[count];
+            charAInFocus = true;
+        } 
+       
         if (charAInFocus)
         {
             charA.color = shaded;

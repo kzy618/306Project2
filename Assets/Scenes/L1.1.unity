@@ -344,6 +344,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43893ca52c80813479727dc558342935, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &983049791
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 382.65872
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 243.3859
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428876, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d14debf501e279b4ab751fe9a7fa1953, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1104535010
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,8 +782,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 4d22239da279e4241be8d527372e9073,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[0]
       value: 
@@ -749,8 +790,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[1]
       value: 
@@ -763,6 +803,37 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: animDuration
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[0]
+      value: Alright everyone, we have a transfer student today. Come in, Stella.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[1]
+      value: Hello everyone, my name is Stella. I transferred to this school from
+        America.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[2]
+      value: Pleased to meet you, let's all get along!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4d22239da279e4241be8d527372e9073,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[3]
+      value: Let's see... There's a free seat at the back by @, you can sit there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[4]
+      value: Okay!
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11488462, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}

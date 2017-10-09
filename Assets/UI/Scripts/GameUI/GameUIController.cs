@@ -50,12 +50,12 @@ public class GameUIController : MonoBehaviour {
         Time.timeScale = 1;
         fpsController.GetComponent<FirstPersonController>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = !Cursor.visible;
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (Time.timeScale != 0)
             {
@@ -65,7 +65,7 @@ public class GameUIController : MonoBehaviour {
                     Time.timeScale = 0;
                     Debug.Log(Cursor.lockState);
                     Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = !Cursor.visible;
+                    Cursor.visible = true;
                     Debug.Log(Cursor.lockState);
                     escBlur.gameObject.SetActive(true);
                     escMenuOpen = true;

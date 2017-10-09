@@ -11,9 +11,12 @@ public class DialogueController : MonoBehaviour {
     public Text nextText;
     public Image charA;
     public Image charB;
+    public Image bg;
+    public Sprite blank;
     public List<string> dLines;
     public List<Sprite> imagesA;
     public List<Sprite> imagesB;
+    public List<Sprite> backgrounds;
     private int count;
     //public LoadOnScreenClick loader;
     //public LoadOrSave saveLoader;
@@ -80,6 +83,11 @@ public class DialogueController : MonoBehaviour {
 
     private void updateImages()
     {
+        if (backgrounds[count] != null)
+        {
+            bg.sprite = backgrounds[count];
+        }
+
         if (imagesB[count] != null)
         {
             charB.sprite = imagesB[count];
@@ -91,8 +99,17 @@ public class DialogueController : MonoBehaviour {
             Debug.Log("chg");
             charA.sprite = imagesA[count];
             charAInFocus = true;
-        } 
-       
+        }
+
+        if (charA.sprite == blank) {
+            charAInFocus = false;
+        }
+        if (charB.sprite == blank)
+        {
+            charAInFocus = true;
+        }
+
+
         if (charAInFocus)
         {
             charA.color = shaded;

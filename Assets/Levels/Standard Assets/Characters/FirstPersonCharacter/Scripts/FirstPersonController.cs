@@ -290,5 +290,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+        public MouseLook getMouseLook()
+        {
+            return m_MouseLook;
+        }
     }
 }

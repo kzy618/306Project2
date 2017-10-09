@@ -4,14 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - pickable
-  - SF_Door
+  - TextBox
   - pickedref
+  - memoryFragment
   - picked
+  - throwref
+  - Fire
+  - laser receiver
   - Sliding Door Button
   - Reflective Surface
+  - Pick Up
   - ground
-  - throwref
   - pickable
   - Fire
   - memoryFragment
@@ -20,6 +23,10 @@ TagManager:
   - conveyerBeltUnit
   - staticPosition
   - unmovable
+  - AnotherCamera
+  - ground
+  - cursor
+  - Life
   layers:
   - Default
   - TransparentFX

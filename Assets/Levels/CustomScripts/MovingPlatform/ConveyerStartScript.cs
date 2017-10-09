@@ -17,18 +17,12 @@ public class ConveyerStartScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		Debug.Log ("Anything Enter Start!");
 		if(col.gameObject.CompareTag ("conveyerBeltUnit")){
-			Debug.Log ("Conveyer Enter Start!");
-			//currentConveyerUnit = col.gameObject;
 		}
 	}
 
 	void OnTriggerExit(Collider col){
-		Debug.Log ("Anything Exit Start!");
 		if(col.gameObject.CompareTag ("conveyerBeltUnit")){
-			Debug.Log ("Conveyer Exit Start!");
-			//currentConveyerUnit = null;
 			manager.GetComponent<ConveyerScript>().newUnit();
 		}
 	}

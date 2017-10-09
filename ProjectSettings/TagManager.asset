@@ -19,6 +19,7 @@ TagManager:
   - basement
   - conveyerBeltUnit
   - staticPosition
+  - unmovable
   layers:
   - Default
   - TransparentFX

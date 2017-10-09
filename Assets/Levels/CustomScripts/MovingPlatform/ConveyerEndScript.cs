@@ -18,23 +18,12 @@ public class ConveyerEndScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.CompareTag ("Player")) {
-			Debug.Log ("Player Enter End!");
-		}
-			
 		if(col.gameObject.CompareTag ("conveyerBeltUnit")){
-			Debug.Log ("Conveyer Enter End!");
-			//currentConveyerUnit = col.gameObject;
 		}
 	}
 
 	void OnTriggerExit(Collider col){
-		if (col.gameObject.CompareTag ("Player")) {
-			Debug.Log ("Player Exit End!");
-		}
 		if(col.gameObject.CompareTag ("conveyerBeltUnit")){
-			Debug.Log ("Conveyer Exit End!");
-			//currentConveyerUnit = null;
 			manager.GetComponent<ConveyerScript>().removeUnit(col.gameObject);
 		}
 	}

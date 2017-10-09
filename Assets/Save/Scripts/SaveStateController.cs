@@ -22,6 +22,7 @@ public class SaveStateController : MonoBehaviour {
     public string playerName;
     public int health;
     public int startingHealth;
+    public string lastCheckpoint;
 
     // PLAYER PREFERENCES
     // master volume
@@ -36,6 +37,7 @@ public class SaveStateController : MonoBehaviour {
             controller = this; // the first created game controller will be the singleton
             hintTextToggle = true;
             masterVol = 0.75F;
+            lastCheckpoint = "Prologue";
             LoadPlayerPref(); // loads player preferences at the start
         }
         else if (controller != this)
@@ -57,6 +59,7 @@ public class SaveStateController : MonoBehaviour {
         // Save the data here
         data.health = health;
         data.playerName = playerName;
+        data.lastCheckpoint = lastCheckpoint;
 
         bf.Serialize(file, data);
         file.Close();
@@ -72,6 +75,7 @@ public class SaveStateController : MonoBehaviour {
             // Load the data here
             health = data.health;
             playerName = data.playerName;
+            lastCheckpoint = data.lastCheckpoint;
 
         }
     }
@@ -81,6 +85,7 @@ public class SaveStateController : MonoBehaviour {
         {
             File.Delete(PLAYER_DATA_FILENAME);
             health = 0;
+
         }
     }
 
@@ -132,6 +137,7 @@ public class SaveStateController : MonoBehaviour {
 class PlayerData {
     public int health;
     public string playerName;
+    public string lastCheckpoint;
 }
 
 [Serializable]

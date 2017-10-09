@@ -613,23 +613,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
-      value: Heyyy~ stella lets go have lunch out in the sun!
+      value: Heyyy~ Stella let's go have lunch out in the sun!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[1]
-      value: nahh, I still have something to do....
+      value: I can't... I still have to catch up on notes that I missed...
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[2]
-      value: ohh okay :( Catch ya later then
+      value: Ohh okay... Catch ya later then.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[3]
-      value: '*Proceeds on to studying*'
+      value: '*Time passes*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[4]
-      value: '*Studying noise*'
+      value: '*More time passes*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: sceneName
@@ -676,7 +676,7 @@ Prefab:
       objectReference: {fileID: 1389555212}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: '"That is weird, Stella is not going to lunch?"'
+      value: That's weird, Stella isn't going to have lunch?
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[6]
@@ -684,31 +684,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[7]
-      value: Oh maybe she forgot her lunch
+      value: Oh, maybe she forgot to bring her lunch.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[8]
-      value: Hey Stella, I made some cookie in the morning
+      value: Hey Stella, I made some cookies this morning.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[9]
-      value: Do you want some of them
+      value: Would you like to have some?
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[10]
-      value: Ahh nahh it is all right, I would feel bad if I take your lunch.
+      value: It's all right, I'd feel bad taking your lunch.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[11]
-      value: '*Tummy Grumbles*'
+      value: '*Tummy grumbles*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[12]
-      value: oh comme on, please take one, I want to thank you from before
+      value: No need to be polite, please take one. I want to thank you for helping
+        me earlier.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[13]
-      value: Oh okay in that case, I will take one.
+      value: Oh okay, in that case I'll take one. Thanks!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[14]
@@ -716,8 +717,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[15]
-      value: hmmm~ oh wow it tastes like coconut! It is so delicious, I can't have
-        enough of it
+      value: Hmm... Oh wow it tastes like coconut! It's so delicious, I can't have
+        enough of it!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[16]
@@ -725,16 +726,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[17]
-      value: '*Smiles and takes 1 more*'
+      value: '*Smiles and takes one more*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[18]
-      value: 'Yo, @ , what are you doing there. Let''s have lunch. '
+      value: Yo @ , what are you doing there? Let's go have lunch.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[19]
-      value: Ah, I'm going to have lunch with my friend, if you do not mind you can
-        have all of them. Bye. *Leaving*
+      value: Ah, I'm going to have lunch with my friend, if you don't mind you can
+        have all of them. Bye.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[3]

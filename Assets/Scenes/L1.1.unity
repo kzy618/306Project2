@@ -810,16 +810,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
-      value: Alright everyone, we have a transfer student today. Come in, Stella.
+      value: Alright everyone, we have a new transfer student today. Please come in,
+        Stella.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[1]
-      value: Hello everyone, my name is Stella. I transferred to this school from
-        America.
+      value: Hello everyone, my name is Stella. I just tranferred here from America.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[2]
-      value: Pleased to meet you, let's all get along!
+      value: Pleased to meet you all!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[3]

@@ -401,24 +401,25 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
-      value: Oh it is raining pretty heavily
+      value: Hmm it's raining quite heavily.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[1]
-      value: Dammit, I forgot my umbrella, I guess I am waiting here
+      value: Dammit, I forgot my umbrella. Guess I'm waiting here until it stops.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[2]
-      value: '*30 minutes passed* '
+      value: '*30 minutes later* '
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[3]
-      value: Hm, @ you are still here?
+      value: Hm, @ you're still here?
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[4]
-      value: Waiting the rain stopping, but I may rush to the bus stop now, or I may
-        miss the final bus
+      value: I've been waiting for the rain to stop, but it doesn't seem like it's
+        going to stop any time soon. I'm going to have to rush to the bus stop now
+        or else I'm going to miss the last bus.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: sceneName
@@ -463,11 +464,11 @@ Prefab:
       objectReference: {fileID: 788655701}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: I also will go to bus stop now, we can share my umbrella.
+      value: Since I'm also going to the bus stop now we can share my umbrella!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[6]
-      value: Thanks.
+      value: Thanks!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[7]

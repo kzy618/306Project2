@@ -42,6 +42,7 @@ public class InteractionController : MonoBehaviour {
     // how many memories are found
     public int _memories;
 
+
     // Use this for initialization
     void Start () {
 		pickref = GameObject.FindWithTag("pickedref");
@@ -222,12 +223,15 @@ public class InteractionController : MonoBehaviour {
 	
 	void OnGUI()
 	{
-		if (guipick && canpick){
-			GUI.Label (new Rect (Screen.width/2,Screen.height/2,Screen.width/2,Screen.height/2), "press Mouse LB to pick"); 
+		if (guipick && canpick)
+		{
+			GUI.color = Color.red;
+			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height/2,Screen.width,Screen.height/2), "press Mouse LB to pick"); 
 		}
 		else if (picked)
 		{
-			GUI.Label (new Rect (Screen.width/2,Screen.height/2,Screen.width/2,Screen.height/2), "press Mouse LB to throw or Mouse RB to release"); 
+			GUI.color = Color.red;
+			GUI.Label (new Rect (Screen.width/2 - 150,Screen.height/2 + 100,Screen.width,Screen.height/2), "press Mouse LB to throw or Mouse RB to release"); 
 		}
 	}
 

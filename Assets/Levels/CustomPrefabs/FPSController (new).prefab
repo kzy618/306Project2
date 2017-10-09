@@ -2505,10 +2505,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 1, z: -9.38}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 3, y: 31.009, z: 55}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children:
   - {fileID: 451128}
   - {fileID: 405420}
@@ -4175,6 +4175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CubeMaterial: {fileID: 2100000, guid: 65fbe791bb29a8c46a411fc648e18cf7, type: 2}
   CapsuleMaterial: {fileID: 2100000, guid: 75bf26dc56e547e45b1ad98a7533fc57, type: 2}
+  TooltipMaterial: {fileID: 2100000, guid: 93e64bd33329afe45ac00fd953ba87db, type: 2}
   PickableRange: 3.5
   throwingForce: 500
   holdingPlace: {fileID: 156800}

@@ -19,6 +19,7 @@ TagManager:
   - AnotherCamera
   - ground
   - cursor
+  - Life
   layers:
   - Default
   - TransparentFX

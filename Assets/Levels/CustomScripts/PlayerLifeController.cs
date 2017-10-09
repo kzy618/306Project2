@@ -7,6 +7,7 @@ public class PlayerLifeController : MonoBehaviour {
 
     public int maxLives;
     public float invincibilityTime;
+    public Text lifeText;
 
     private int currentLives;
     private float currentInvincibilityTime;
@@ -21,6 +22,7 @@ public class PlayerLifeController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //print(currentLives);
+        lifeText.text = "x" + currentLives;
 
         if (invincible)
         {
@@ -35,6 +37,7 @@ public class PlayerLifeController : MonoBehaviour {
 
         if (currentLives <= 0)
         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             // handle death
         }
 	}

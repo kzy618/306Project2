@@ -257,7 +257,7 @@ GameObject:
   - 114: {fileID: 11430658}
   m_Layer: 5
   m_Name: HealthCountText
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2569,7 +2569,6 @@ MonoBehaviour:
   hintTextToggle: {fileID: 11484444}
   hintText: {fileID: 11438204}
   fpsController: {fileID: 0}
-  a_camera: {fileID: 0}
 --- !u!114 &11493988
 MonoBehaviour:
   m_ObjectHideFlags: 1

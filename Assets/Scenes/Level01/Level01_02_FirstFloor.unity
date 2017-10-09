@@ -923,6 +923,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22413740, guid: 192df43c5d2209249b7e0e2e649a54b6,
     type: 2}
   m_PrefabInternal: {fileID: 125264284}
+--- !u!114 &125264286 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11430658, guid: 192df43c5d2209249b7e0e2e649a54b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 125264284}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &133237095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1049,7 @@ GameObject:
   - 82: {fileID: 135179780}
   - 65: {fileID: 135179785}
   - 114: {fileID: 135179786}
+  - 114: {fileID: 135179787}
   m_Layer: 0
   m_Name: FPSController (new)
   m_TagString: Player
@@ -1296,6 +1303,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 3
+--- !u!114 &135179787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 135179779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c692112111be474bb1d7be768a5dfc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLives: 3
+  invincibilityTime: 1
+  lifeText: {fileID: 125264286}
 --- !u!1 &135643349
 GameObject:
   m_ObjectHideFlags: 0

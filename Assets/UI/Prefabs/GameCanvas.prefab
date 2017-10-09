@@ -1607,7 +1607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'press ESC to go to in-game settings, then
+  m_Text: 'Press ESC to go to in-game settings, then
 
     select Player Controls to learn the controls,
 

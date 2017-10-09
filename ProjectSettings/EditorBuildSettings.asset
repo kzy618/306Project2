@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
   - enabled: 1
-    path: Assets/Scenes/MiniGame.unity
+    path: Assets/Scenes/Credits.unity
   - enabled: 1
     path: Assets/Scenes/L1.1.unity
   - enabled: 1

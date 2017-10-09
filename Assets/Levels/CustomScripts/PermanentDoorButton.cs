@@ -3,6 +3,11 @@ using System.Collections;
 
 public class PermanentDoorButton : MonoBehaviour {
 	public GameObject _shedDoor;
+	public GameObject _links;
+	public GameObject breakableGlass;
+
+	public Material untriggerMat;
+	public Material triggerMat;
 
 	private bool triggered = false;
 	private Collider other; 
@@ -17,6 +22,11 @@ public class PermanentDoorButton : MonoBehaviour {
 
 	void Start()
 	{
+		foreach (Transform childTransform in _links.transform) {
+			GameObject child = childTransform.gameObject;
+			child.GetComponent<Renderer> ().material = untriggerMat;
+		}
+
 		defaultPosition = transform.position;
 		pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
 
@@ -31,6 +41,9 @@ public class PermanentDoorButton : MonoBehaviour {
 			if (_shedDoor.transform.position.y <= openDoorHeight) {
 				_shedDoor.transform.position = new Vector3(doorPosition.x, openDoorHeight, doorPosition.z);
 			}
+
+			float descale = 
+			breakableGlass.transform.localScale -= new Vector3(
 		}
 
 	}
@@ -40,11 +53,10 @@ public class PermanentDoorButton : MonoBehaviour {
 	{
 		this.other = other;
 		this.triggered = true;
-	}
 
-	void OnTriggerExit(Collider other)
-	{
-		transform.position = defaultPosition;
-		triggered = false;
+		foreach (Transform childTransform in _links.transform) {
+			GameObject child = childTransform.gameObject;
+			child.GetComponent<Renderer> ().material = triggerMat;
+		}
 	}
 }

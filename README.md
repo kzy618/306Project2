@@ -1,13 +1,11 @@
-# SOFTENG 306 Project 2
+# Tower of Babel
+**By Team Rocket**
 
-## Collaborators
-* Jonathan Kang (kzy618) - kzy618@aucklanduni.ac.nz - 
-* Hunter Bao (hbao448) - hbao448@aucklanduni.ac.nz - 101514440
-* Yao Jian Yap (RemRinRamChi) - yyap601@aucklanduni.ac.nz - 983729282
-* Mason Shi (tshi206) - tshi206@aucklanduni.ac.nz - 313368828
-* Alex Yoo (SuhoNova) - syu680@aucklanduni.ac.nz -
-* Joseph Dumogho (Scorpiris3196) - jdum654@aucklanduni.ac.nz - 8855273
-* Andy Tang (ponchotang) - atan932@aucklanduni.ac.nz - 
-* Vincent Chen (bche722) - bche722@aucklanduni.ac.nz - 896127611
+Tower of Babel is a first person puzzle game that promotes critical thinking in the player.
 
-Google Drive: [link](https://drive.google.com/drive/u/1/folders/0B8oJg2cVCcK6anY3T2RTV1VoSzg)
+### Execution Instructions 
+1. Clone the PROTOTYPE branch onto a local directory.
+2. Make sure that Unity version 5.3.5 is installed
+3. Open the cloned project in Unity 5.3.5
+4. Go Files -> Build Settings... -> Build, to build to a desired directory
+5. Launch the created executable for the game and have fun !

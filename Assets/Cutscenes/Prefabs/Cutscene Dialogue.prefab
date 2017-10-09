@@ -99,6 +99,7 @@ MonoBehaviour:
   nextText: {fileID: 11474262}
   charA: {fileID: 0}
   charB: {fileID: 0}
+  blank: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   dLines:
   - Welcome
   - To

@@ -1,27 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
-public class NextSceneMemory : MonoBehaviour
+public class NextSceneCredits : NextSceneMemory
 {
-    public string _nextScene;
-    public bool _memoryFound;
-    protected bool _loaded;
+    public GameObject fpsController;
 
-    void Start()
-    {
-        _memoryFound = false;
-        _loaded = false;
-    }
-    public virtual void OnTriggerEnter(Collider other)
+    public override void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.ToString());
         if (other.gameObject.CompareTag("Player") && _memoryFound && !_loaded)
         {
             // save player's data here
             SaveStateController.controller.lastCheckpoint = _nextScene;
-            SaveStateController.controller.SavePlayerData();
-
+            SaveStateController.controller.DeletePlayerData();
+            fpsController.GetComponent<FirstPersonController>().enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadSceneAsync(_nextScene);
             _loaded = true;
         }

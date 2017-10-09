@@ -66,7 +66,7 @@ GameObject:
   - 114: {fileID: 11456548}
   - 114: {fileID: 11449620}
   - 95: {fileID: 9534302}
-  - 114: {fileID: 11443020}
+  - 114: {fileID: 11477916}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -383,18 +383,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: You Died
---- !u!114 &11443020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033475808b5ab2a47b59843622ff5fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: MiniGame
 --- !u!114 &11449620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -434,8 +422,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11443020}
-        m_MethodName: LoadByIndex
+      - m_Target: {fileID: 11477916}
+        m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -501,6 +489,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11477916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019ad757af3872e4abe0cbe5e3405b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11492760
 MonoBehaviour:
   m_ObjectHideFlags: 1

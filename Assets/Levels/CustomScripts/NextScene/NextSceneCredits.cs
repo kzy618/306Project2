@@ -14,7 +14,7 @@ public class NextSceneCredits : NextSceneMemory
         {
             // save player's data here
             SaveStateController.controller.lastCheckpoint = _nextScene;
-            SaveStateController.controller.SavePlayerData();
+            SaveStateController.controller.DeletePlayerData();
             fpsController.GetComponent<FirstPersonController>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

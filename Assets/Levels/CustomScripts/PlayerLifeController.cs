@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerLifeController : MonoBehaviour {
 
@@ -12,11 +13,15 @@ public class PlayerLifeController : MonoBehaviour {
     private int currentLives;
     private float currentInvincibilityTime;
     private bool invincible;
+    private bool died;
+
+    public Animator death;
 
     private void Start()
     {
         currentLives = maxLives;
         invincible = false;
+        died = false;
     }
 
 	// Update is called once per frame
@@ -35,10 +40,16 @@ public class PlayerLifeController : MonoBehaviour {
             }
         }
 
-        if (currentLives <= 0)
+        if (currentLives <= 0 && !died)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            // handle death
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GetComponent<FirstPersonController>().enabled = false;
+            Time.timeScale = 0;
+            Debug.Log("ts0");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            died = true;
+            death.SetTrigger("PlayerDeath");
         }
 	}
 

@@ -267,8 +267,9 @@ GameObject:
   - 114: {fileID: 11481258}
   - 54: {fileID: 5401180}
   - 82: {fileID: 8243310}
-  - 65: {fileID: 6597006}
-  - 114: {fileID: 11460810}
+  - 65: {fileID: 6557108}
+  - 114: {fileID: 11400292}
+  - 114: {fileID: 11439294}
   m_Layer: 0
   m_Name: FPSController (new)
   m_TagString: Player
@@ -4052,7 +4053,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6597006
+--- !u!65 &6557108
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -4162,6 +4163,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd47201793f5d748a16fcb69aac6310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 3
 --- !u!114 &11421846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4194,18 +4207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad313ed1f6ae4e048bac9ff4a810098b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11452672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c9e10d07d41f94588246a609a5bf26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11460810
+--- !u!114 &11439294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -4219,6 +4221,17 @@ MonoBehaviour:
   maxLives: 3
   invincibilityTime: 1
   lifeText: {fileID: 0}
+--- !u!114 &11452672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c9e10d07d41f94588246a609a5bf26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11481258
 MonoBehaviour:
   m_ObjectHideFlags: 1

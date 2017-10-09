@@ -2689,10 +2689,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11460810, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
-      propertyPath: lifeText
-      value: 
-      objectReference: {fileID: 1402400727}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
   m_IsPrefabParent: 0
@@ -3434,15 +3430,13 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 106.21207
       objectReference: {fileID: 0}
+    - target: {fileID: 22442686, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1402400727 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11430658, guid: 192df43c5d2209249b7e0e2e649a54b6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1402400726}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1461887199 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 1c28602268ade034dbb8f08048b2f566, type: 3}

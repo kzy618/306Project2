@@ -56,4 +56,9 @@ public class PlayerLifeController : MonoBehaviour {
         }
         
     }
+    
+    public void healing()
+    {
+        currentLives++;
+    }
 }

@@ -18,6 +18,10 @@ public class NextSceneMemory : MonoBehaviour
         Debug.Log(other.ToString());
         if (other.gameObject.CompareTag("Player") && _memoryFound && !_loaded)
         {
+            // save player's data here
+            SaveStateController.controller.lastCheckpoint = _nextScene;
+            SaveStateController.controller.SavePlayerData();
+
             SceneManager.LoadSceneAsync(_nextScene);
             _loaded = true;
         }

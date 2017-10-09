@@ -2,7 +2,7 @@
 using System.Collections;
 
 /*
- * Class for loading and saving player data and preferences 
+ * Helper class for loading and saving player data and preferences 
  */ 
 public class LoadOrSave : MonoBehaviour {
 

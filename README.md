@@ -8,6 +8,6 @@
 * Alex Yoo (SuhoNova) - syu680@aucklanduni.ac.nz -
 * Joseph Dumogho (Scorpiris3196) - jdum654@aucklanduni.ac.nz - 8855273
 * Andy Tang (ponchotang) - atan932@aucklanduni.ac.nz - 
-* Vincent Chen (bche722) - bche722@aucklanduni.ac.nz -
+* Vincent Chen (bche722) - bche722@aucklanduni.ac.nz - 896127611
 
 Google Drive: [link](https://drive.google.com/drive/u/1/folders/0B8oJg2cVCcK6anY3T2RTV1VoSzg)

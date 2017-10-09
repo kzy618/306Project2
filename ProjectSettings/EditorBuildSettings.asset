@@ -22,4 +22,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level01/Level01_02_FirstFloor.unity
   - enabled: 1
-    path: Assets/Scenes/Level01/1Level01_03_SecondFloor.unity
+    path: Assets/Scenes/Level01/Level01_03_SecondFloor.unity

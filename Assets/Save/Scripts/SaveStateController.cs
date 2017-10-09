@@ -85,7 +85,7 @@ public class SaveStateController : MonoBehaviour {
         {
             File.Delete(PLAYER_DATA_FILENAME);
             health = 0;
-
+            lastCheckpoint = "Prologue";
         }
     }
 

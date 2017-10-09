@@ -17,6 +17,8 @@ TagManager:
   - memoryFragment
   - laser receiver
   - basement
+  - conveyerBeltUnit
+  - staticPosition
   layers:
   - Default
   - TransparentFX

@@ -49,22 +49,24 @@ public class GameUIController : MonoBehaviour {
         escMenuOpen = false;
         Time.timeScale = 1;
         fpsController.GetComponent<FirstPersonController>().enabled = true;
-        fpsController.GetComponent<FirstPersonController>().getMouseLook().lockCursor = true;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = !Cursor.visible;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if (Time.timeScale != 0)
             {
                 if (!escMenuOpen)
                 {
                     fpsController.GetComponent<FirstPersonController>().enabled = false;
-                    fpsController.GetComponent<FirstPersonController>().getMouseLook().lockCursor = false;
-                    Cursor.visible = true;
                     Time.timeScale = 0;
+                    Debug.Log(Cursor.lockState);
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = !Cursor.visible;
+                    Debug.Log(Cursor.lockState);
                     escBlur.gameObject.SetActive(true);
                     escMenuOpen = true;
                     settingsPanel.GetComponent<Animator>().SetTrigger("Open");

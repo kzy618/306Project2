@@ -16,6 +16,13 @@ TagManager:
   - Pick Up
   - ground
   - pickable
+  - Fire
+  - memoryFragment
+  - laser receiver
+  - basement
+  - conveyerBeltUnit
+  - staticPosition
+  - unmovable
   - AnotherCamera
   - ground
   - cursor

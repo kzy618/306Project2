@@ -8,9 +8,10 @@ public class PickableObjController : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag != "Player" && other.gameObject.tag != "picked" && other.gameObject.tag != "ground")
+		if (other.gameObject.tag != "Player" && other.gameObject.tag != "picked" && other.gameObject.tag != "ground" && other.gameObject.tag != "potion")
 		{
  
+			Debug.Log(refusethrow);
 			refusethrow = true;
  
 		}
@@ -18,7 +19,7 @@ public class PickableObjController : MonoBehaviour
 
 	private void OnTriggerExit(Collider other)
 	{
-		if (other.gameObject.tag != "Player" && other.gameObject.tag != "picked" && other.gameObject.tag != "ground")
+		if (other.gameObject.tag != "Player" && other.gameObject.tag != "picked" && other.gameObject.tag != "ground" && other.gameObject.tag != "potion")
 		{
  
 			refusethrow = false;

@@ -23,7 +23,7 @@ public class DoorButton : MonoBehaviour
 		pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
 
 		doorPosition = _shedDoor.transform.position;
-		openDoorHeight = doorPosition.y + _shedDoor.GetComponent<Renderer> ().bounds.size.y;
+		openDoorHeight = doorPosition.y - _shedDoor.GetComponent<Renderer> ().bounds.size.y;
 	}
 
     void FixedUpdate()
@@ -34,13 +34,13 @@ public class DoorButton : MonoBehaviour
             triggered = false;
         }
 		if (triggered) {
-			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y+doorSpeed, doorPosition.z);
-			if (_shedDoor.transform.position.y >= openDoorHeight) {
+			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y-doorSpeed, doorPosition.z);
+			if (_shedDoor.transform.position.y <= openDoorHeight) {
 				_shedDoor.transform.position = new Vector3(doorPosition.x, openDoorHeight, doorPosition.z);
 			}
 		} else {
-			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y-doorSpeed, doorPosition.z);
-			if (_shedDoor.transform.position.y <= doorPosition.y) {
+			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y+doorSpeed, doorPosition.z);
+			if (_shedDoor.transform.position.y >= doorPosition.y) {
 				_shedDoor.transform.position = new Vector3(doorPosition.x, doorPosition.y, doorPosition.z);
 			}
 		}

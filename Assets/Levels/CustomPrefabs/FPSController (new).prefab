@@ -269,6 +269,7 @@ GameObject:
   - 82: {fileID: 8243310}
   - 65: {fileID: 6597006}
   - 114: {fileID: 11460810}
+  - 114: {fileID: 11479192}
   m_Layer: 0
   m_Name: FPSController (new)
   m_TagString: Player
@@ -3069,7 +3070,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: 2}
+  m_LocalPosition: {x: 0, y: -0.6, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -4219,6 +4220,18 @@ MonoBehaviour:
   maxLives: 3
   invincibilityTime: 1
   lifeText: {fileID: 0}
+--- !u!114 &11479192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd47201793f5d748a16fcb69aac6310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 3
 --- !u!114 &11481258
 MonoBehaviour:
   m_ObjectHideFlags: 1

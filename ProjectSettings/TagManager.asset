@@ -17,6 +17,8 @@ TagManager:
   - ground
   - pickable
   - AnotherCamera
+  - ground
+  - cursor
   layers:
   - Default
   - TransparentFX

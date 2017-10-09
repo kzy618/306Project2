@@ -14,14 +14,14 @@ public class HolderScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if(!col.gameObject.CompareTag("staticPosition") && !col.gameObject.CompareTag("picked") && !col.gameObject.CompareTag("conveyerBeltUnit")){
+		if(!col.gameObject.CompareTag("staticPosition") && !col.gameObject.CompareTag("picked") && !col.gameObject.CompareTag("conveyerBeltUnit") && !col.gameObject.CompareTag("Untagged")){
 			objects.Add (col.gameObject);
 			//col.transform.parent = gameObject.transform;
 		}
 	}
 
 	void OnTriggerExit(Collider col){
-		if(!col.gameObject.CompareTag("staticPosition") && !col.gameObject.CompareTag("picked") && !col.gameObject.CompareTag("conveyerBeltUnit")){
+		if(!col.gameObject.CompareTag("staticPosition") && !col.gameObject.CompareTag("picked") && !col.gameObject.CompareTag("conveyerBeltUnit") && !col.gameObject.CompareTag("Untagged")){
 			objects.Remove (col.gameObject);
 			//col.transform.parent = null;
 		}

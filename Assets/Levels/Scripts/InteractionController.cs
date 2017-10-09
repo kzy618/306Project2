@@ -93,7 +93,7 @@ public class InteractionController : MonoBehaviour {
 				Renderer rend = cube.GetComponent<Renderer>();
 				rend.material = CubeMaterial;
 				cube.AddComponent<Rigidbody>();
-				//Destroy (cube.GetComponent<BoxCollider> ());
+				//cube.GetComponent<BoxCollider> ().size = new Vector3 (2f, 2f, 2f);
 				//cube.AddComponent<BoxCollider> ();
 				cube.AddComponent<PickableObjController>();
 				cube.tag = "pickable";

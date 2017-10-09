@@ -23,6 +23,7 @@ public class SaveStateController : MonoBehaviour {
     public int health;
     public int startingHealth;
     public string lastCheckpoint;
+    public float clearTime;
 
     // PLAYER PREFERENCES
     // master volume
@@ -60,7 +61,8 @@ public class SaveStateController : MonoBehaviour {
         data.health = health;
         data.playerName = playerName;
         data.lastCheckpoint = lastCheckpoint;
-
+        data.clearTime = clearTime;
+        Debug.Log(clearTime);
         bf.Serialize(file, data);
         file.Close();
     }
@@ -76,6 +78,7 @@ public class SaveStateController : MonoBehaviour {
             health = data.health;
             playerName = data.playerName;
             lastCheckpoint = data.lastCheckpoint;
+            clearTime = data.clearTime;
 
         }
     }
@@ -85,6 +88,7 @@ public class SaveStateController : MonoBehaviour {
         {
             File.Delete(PLAYER_DATA_FILENAME);
             health = 0;
+            clearTime = 0f;
             lastCheckpoint = "Prologue";
         }
     }
@@ -138,6 +142,7 @@ class PlayerData {
     public int health;
     public string playerName;
     public string lastCheckpoint;
+    public float clearTime;
 }
 
 [Serializable]

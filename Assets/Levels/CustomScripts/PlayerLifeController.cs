@@ -19,7 +19,7 @@ public class PlayerLifeController : MonoBehaviour {
 
     private void Start()
     {
-        currentLives = maxLives;
+        currentLives = SaveStateController.controller.health;
         invincible = false;
         died = false;
     }
@@ -70,6 +70,7 @@ public class PlayerLifeController : MonoBehaviour {
     
     public void healing()
     {
-        currentLives++;
+        SaveStateController.controller.health++;
+        currentLives = SaveStateController.controller.health;
     }
 }

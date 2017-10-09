@@ -4295,7 +4295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b297a5ddd80604da4eb27c72a933d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _memoryChecker: {fileID: 1786491061}
+  _memoryChecker: {fileID: 1786491062}
   anim: {fileID: 403964631}
   animDuration: 0.9
   memory: L1.3
@@ -6515,7 +6515,7 @@ GameObject:
   - 33: {fileID: 1786491059}
   - 65: {fileID: 1786491058}
   - 23: {fileID: 1786491057}
-  - 114: {fileID: 1786491061}
+  - 114: {fileID: 1786491062}
   m_Layer: 0
   m_Name: NextLevelTemp
   m_TagString: Untagged
@@ -6581,7 +6581,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
---- !u!114 &1786491061
+--- !u!114 &1786491062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6589,11 +6589,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1786491056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f9ef1e7fe49dd94d83e73ba76fab0dd, type: 3}
+  m_Script: {fileID: 11500000, guid: b9a83f397bbe45f4f85bee59ee676d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _nextScene: Credits
   _memoryFound: 0
+  fpsController: {fileID: 1770273975}
 --- !u!1 &1799411746
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,10 +4,13 @@ using System.Collections;
 public class PermanentDoorButton : MonoBehaviour {
 	public GameObject _shedDoor;
 	public GameObject _links;
-	public GameObject breakableGlass;
 
 	public Material untriggerMat;
 	public Material triggerMat;
+
+	public GameObject recedingGlass;
+	public float glassRecedeRate = 0.3f;
+	private Vector3 triggeredGlassPos;
 
 	private bool triggered = false;
 	private Collider other; 
@@ -32,6 +35,8 @@ public class PermanentDoorButton : MonoBehaviour {
 
 		doorPosition = _shedDoor.transform.position;
 		openDoorHeight = doorPosition.y - _shedDoor.GetComponent<Renderer> ().bounds.size.y;
+
+		triggeredGlassPos = recedingGlass.transform.position + new Vector3(-25.25f, 0f, 0f);
 	}
 
 	void FixedUpdate()
@@ -42,8 +47,11 @@ public class PermanentDoorButton : MonoBehaviour {
 				_shedDoor.transform.position = new Vector3(doorPosition.x, openDoorHeight, doorPosition.z);
 			}
 
-			float descale = 
-			breakableGlass.transform.localScale -= new Vector3(
+			if (recedingGlass.transform.position.x >= triggeredGlassPos.x) {
+				recedingGlass.transform.position -= new Vector3 (glassRecedeRate, 0f, 0f);
+			} else {
+				recedingGlass.transform.position = triggeredGlassPos;
+			}
 		}
 
 	}

@@ -548,7 +548,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10808562, guid: 6066a43a27f888c4292cef6f458cefce, type: 2}
       propertyPath: m_Range
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6066a43a27f888c4292cef6f458cefce, type: 2}
@@ -1472,8 +1472,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 543679246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 1.5, z: 7.5}
-  m_LocalScale: {x: 1, y: 4, z: 5}
+  m_LocalPosition: {x: 6.2, y: 1.5, z: 8}
+  m_LocalScale: {x: 1, y: 4, z: 4}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 176700754}
@@ -1542,12 +1542,8 @@ MonoBehaviour:
   _links: {fileID: 1209386470}
   untriggerMat: {fileID: 2100000, guid: 2e43eff3efd66c548a47be681ee3e6ef, type: 2}
   triggerMat: {fileID: 2100000, guid: 7376b509b963543479807ba2e0fa4cc5, type: 2}
-  triggered: 0
-  other: {fileID: 0}
-  defaultPosition: {x: 0, y: 0, z: 0}
-  pressedPosition: {x: 0, y: 0, z: 0}
-  openDoorHeight: 0
-  doorPosition: {x: 0, y: 0, z: 0}
+  recedingGlass: {fileID: 1354559881}
+  glassRecedeRate: 0.3
   doorSpeed: 0.1
 --- !u!1 &596626615
 GameObject:
@@ -4357,7 +4353,7 @@ GameObject:
   - 65: {fileID: 1354559884}
   - 23: {fileID: 1354559883}
   m_Layer: 0
-  m_Name: BreakableGlass
+  m_Name: RecedingGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4370,8 +4366,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1354559881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.499997, y: -8.5, z: 17}
-  m_LocalScale: {x: 4, y: 1, z: 11}
+  m_LocalPosition: {x: 9.499997, y: -8.25, z: 17}
+  m_LocalScale: {x: 4, y: 0.5, z: 11}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1879335023}
@@ -4855,7 +4851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1530852357
 Transform:
   m_ObjectHideFlags: 0
@@ -5883,7 +5879,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10808562, guid: 6066a43a27f888c4292cef6f458cefce, type: 2}
       propertyPath: m_Range
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6066a43a27f888c4292cef6f458cefce, type: 2}
@@ -6213,7 +6209,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11432286, guid: 9f0d0e9f943b8d84b8cdfd27ad298f69, type: 2}
       propertyPath: conveyerSpeed
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 409470, guid: 9f0d0e9f943b8d84b8cdfd27ad298f69, type: 2}
       propertyPath: m_LocalScale.y

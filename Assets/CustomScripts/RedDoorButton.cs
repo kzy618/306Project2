@@ -16,7 +16,6 @@ public class RedDoorButton : MonoBehaviour
 	private Vector3 doorPosition;
 
 	public float doorSpeed = 0.1f;
-	public bool _openDoor = false;
 
 	void Start()
 	{
@@ -38,13 +37,11 @@ public class RedDoorButton : MonoBehaviour
 			if (_shedDoor.transform.position.y <= openDoorHeight) {
 				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
 			}
-		} else {
 		}
 	}
 
     void OnTriggerEnter (Collider other)
     {
-		Debug.Log ("Enter");
 		transform.position = pressedPosition;
         this.other = other;
         this.triggered = true;
@@ -52,7 +49,6 @@ public class RedDoorButton : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-		Debug.Log ("Exit");
 		transform.position = defaultPosition;
         triggered = false;
     }

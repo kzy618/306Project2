@@ -16,7 +16,6 @@ public class DoorButton : MonoBehaviour
 	private Vector3 doorPosition;
 
 	public float doorSpeed = 0.1f;
-	public bool _openDoor = false;
 
 	void Start()
 	{
@@ -48,7 +47,6 @@ public class DoorButton : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-		Debug.Log ("Enter");
 		transform.position = pressedPosition;
         this.other = other;
         this.triggered = true;
@@ -56,7 +54,6 @@ public class DoorButton : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-		Debug.Log ("Exit");
 		transform.position = defaultPosition;
         triggered = false;
     }

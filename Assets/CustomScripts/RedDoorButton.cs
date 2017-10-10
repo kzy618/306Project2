@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class DoorButton : MonoBehaviour
+public class RedDoorButton : MonoBehaviour
 {
     public GameObject _shedDoor;
 
@@ -39,10 +39,6 @@ public class DoorButton : MonoBehaviour
 				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
 			}
 		} else {
-				_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y + doorSpeed, doorPosition.z);
-				if (_shedDoor.transform.position.y >= doorPosition.y) {
-					_shedDoor.transform.position = new Vector3 (doorPosition.x, doorPosition.y, doorPosition.z);
-				}
 		}
 	}
 

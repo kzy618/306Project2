@@ -4180,7 +4180,7 @@ MonoBehaviour:
   throwingForce: 500
   holdingPlace: {fileID: 156800}
   spawningPlace: {fileID: 115382}
-  spawningInterval: 1
+  spawningInterval: 0.5
   maxNumCube: 1
   canSwitchPlaces: 0
   _memories: 0
@@ -4220,6 +4220,7 @@ MonoBehaviour:
   maxLives: 3
   invincibilityTime: 1
   lifeText: {fileID: 0}
+  death: {fileID: 0}
 --- !u!114 &11479192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4244,12 +4245,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
+  m_WalkSpeed: 5.5
   m_RunSpeed: 10
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 7.5
+  m_JumpSpeed: 4.5
   m_StickToGroundForce: 10
-  m_GravityMultiplier: 2
+  m_GravityMultiplier: 0.8
   m_MouseLook:
     XSensitivity: 2
     YSensitivity: 2

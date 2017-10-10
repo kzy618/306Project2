@@ -3,13 +3,13 @@ using System.Collections;
 
 public class LaserScript : MonoBehaviour {
 
-    private LineRenderer line;
+    private LineRenderer _lineRenderer;
 
 	// Use this for initialization
 	void Start ()
     {
-        line = gameObject.GetComponent<LineRenderer>();
-        line.enabled = true;
+        _lineRenderer = gameObject.GetComponent<LineRenderer>();
+        _lineRenderer.enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -20,66 +20,80 @@ public class LaserScript : MonoBehaviour {
 
     IEnumerator FireLaser()
     {
+        // Create ray shooting forward
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        int hitCount = 0;
+        int reflectCount = 0; // keep count of amount of reflections
 
-        line.SetPosition(0, ray.origin);
-        line.SetVertexCount(2);
+        _lineRenderer.SetPosition(0, ray.origin); // set start point of laser
+        _lineRenderer.SetVertexCount(2);
 
+        // keep iterating as long as the laser hits something
         while (Physics.Raycast(ray, out hit, 1000))
         {
-            line.SetPosition(hitCount + 1, hit.point);
+            // render laser between previous hit point and newest hit point.
+            _lineRenderer.SetPosition(reflectCount + 1, hit.point);
 
             GameObject hitObject = hit.collider.gameObject;
-            //print("Laser is hitting: " + hitObject.name);
 
+            // checks if the hit object should reflect the laser
             if (hitObject.CompareTag("Reflective Surface") || hitObject.CompareTag("pickable"))
             {
 
-                hitCount++;
+                reflectCount++;
 
-                line.SetVertexCount(2 + hitCount);
+                // increment vertex count to allow additional lines to be renderered
+                _lineRenderer.SetVertexCount(2 + reflectCount); 
 
-                if (hitCount == 4)
+                // ok I don't think this actually does anything but I'm too scared to change it
+                if (reflectCount == 4)
                 {
-                    line.SetPosition(hitCount + 1, hit.point);
+                    _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 }
 
+                // calculate the new direction the reflected laser should travel
                 Vector3 reflectedPos = Vector3.Reflect(ray.direction, hit.normal);
-                line.SetPosition(hitCount + 1, hit.point + reflectedPos * 1000f);
-                //print("Hit mirror: " + hitCount);
 
+
+                // render the reflected laser
+                _lineRenderer.SetPosition(reflectCount + 1, hit.point + reflectedPos * 1000f);
+
+                // reset ray to check for further hits with the reflected laser in next iteration
                 ray = new Ray(hit.point, reflectedPos);
                 
             } 
 
+            // checks if the laser hit the Player
             else if (hitObject.CompareTag("Player"))
             {
+                // make player take damage and render laser
                 hitObject.GetComponent<PlayerLifeController>().takeDamage();
-                line.SetPosition(hitCount + 1, hit.point);
+                _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 break;
             }
 
+            // checks if a laser receiver was hit
             else if (hitObject.CompareTag("laser receiver"))
             {
+                // activate the laser receiver and render laser
                 hitObject.GetComponent<LaserReceiverController>().activate();
-                line.SetPosition(hitCount + 1, hit.point);
+                _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 break;
             }
 
+            // normal surface hit
             else
             {
-                //print("No reflection");
-                line.SetPosition(hitCount + 1, hit.point);
+                _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 break;
             }
         }
 
+        // for when the laser doesn't hit a surface (or reflected laser doesn't hit a surface)
         if (!Physics.Raycast(ray, out hit, 1000))
         {
-            line.SetPosition(hitCount + 1, ray.GetPoint(1000));
+            _lineRenderer.SetPosition(reflectCount + 1, ray.GetPoint(1000));
         }
         
 

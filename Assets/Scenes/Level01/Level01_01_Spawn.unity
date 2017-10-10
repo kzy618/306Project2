@@ -2615,7 +2615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 423952, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11460810, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
       propertyPath: death
@@ -2627,7 +2627,11 @@ Prefab:
       objectReference: {fileID: 1402400727}
     - target: {fileID: 11481258, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
       propertyPath: m_JumpSpeed
-      value: 5
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481258, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}
+      propertyPath: m_GravityMultiplier
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2585c3a02b4467646aa2835ee9528acf, type: 2}

@@ -32,7 +32,7 @@ public class TrampolineScript : MonoBehaviour
 			Vector3 forward = mainCamera.transform.forward;
 			//projectile equation might be wrong
 			Vector3 projectile = new Vector3((float) Math.Sqrt(up.x*up.x + forward.x*forward.x), (float) Math.Sqrt(up.y*up.y + forward.y*forward.y), (float) Math.Sqrt(up.z*up.z + forward.z*forward.z));
-			player.GetComponent<ImpactReceiver>().AddImpact(up, bouncingForce);
+			player.GetComponent<ImpactReceiver>().AddImpact(new Vector3(0, 1, 0), bouncingForce);
 			Debug.Log ("add force on player");
 			bouncing = !bouncing;
 		}

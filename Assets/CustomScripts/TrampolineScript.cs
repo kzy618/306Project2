@@ -24,17 +24,22 @@ public class TrampolineScript : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.CompareTag("Player") && !bouncing)
-		{
+		if (col.gameObject.CompareTag ("Player") && !bouncing) {
 			bouncing = !bouncing;
 			GameObject player = col.gameObject;
 			Vector3 up = mainCamera.transform.up;
 			Vector3 forward = mainCamera.transform.forward;
 			//projectile equation might be wrong
-			Vector3 projectile = new Vector3((float) Math.Sqrt(up.x*up.x + forward.x*forward.x), (float) Math.Sqrt(up.y*up.y + forward.y*forward.y), (float) Math.Sqrt(up.z*up.z + forward.z*forward.z));
-			player.GetComponent<ImpactReceiver>().AddImpact(new Vector3(0, 1, 0), bouncingForce);
+			Vector3 projectile = new Vector3 ((float)Math.Sqrt (up.x * up.x + forward.x * forward.x), (float)Math.Sqrt (up.y * up.y + forward.y * forward.y), (float)Math.Sqrt (up.z * up.z + forward.z * forward.z));
+			player.GetComponent<ImpactReceiver> ().AddImpact (new Vector3 (0, 1, 0), bouncingForce);
 			Debug.Log ("add force on player");
 			bouncing = !bouncing;
+		} else {
+
+			Rigidbody rb = col.gameObject.GetComponent<Rigidbody> ();
+			if (rb != null) {
+				rb.velocity = new Vector3 (0f, 30f, 0f);
+			}
 		}
 	}
 

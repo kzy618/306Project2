@@ -8,7 +8,7 @@ public class PlayerLifeController : MonoBehaviour {
 
     public int maxLives;
     public float invincibilityTime;
-    public Text lifeText;
+    public Text _lifeText;
 
     private int currentLives;
     private float currentInvincibilityTime;
@@ -16,6 +16,7 @@ public class PlayerLifeController : MonoBehaviour {
     private bool died;
 
     public Animator death;
+    public Animator _damaged;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class PlayerLifeController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //print(currentLives);
-        lifeText.text = "x" + currentLives;
+        _lifeText.text = "x" + currentLives;
 
         if (invincible)
         {
@@ -62,6 +63,7 @@ public class PlayerLifeController : MonoBehaviour {
     {
         if (!invincible)
         {
+            _damaged.SetTrigger("PlayerDamaged");
 			SaveStateController.controller.health--;
 			currentLives = SaveStateController.controller.health;
             invincible = true;

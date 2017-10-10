@@ -299,5 +299,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public void resetVertical(){
 			m_MoveDir.y = 0f;
 		}
+
+		public bool grounded(){
+			return m_CharacterController.isGrounded;
+			//return m_PreviouslyGrounded;
+		}
     }
 }

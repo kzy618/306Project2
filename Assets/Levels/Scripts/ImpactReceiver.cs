@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
 
 public class ImpactReceiver : MonoBehaviour {
 
@@ -32,6 +34,8 @@ public class ImpactReceiver : MonoBehaviour {
 	Vector3 impact = Vector3.zero;
 	Vector3 initialImpact = Vector3.zero;
 	private CharacterController character;
+	private bool jump = false;
+
 	// Use this for initialization
 	void Start () {
 		character = GetComponent<CharacterController>();
@@ -42,10 +46,19 @@ public class ImpactReceiver : MonoBehaviour {
 		// apply the impact force:
 
 		// consumes the impact energy each cycle:
-			if (impact.magnitude > 0.4F)
+		//if (!character.isGrounded) {
+		if (true) {
+			if (impact.magnitude > 5F) {
 				character.Move (impact * Time.deltaTime);
-			impact = Vector3.Lerp (impact, Vector3.zero, .085f);
+				impact = Vector3.Lerp (impact, Vector3.zero, .01f);
 
+			} 
+		} 
+		//} else {
+		//	impact = Vector3.zero;
+		//}
+		if (character.isGrounded)
+			impact = Vector3.zero;
 		/*if (impact.y > 0.2f) {
 			impact = Vector3.Lerp (impact, Vector3.zero, .085f);
 		} else {
@@ -68,8 +81,7 @@ public class ImpactReceiver : MonoBehaviour {
 	public void AddImpact(Vector3 dir, float force){
 
 		dir.Normalize ();
-		if (dir.y < 0)
-			dir.y = -dir.y; // reflect down force on the ground
 		impact = dir.normalized * force / mass;
+		jump = true; 
 	}
 }

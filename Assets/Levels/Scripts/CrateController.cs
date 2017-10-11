@@ -22,7 +22,7 @@ public class CrateController : MonoBehaviour {
 			Debug.Log(other.gameObject.tag);
 			float chance = Random.Range(0f, 1f);
 			Debug.Log(chance);
-			if (chance > 0.5f)
+			if (chance > 0f)
 			{
 				gameObject.SetActive(false);
 				GameObject potion = (GameObject) Instantiate(PotionGameObject, transform.position, transform.rotation);

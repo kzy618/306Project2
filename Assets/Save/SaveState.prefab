@@ -41,9 +41,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
-  health: 5
-  startingHealth: 5
+  health: 0
+  startingHealth: 3
+  lastCheckpoint: 
+  clearTime: 0
   masterVol: 0
+  hintTextToggle: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

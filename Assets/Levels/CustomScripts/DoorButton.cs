@@ -27,26 +27,23 @@ public class DoorButton : MonoBehaviour
 	}
 
     void FixedUpdate()
-    {
-        if(triggered && !other)
-        {
+	{
+		if (triggered && !other) {
 			transform.position = defaultPosition;
-            triggered = false;
-        }
+			triggered = false;
+		}
 		if (triggered) {
-			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y-doorSpeed, doorPosition.z);
+			_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y - doorSpeed, doorPosition.z);
 			if (_shedDoor.transform.position.y <= openDoorHeight) {
-				_shedDoor.transform.position = new Vector3(doorPosition.x, openDoorHeight, doorPosition.z);
+				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
 			}
 		} else {
-			_shedDoor.transform.position = new Vector3(doorPosition.x, _shedDoor.transform.position.y+doorSpeed, doorPosition.z);
-			if (_shedDoor.transform.position.y >= doorPosition.y) {
-				_shedDoor.transform.position = new Vector3(doorPosition.x, doorPosition.y, doorPosition.z);
-			}
+				_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y + doorSpeed, doorPosition.z);
+				if (_shedDoor.transform.position.y >= doorPosition.y) {
+					_shedDoor.transform.position = new Vector3 (doorPosition.x, doorPosition.y, doorPosition.z);
+				}
 		}
-			
-    }
-    
+	}
 
     void OnTriggerEnter (Collider other)
     {

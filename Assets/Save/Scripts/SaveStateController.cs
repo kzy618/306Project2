@@ -37,6 +37,7 @@ public class SaveStateController : MonoBehaviour {
             DontDestroyOnLoad(gameObject); // make the obj stay around forever
             controller = this; // the first created game controller will be the singleton
             hintTextToggle = true;
+			health = startingHealth;
             masterVol = 0.75F;
             lastCheckpoint = "Prologue";
             LoadPlayerPref(); // loads player preferences at the start

@@ -62,7 +62,8 @@ public class PlayerLifeController : MonoBehaviour {
     {
         if (!invincible)
         {
-            currentLives--;
+			SaveStateController.controller.health--;
+			currentLives = SaveStateController.controller.health;
             invincible = true;
         }
         
@@ -70,7 +71,9 @@ public class PlayerLifeController : MonoBehaviour {
     
     public void healing()
     {
+		Debug.Log (SaveStateController.controller.health);
         SaveStateController.controller.health++;
         currentLives = SaveStateController.controller.health;
+		Debug.Log (SaveStateController.controller.health);
     }
 }

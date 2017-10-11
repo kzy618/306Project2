@@ -295,5 +295,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             return m_MouseLook;
         }
+
+		public void resetVertical(){
+			m_MoveDir.y = 0f;
+		}
     }
 }

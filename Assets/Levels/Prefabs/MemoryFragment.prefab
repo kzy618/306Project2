@@ -105,6 +105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _memoryChecker: {fileID: 0}
+  anim: {fileID: 0}
+  animDuration: 0
+  memory: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

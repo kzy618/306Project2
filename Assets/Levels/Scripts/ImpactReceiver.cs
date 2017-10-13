@@ -36,6 +36,7 @@ public class ImpactReceiver : MonoBehaviour {
 	private CharacterController character;
 	private bool jump = false;
 	private float prevDelt;
+	private float currDelt;
 
 	// Use this for initialization
 	void Start () {

@@ -35,6 +35,7 @@ public class ImpactReceiver : MonoBehaviour {
 	Vector3 initialImpact = Vector3.zero;
 	private CharacterController character;
 	private bool jump = false;
+	private float prevDelt;
 
 	// Use this for initialization
 	void Start () {

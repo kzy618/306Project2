@@ -7,8 +7,7 @@ public class TrampolineScript : MonoBehaviour
 {
 
 	private Camera mainCamera;
-	
-	private bool bouncing = false;
+
 
 	public float bouncingForce;
 
@@ -24,22 +23,20 @@ public class TrampolineScript : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.CompareTag ("Player") && !bouncing) {
-			bouncing = !bouncing;
+		if (col.gameObject.CompareTag ("Player")) {
 			GameObject player = col.gameObject;
 			//Vector3 up = mainCamera.transform.up;
 			//Vector3 forward = mainCamera.transform.forward;
 			//projectile equation might be wrong
 			//Vector3 projectile = new Vector3 ((float)Math.Sqrt (up.x * up.x + forward.x * forward.x), (float)Math.Sqrt (up.y * up.y + forward.y * forward.y), (float)Math.Sqrt (up.z * up.z + forward.z * forward.z));
-			player.GetComponent<FirstPersonController>().resetVertical();
-			player.GetComponent<ImpactReceiver> ().AddImpact (transform.up, bouncingForce*2);
+			//player.GetComponent<FirstPersonController>().resetVertical();
+			player.GetComponent<ImpactReceiver> ().AddImpact (transform.up, bouncingForce);
 			Debug.Log ("add force on player");
-			bouncing = !bouncing;
 		} else {
 
 			Rigidbody rb = col.gameObject.GetComponent<Rigidbody> ();
 			if (rb != null) {
-				rb.velocity = new Vector3 (0f, bouncingForce, 0f);
+				rb.velocity += new Vector3 (0f, bouncingForce*100, 0f);
 			}
 		}
 	}

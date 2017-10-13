@@ -11,7 +11,7 @@ public class InteractionController : MonoBehaviour {
 	public Material CapsuleMaterial;
 	
 	public float PickableRange = 3.5f;
-	public int throwingForce = 8000;
+	public float throwingForce = 10f;
 	
 	public GameObject holdingPlace;
 	public GameObject spawningPlace;
@@ -73,7 +73,8 @@ public class InteractionController : MonoBehaviour {
 					GameObject latestCube = cubes.Last();
 					Vector3 latestCubePosition = new Vector3(latestCube.transform.position.x, latestCube.transform.position.y + 0.25f, latestCube.transform.position.z);
 
-					transform.position = latestCubePosition;
+					transform.parent.position = latestCubePosition;
+					//transform.parent.position = latestCubePosition;
 
 					DestroyObject(latestCube);
 					Queue<GameObject> temp = new Queue<GameObject>();
@@ -118,7 +119,7 @@ public class InteractionController : MonoBehaviour {
 				throwableController.passOnQueue(cubes);
 				throwableController.setMaxNum(maxNumCube);
 				capsule.GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-				capsule.GetComponent<Rigidbody>().AddForce (throwref.transform.forward * throwingForce);
+				capsule.GetComponent<Rigidbody>().velocity = throwref.transform.forward * throwingForce;
 				nextSpawn = Time.time + spawningInterval;
 			}
 			else
@@ -188,7 +189,7 @@ public class InteractionController : MonoBehaviour {
 
 					pickObj.GetComponent<Collider>().isTrigger = false;
   
-					pickObj.GetComponent<Rigidbody>().AddForce (holdingPlace.transform.forward * throwingForce);
+					pickObj.GetComponent<Rigidbody>().velocity = holdingPlace.transform.forward * throwingForce;
 			
 					pickObj = pickref;
  

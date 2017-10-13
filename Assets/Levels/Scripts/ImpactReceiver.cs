@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ImpactReceiver : MonoBehaviour {
 
@@ -42,15 +43,16 @@ public class ImpactReceiver : MonoBehaviour {
 		// apply the impact force:
 
 		// consumes the impact energy each cycle:
-			if (impact.magnitude > 0.4F)
+			/*if (impact.magnitude > 0.4F)
 				character.Move (impact * Time.deltaTime);
-			impact = Vector3.Lerp (impact, Vector3.zero, .085f);
+			impact = Vector3.Lerp (impact, Vector3.zero, .085f);*/
 
-		/*if (impact.y > 0.2f) {
+		if (impact.y > 0.4f) {
+			character.Move (impact * Time.deltaTime);
 			impact = Vector3.Lerp (impact, Vector3.zero, .085f);
 		} else {
 			impact = Vector3.zero;
-		}*/
+		}
 		/*if (frame > frameDelay && frame <= framesPerJump + frameDelay) {
 			//if (impact.magnitude > 0.2F)
 			//impact -= initialImpact / framesPerJump;
@@ -71,5 +73,6 @@ public class ImpactReceiver : MonoBehaviour {
 		if (dir.y < 0)
 			dir.y = -dir.y; // reflect down force on the ground
 		impact = dir.normalized * force / mass;
+		GetComponent<FirstPersonController>().resetVertical();
 	}
 }

@@ -16,6 +16,7 @@ public class SaveStateController : MonoBehaviour {
 
     public static string PLAYER_DATA_FILENAME = Application.persistentDataPath + "/playerInfo.dat";
     public static string PLAYER_PREFERENCES_FILENAME = Application.persistentDataPath + "/playerPref.dat";
+    public static string PLAYER_MEMORIES_FILENAME = Application.persistentDataPath + "/playerMem.dat";
 
     // PLAYER DATA
     // player's health
@@ -24,6 +25,7 @@ public class SaveStateController : MonoBehaviour {
     public int startingHealth;
     public string lastCheckpoint;
     public float clearTime;
+    public Hashtable _collectedMemories;
 
     // PLAYER PREFERENCES
     // master volume
@@ -40,13 +42,16 @@ public class SaveStateController : MonoBehaviour {
 			health = startingHealth;
             masterVol = 0.75F;
             lastCheckpoint = "Prologue";
+            _collectedMemories = new Hashtable();
             LoadPlayerPref(); // loads player preferences at the start
+            LoadPlayerMemories();
         }
         else if (controller != this)
         {
             if (controller.health <= 0)
             {
                 controller.health = startingHealth;
+                controller.LoadPlayerMemories();
             }
             // remove any other instances controller that's not the first one
             Destroy(gameObject);
@@ -80,7 +85,6 @@ public class SaveStateController : MonoBehaviour {
             playerName = data.playerName;
             lastCheckpoint = data.lastCheckpoint;
             clearTime = data.clearTime;
-
         }
     }
 
@@ -91,6 +95,12 @@ public class SaveStateController : MonoBehaviour {
             health = 0;
             clearTime = 0f;
             lastCheckpoint = "Prologue";
+            
+        }
+        if (File.Exists(PLAYER_MEMORIES_FILENAME))
+        {
+            File.Delete(PLAYER_MEMORIES_FILENAME);
+            _collectedMemories = new Hashtable();
         }
     }
 
@@ -136,6 +146,34 @@ public class SaveStateController : MonoBehaviour {
             hintTextToggle = true;
         }
     }
+
+    public void LoadPlayerMemories()
+    {
+        if (File.Exists(PLAYER_MEMORIES_FILENAME))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(PLAYER_MEMORIES_FILENAME, FileMode.Open);
+            PlayerMemories data = (PlayerMemories)bf.Deserialize(file);
+            file.Close();
+
+            // Load the data here
+            _collectedMemories = data._collectedMemories;
+        }
+    }
+
+    public void SavePlayerMemories()
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(PLAYER_MEMORIES_FILENAME);
+
+        PlayerMemories mem = new PlayerMemories();
+
+        // Save the data here
+        mem._collectedMemories = _collectedMemories;
+
+        bf.Serialize(file, mem);
+        file.Close();
+    }
 }
 
 [Serializable]
@@ -151,5 +189,11 @@ class PlayerPref
 {
     public float masterVol;
     public bool hintTextToggle;
+}
+
+[Serializable]
+class PlayerMemories
+{
+    public Hashtable _collectedMemories;
 }
 

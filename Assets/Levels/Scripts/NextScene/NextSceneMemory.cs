@@ -22,6 +22,7 @@ public class NextSceneMemory : MonoBehaviour
             SaveStateController.controller.lastCheckpoint = _nextScene;
             SaveStateController.controller.clearTime += Time.timeSinceLevelLoad;
             SaveStateController.controller.SavePlayerData();
+            SaveStateController.controller.SavePlayerMemories();
 
             SceneManager.LoadSceneAsync(_nextScene);
             _loaded = true;

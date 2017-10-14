@@ -24,7 +24,7 @@ public class DoorButton : MonoBehaviour
 		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y/2);
 
 		doorPosition = _shedDoor.transform.position;
-		openDoorHeight = doorPosition.y - _shedDoor.GetComponent<Renderer> ().bounds.size.y;
+		openDoorHeight = doorPosition.y - (_shedDoor.transform.up*_shedDoor.GetComponent<Renderer> ().bounds.size.y).y;
 	}
 
     void FixedUpdate()

@@ -24,7 +24,7 @@ public class MovingPlatformScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		radian += 0.005f;
+		radian +=  radiansPerFrame;
 		//transform.position = new Vector3 (defaultPos.x + Mathf.Pow(Mathf.Sin(radian), 2)*25f, defaultPos.y, defaultPos.z);
 		transform.position = new Vector3 (defaultPos.x + Mathf.Sin (radian) * posDiff.x,
 			defaultPos.y + Mathf.Sin (radian) * posDiff.y,

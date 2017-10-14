@@ -20,7 +20,8 @@ public class DoorButton : MonoBehaviour
 	void Start()
 	{
 		defaultPosition = transform.position;
-		pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
+		//pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
+		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y/2);
 
 		doorPosition = _shedDoor.transform.position;
 		openDoorHeight = doorPosition.y - _shedDoor.GetComponent<Renderer> ().bounds.size.y;

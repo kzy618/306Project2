@@ -111,6 +111,7 @@ public class InteractionController : MonoBehaviour {
 				GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
 				capsule.transform.position = new Vector3(throwref.transform.position.x, throwref.transform.position.y, throwref.transform.position.z);
 				capsule.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+				capsule.tag = "Capsule";
 				Renderer rend = capsule.GetComponent<Renderer>();
 				rend.material = CapsuleMaterial;
 				capsule.AddComponent<Rigidbody>();

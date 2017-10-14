@@ -28,6 +28,8 @@ TagManager:
   - cursor
   - Life
   - potion
+  - Capsule
+  - Platform
   layers:
   - Default
   - TransparentFX

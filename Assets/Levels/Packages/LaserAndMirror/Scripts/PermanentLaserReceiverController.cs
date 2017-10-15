@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LaserReceiverController : MonoBehaviour {
+public class PermanentLaserReceiverController : MonoBehaviour {
 
     public GameObject _door;
     public float _speed;

@@ -27,7 +27,7 @@ public class PermanentDoorButtonTranslate : MonoBehaviour
 	void Start()
 	{
 		defaultPosition = transform.position;
-		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y/2);
+		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y);
 
 
 		doorPosition = _shedDoor.transform.position;

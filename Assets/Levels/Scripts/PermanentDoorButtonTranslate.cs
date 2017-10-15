@@ -8,6 +8,9 @@ public class PermanentDoorButtonTranslate : MonoBehaviour
 	public GameObject positionObj;
 	public GameObject _links;
 
+	public Material untriggerMat;
+	public Material triggerMat;
+
 	private Boolean triggered = false;
 	private Collider other; 
 
@@ -28,30 +31,55 @@ public class PermanentDoorButtonTranslate : MonoBehaviour
 
 
 		doorPosition = _shedDoor.transform.position;
-		pressedPosition = positionObj.transform.position;
+		doorTriggered = positionObj.transform.position;
 		direction = (doorTriggered - doorPosition).normalized;
 		//openDoorHeight = doorPosition.y - (_shedDoor.transform.up*_shedDoor.GetComponent<Renderer> ().bounds.size.y).y;
 	}
 
 	void FixedUpdate()
 	{
+		if (triggered && !other) {
+			transform.position = defaultPosition;
+			//triggered = false;
+		}
 		if (triggered) {
+			if ((_shedDoor.transform.position - doorTriggered).magnitude > (direction * doorSpeed).magnitude) {
+				_shedDoor.transform.position += direction * doorSpeed;
+			} else {
+				_shedDoor.transform.position = doorTriggered;
+			}
+
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = triggerMat;
+			}
+		} else {
+			if ((_shedDoor.transform.position - doorPosition).magnitude > (direction * doorSpeed).magnitude) {
+				_shedDoor.transform.position -= direction * doorSpeed;
+			} else {
+				_shedDoor.transform.position = doorPosition;
+			}
+
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = untriggerMat;
+			}
+		}/*
+		if (triggered) {
+			_shedDoor.transform.position += direction * doorSpeed;
 			if ((_shedDoor.transform.position.x - doorTriggered.x)< direction.x*doorSpeed
 				&& (_shedDoor.transform.position.y - doorTriggered.y)< direction.y*doorSpeed
 				&& (_shedDoor.transform.position.z - doorTriggered.z)< direction.z*doorSpeed) {
-				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
-			}else {
-				_shedDoor.transform.position += direction * doorSpeed;
+				_shedDoor.transform.position = doorTriggered;
 			}
 		} else {
+			_shedDoor.transform.position -= direction * doorSpeed;
 			if ((_shedDoor.transform.position.x - doorPosition.x) < direction.x*doorSpeed
 				&& (_shedDoor.transform.position.y - doorPosition.y) < direction.y*doorSpeed
 				&& (_shedDoor.transform.position.z - doorPosition.z) < direction.z*doorSpeed) {
 				_shedDoor.transform.position = doorPosition;
-			} else {
-				_shedDoor.transform.position -= direction * doorSpeed;
 			}
-		}
+		}*/
 	}
 
 	void OnTriggerEnter (Collider other)
@@ -64,7 +92,7 @@ public class PermanentDoorButtonTranslate : MonoBehaviour
 	void OnTriggerExit(Collider other)
 	{
 		transform.position = defaultPosition;
-		triggered = false;
+		//triggered = false;
 	}
 
 }

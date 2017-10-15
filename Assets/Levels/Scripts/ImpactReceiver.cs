@@ -49,7 +49,7 @@ public class ImpactReceiver : MonoBehaviour {
 
 		if (impact.y > 0.2f) {
 			character.Move (impact * Time.deltaTime);
-			impact = Vector3.Lerp (impact, Vector3.zero, .085f);
+			impact = Vector3.Lerp (impact, Vector3.zero, .05f);
 		} else {
 			impact = Vector3.zero;
 		}

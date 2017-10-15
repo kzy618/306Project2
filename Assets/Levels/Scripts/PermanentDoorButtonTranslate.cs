@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class DoorButtonTranslate : MonoBehaviour
+public class PermanentDoorButtonTranslate : MonoBehaviour
 {
 	public GameObject _shedDoor;
 	public GameObject positionObj;
@@ -35,10 +35,6 @@ public class DoorButtonTranslate : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if (triggered && !other) {
-			transform.position = defaultPosition;
-			triggered = false;
-		}
 		if (triggered) {
 			if ((_shedDoor.transform.position.x - doorTriggered.x)< direction.x*doorSpeed
 				&& (_shedDoor.transform.position.y - doorTriggered.y)< direction.y*doorSpeed

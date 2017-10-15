@@ -36,6 +36,7 @@ public class PermanentDoorButton : MonoBehaviour {
 		doorPosition = _shedDoor.transform.position;
 		openDoorHeight = doorPosition.y - _shedDoor.GetComponent<Renderer> ().bounds.size.y;
 
+		if(recedingGlass != null)
 		triggeredGlassPos = recedingGlass.transform.position + new Vector3(-25.25f, 0f, 0f);
 	}
 
@@ -47,6 +48,7 @@ public class PermanentDoorButton : MonoBehaviour {
 				_shedDoor.transform.position = new Vector3(doorPosition.x, openDoorHeight, doorPosition.z);
 			}
 
+			if(recedingGlass != null)
 			if (recedingGlass.transform.position.x >= triggeredGlassPos.x) {
 				recedingGlass.transform.position -= new Vector3 (glassRecedeRate, 0f, 0f);
 			} else {

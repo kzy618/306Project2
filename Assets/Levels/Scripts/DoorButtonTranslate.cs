@@ -14,7 +14,6 @@ public class DoorButtonTranslate : MonoBehaviour
 	private Vector3 defaultPosition;
 	private Vector3 pressedPosition;
 
-	private float openDoorHeight;
 	private Vector3 doorPosition;
 	private Vector3 doorTriggered;
 	private Vector3 direction;
@@ -28,7 +27,7 @@ public class DoorButtonTranslate : MonoBehaviour
 
 
 		doorPosition = _shedDoor.transform.position;
-		pressedPosition = positionObj.transform.position;
+		doorTriggered = positionObj.transform.position;
 		direction = (doorTriggered - doorPosition).normalized;
 		//openDoorHeight = doorPosition.y - (_shedDoor.transform.up*_shedDoor.GetComponent<Renderer> ().bounds.size.y).y;
 	}
@@ -40,20 +39,16 @@ public class DoorButtonTranslate : MonoBehaviour
 			triggered = false;
 		}
 		if (triggered) {
-			if ((_shedDoor.transform.position.x - doorTriggered.x)< direction.x*doorSpeed
-				&& (_shedDoor.transform.position.y - doorTriggered.y)< direction.y*doorSpeed
-				&& (_shedDoor.transform.position.z - doorTriggered.z)< direction.z*doorSpeed) {
-				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
-			}else {
+			if ((_shedDoor.transform.position - doorTriggered).magnitude > (direction * doorSpeed).magnitude) {
 				_shedDoor.transform.position += direction * doorSpeed;
+			} else {
+				_shedDoor.transform.position = doorTriggered;
 			}
 		} else {
-			if ((_shedDoor.transform.position.x - doorPosition.x) < direction.x*doorSpeed
-				&& (_shedDoor.transform.position.y - doorPosition.y) < direction.y*doorSpeed
-				&& (_shedDoor.transform.position.z - doorPosition.z) < direction.z*doorSpeed) {
-				_shedDoor.transform.position = doorPosition;
-			} else {
+			if ((_shedDoor.transform.position - doorPosition).magnitude > (direction * doorSpeed).magnitude) {
 				_shedDoor.transform.position -= direction * doorSpeed;
+			} else {
+				_shedDoor.transform.position = doorPosition;
 			}
 		}
 	}

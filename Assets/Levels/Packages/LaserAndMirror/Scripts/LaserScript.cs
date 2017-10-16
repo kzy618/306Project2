@@ -77,7 +77,10 @@ public class LaserScript : MonoBehaviour {
             else if (hitObject.CompareTag("laser receiver"))
             {
                 // activate the laser receiver and render laser
-                hitObject.GetComponent<LaserReceiverController>().activate();
+				if(hitObject.GetComponent<LaserReceiverController>() != null)
+                	hitObject.GetComponent<LaserReceiverController>().activate();
+				if(hitObject.GetComponent<LaserReceiverControllerTranslate>() != null)
+					hitObject.GetComponent<LaserReceiverControllerTranslate>().activate();
                 _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 break;
             }

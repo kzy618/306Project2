@@ -3,8 +3,12 @@ using System.Collections;
 
 public class LaserReceiverController : MonoBehaviour {
 
-    public GameObject _door;
+	public GameObject _door;
+	public GameObject _links;
     public float _speed;
+
+	public Material untriggerMat;
+	public Material triggerMat;
 
     private float _doorOpenPosition;
     private float _doorClosePosition;
@@ -35,6 +39,12 @@ public class LaserReceiverController : MonoBehaviour {
             }
 
             _door.transform.localPosition = new Vector3(doorPos.x, newY, doorPos.z);
+
+			if(_links != null)
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = untriggerMat;
+			}
         }
 
         // move door up
@@ -50,6 +60,13 @@ public class LaserReceiverController : MonoBehaviour {
 
             _door.transform.localPosition = new Vector3(doorPos.x, newY, doorPos.z);
             _isClosing = true; // set to true in case the laser is no longer being received
+
+
+			if(_links != null)
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = triggerMat;
+			}
         }
     }
 

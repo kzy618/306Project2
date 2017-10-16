@@ -19,7 +19,10 @@ public class MemoryRotator : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Time.timeScale != 0)
         {
-            _memoryChecker._memoryFound = true;
+            if (_memoryChecker != null)
+            {
+                _memoryChecker._memoryFound = true;
+            }
             Time.timeScale = 0;
             SaveStateController.controller._collectedMemories.Add(memory, true);
             StartCoroutine(playFade(memory));

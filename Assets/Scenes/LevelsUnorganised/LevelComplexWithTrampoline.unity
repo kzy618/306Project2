@@ -2762,7 +2762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445282, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
       propertyPath: bouncingForce
-      value: 225
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
@@ -2828,7 +2828,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445282, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
       propertyPath: bouncingForce
-      value: 350
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 120442, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
       propertyPath: m_Name
@@ -4952,7 +4952,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445282, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
       propertyPath: bouncingForce
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 120442, guid: 64f00554ec81ffa4caa1fb525433ef0c, type: 2}
       propertyPath: m_Name

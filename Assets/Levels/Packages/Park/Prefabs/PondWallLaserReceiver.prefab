@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2382902}
   - 114: {fileID: 11457108}
   m_Layer: 0
-  m_Name: 10
+  m_Name: PondWallLaserReceiver
   m_TagString: laser receiver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

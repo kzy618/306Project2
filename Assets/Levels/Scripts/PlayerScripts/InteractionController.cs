@@ -109,7 +109,7 @@ public class InteractionController : MonoBehaviour {
 			}
 			else if (Input.GetKeyDown(KeyCode.R) && !isLoaded  && Time.time > nextSpawn)
 			{
-				GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+				GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 				capsule.transform.position = new Vector3(throwref.transform.position.x, throwref.transform.position.y, throwref.transform.position.z);
 				capsule.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 				capsule.tag = "Capsule";

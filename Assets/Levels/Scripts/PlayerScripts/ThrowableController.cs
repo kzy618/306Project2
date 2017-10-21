@@ -12,7 +12,7 @@ public class ThrowableController : MonoBehaviour
 
 	private void OnCollisionStay(Collision other)
 	{
-		if (other.gameObject.tag == "ground" || other.gameObject.tag == "conveyerBeltUnit" || other.gameObject.tag == "Platform")
+		if (other.gameObject.tag == "ground" || other.gameObject.tag == "conveyerBeltUnit" || other.gameObject.tag == "Platform" || other.gameObject.tag == "LevelThreeRedStone" || other.gameObject.tag == "RouteStarter")
 		{
 			makeCube();
 		} else
@@ -23,7 +23,7 @@ public class ThrowableController : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "ground" || other.gameObject.tag == "conveyerBeltUnit" || other.gameObject.tag == "Platform")
+		if (other.gameObject.tag == "ground" || other.gameObject.tag == "conveyerBeltUnit" || other.gameObject.tag == "Platform" || other.gameObject.tag == "LevelThreeRedStone" || other.gameObject.tag == "RouteStarter")
 		{
 			makeCube();
 		}

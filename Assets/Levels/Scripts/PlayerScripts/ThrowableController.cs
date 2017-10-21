@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿    using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -15,7 +15,10 @@ public class ThrowableController : MonoBehaviour
 		if (other.gameObject.tag == "ground" || other.gameObject.tag == "conveyerBeltUnit" || other.gameObject.tag == "Platform")
 		{
 			makeCube();
-		}
+		} else
+        {
+            gameObject.SetActive(false);
+        }
 	}
 
 	private void OnTriggerEnter(Collider other)

@@ -29,6 +29,8 @@ public class LaserScript : MonoBehaviour {
         _lineRenderer.SetPosition(0, ray.origin); // set start point of laser
         _lineRenderer.SetVertexCount(2);
 
+        // NOTE: 'reflectCount + 1' refers to the last vertex in the line renderer (e.g. the last line to be rendered)
+
         // keep iterating as long as the laser hits something
         while (Physics.Raycast(ray, out hit, 1000))
         {
@@ -38,7 +40,7 @@ public class LaserScript : MonoBehaviour {
             GameObject hitObject = hit.collider.gameObject;
 
             // checks if the hit object should reflect the laser
-            if (hitObject.CompareTag("Reflective Surface") || hitObject.CompareTag("pickable"))
+            if (hitObject.CompareTag("Reflective Surface"))
             {
 
                 reflectCount++;
@@ -63,6 +65,23 @@ public class LaserScript : MonoBehaviour {
                 ray = new Ray(hit.point, reflectedPos);
                 
             } 
+
+            else if (hitObject.CompareTag("pickable"))
+            {
+                // increase count by 2 as we are rendering two extra lines here
+                reflectCount += 2;
+
+                _lineRenderer.SetVertexCount(2 + reflectCount);
+
+                // render laser to reach center of the ice block
+                _lineRenderer.SetPosition(reflectCount, hitObject.GetComponent<Renderer>().bounds.center);
+
+                // render laser to project in the direction of the ice block
+                _lineRenderer.SetPosition(reflectCount + 1, hitObject.transform.forward * 1000f);
+
+                // reset ray to check for further hits with the redirected laser in the next iteration
+                ray = new Ray(hitObject.GetComponent<Renderer>().bounds.center, hitObject.transform.forward);
+            }
 
             // checks if the laser hit the Player
             else if (hitObject.CompareTag("Player"))

@@ -36,7 +36,7 @@ public class DoorButton : MonoBehaviour
 		if (triggered) {
 			_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y - doorSpeed, doorPosition.z);
 			if (_shedDoor.transform.position.y <= openDoorHeight) {
-				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight, doorPosition.z);
+				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight-0.01f, doorPosition.z);
 			}
 		} else {
 				_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y + doorSpeed, doorPosition.z);

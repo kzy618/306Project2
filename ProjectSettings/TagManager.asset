@@ -30,6 +30,8 @@ TagManager:
   - potion
   - Capsule
   - Platform
+  - TagLight
+  - torch
   layers:
   - Default
   - TransparentFX

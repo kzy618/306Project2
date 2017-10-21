@@ -2506,10 +2506,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112620}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 3, y: 31.009, z: 55}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: 103, z: 21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 451128}
   - {fileID: 405420}
@@ -4090,7 +4090,7 @@ AudioSource:
   Spatialize: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.4101391
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -4174,8 +4174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90183d407a2bb244c95f7b43b1934cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubeMaterial: {fileID: 2100000, guid: 65fbe791bb29a8c46a411fc648e18cf7, type: 2}
-  CapsuleMaterial: {fileID: 2100000, guid: 75bf26dc56e547e45b1ad98a7533fc57, type: 2}
+  CubeMaterial: {fileID: 2100000, guid: e9a9afac9d3f04144ac20c83b0cded10, type: 2}
+  CapsuleMaterial: {fileID: 2100000, guid: e9a9afac9d3f04144ac20c83b0cded10, type: 2}
   PickableRange: 3.5
   throwingForce: 10
   holdingPlace: {fileID: 156800}
@@ -4222,6 +4222,7 @@ MonoBehaviour:
   _lifeText: {fileID: 0}
   death: {fileID: 0}
   _damaged: {fileID: 0}
+  _secondsPerRegen: 3
 --- !u!114 &11479192
 MonoBehaviour:
   m_ObjectHideFlags: 1

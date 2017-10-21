@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class ThrowableController : MonoBehaviour
 {
 
+    private GameObject _fpsController;
 	private Material Material;
 	private Queue<GameObject> cubes;
 	private int maxNumCube;
@@ -49,7 +50,8 @@ public class ThrowableController : MonoBehaviour
 		gameObject.SetActive(false);
 		GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 		cube.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.5f, gameObject.transform.position.z);
-		Renderer rend = cube.GetComponent<Renderer>();
+        cube.transform.forward = _fpsController.transform.forward;
+        Renderer rend = cube.GetComponent<Renderer>();
 		rend.material = Material;
 		cube.AddComponent<Rigidbody>();
 		cube.AddComponent<PickableObjController>();
@@ -63,4 +65,12 @@ public class ThrowableController : MonoBehaviour
 		}
 		Destroy(gameObject);
 	}
+
+    public GameObject FpsController
+    {
+        set
+        {
+            _fpsController = value;
+        }
+    }
 }

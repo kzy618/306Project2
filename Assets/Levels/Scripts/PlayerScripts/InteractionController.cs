@@ -91,6 +91,7 @@ public class InteractionController : MonoBehaviour {
             
 				GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 				cube.transform.position = new Vector3(spawningPlace.transform.position.x, spawningPlace.transform.position.y, spawningPlace.transform.position.z);
+                cube.transform.forward = gameObject.transform.forward;
 				Renderer rend = cube.GetComponent<Renderer>();
 				rend.material = CubeMaterial;
 				cube.AddComponent<Rigidbody>();
@@ -116,6 +117,7 @@ public class InteractionController : MonoBehaviour {
 				rend.material = CapsuleMaterial;
 				capsule.AddComponent<Rigidbody>();
 				ThrowableController throwableController = capsule.AddComponent<ThrowableController>();
+                throwableController.FpsController = gameObject;
 				throwableController.setMaterial(CubeMaterial);
 				throwableController.passOnQueue(cubes);
 				throwableController.setMaxNum(maxNumCube);

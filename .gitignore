@@ -5,6 +5,9 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 
+# Git doesnt like this file as its too big wtf lol
+**/RuinedTower/Materials/Tower Diffuse.psd
+**/Tower Diffuse.psd
 
 # Visual Studio 2015 cache directory
 **/.vs/

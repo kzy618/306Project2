@@ -32,6 +32,11 @@ TagManager:
   - Platform
   - TagLight
   - torch
+  - Bullet
+  - NoBulletHit
+  - LevelThreeController
+  - LevelThreeRedStone
+  - RouteStarter
   layers:
   - Default
   - TransparentFX

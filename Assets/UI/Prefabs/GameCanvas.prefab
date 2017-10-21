@@ -4079,11 +4079,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22492998}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 1000, y: 1000}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460, y: -250}
+  m_SizeDelta: {x: 1000, y: 750}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &22444776
 RectTransform:
   m_ObjectHideFlags: 1

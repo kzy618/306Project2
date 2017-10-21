@@ -49,9 +49,10 @@ public class LaserScript : MonoBehaviour {
                 _lineRenderer.SetVertexCount(2 + reflectCount); 
 
                 // ok I don't think this actually does anything but I'm too scared to change it
-                if (reflectCount == 4)
+                if (reflectCount >= 6)
                 {
                     _lineRenderer.SetPosition(reflectCount + 1, hit.point);
+                    break;
                 }
 
                 // calculate the new direction the reflected laser should travel

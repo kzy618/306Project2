@@ -33,8 +33,6 @@ public class LaserReceiverController : MonoBehaviour {
         // move door down
         if (_isClosing)
         {
-			Debug.log ("door close");
-			stopOpenDoorSound ();
             float newY = _door.transform.localPosition.y - (_speed * delta);
 
             // ensures that door doesn't go below a certain position
@@ -55,8 +53,6 @@ public class LaserReceiverController : MonoBehaviour {
         // move door up
         else
         {
-			Debug.log ("door open");
-			openDoorSound();
             float newY = _door.transform.localPosition.y + (_speed * delta);
 
             // ensures that door doesn't go above a certain position

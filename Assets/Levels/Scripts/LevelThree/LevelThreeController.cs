@@ -166,13 +166,14 @@ public class LevelThreeController : MonoBehaviour {
 			VerticalShooters.SetActive(true);
 			RouteEntrances.SetActive(true);
 			Fences.SetActive(true);
-			MemoryFragmentBonfire.SetActive(true);
+			//MemoryFragmentBonfire.SetActive(true);
 			FinaleStarted = true;
 		}
-		else if (FinaleCompleted && !AllDone)
+		else if (FinaleStarted && !FinaleCompleted && AllDone)
 		{
 			Bonfire.SetActive(true);
-			AllDone = true;
+			MemoryFragmentOmen.SetActive(true);
+			FinaleCompleted = true;
 		}
 	}
 

@@ -45,8 +45,14 @@ public class PlayerLifeController : MonoBehaviour {
             }
         }
 
+        if (!_crRunning)
+        {
+            _cr = StartCoroutine(startRegen());
+        }
+
         if (currentLives <= 0 && !died)
         {
+            StopCoroutine(_cr);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             GetComponent<FirstPersonController>().enabled = false;
             Time.timeScale = 0;
@@ -55,11 +61,6 @@ public class PlayerLifeController : MonoBehaviour {
             Cursor.visible = true;
             died = true;
             death.SetTrigger("PlayerDeath");
-        }
-
-        if (!_crRunning)
-        {
-            _cr = StartCoroutine(startRegen());
         }
 	}
 

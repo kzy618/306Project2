@@ -42,4 +42,14 @@ public class RouteCompletor : MonoBehaviour {
 			interacting = false;
 		}
 	}
+	
+	private void OnGUI()
+	{
+		if (interacting)
+		{
+			GUI.color = Color.red;
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
+				"Looks like this ancient cannon is still working... (Mouse LB)");
+		}
+	}
 }

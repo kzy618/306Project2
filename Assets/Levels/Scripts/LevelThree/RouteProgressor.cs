@@ -41,5 +41,15 @@ public class RouteProgressor : MonoBehaviour {
 			interacting = false;
 		}
 	}
+	
+	private void OnGUI()
+	{
+		if (interacting)
+		{
+			GUI.color = Color.red;
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
+				"Maybe I can light it up with my torch... (Mouse LB)");
+		}
+	}
 
 }

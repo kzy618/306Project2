@@ -92,6 +92,7 @@ public class PlayerLifeController : MonoBehaviour {
             Debug.Log(SaveStateController.controller.health);
             SaveStateController.controller.health++;
             currentLives = SaveStateController.controller.health;
+            GetComponentInChildren<RegenSound>().Play();
             Debug.Log(SaveStateController.controller.health);
         }
     }

@@ -19,6 +19,9 @@ public class CafeLaserRotation : MonoBehaviour {
     private Vector3 defaultButtonPosition;
     private Vector3 pressedButtonPosition;
 
+	public GameObject laserTip1;
+	public GameObject laserTip2;
+
     void Start()
     {
         defaultButtonPosition = transform.position;
@@ -67,11 +70,26 @@ public class CafeLaserRotation : MonoBehaviour {
         platform.radiansPerFrame = defaultRadianssPerFrame;
         laser1.transform.rotation = defaultRotation1;
         laser2.transform.rotation = defaultRotation2;
+		this.enableLaserScript();
     }
     void rotateNewLasterPosition()
     {
         platform.radiansPerFrame = radiansPerFrame;
         laser1.transform.Rotate(0, 90, 0, Space.World);
         laser2.transform.Rotate(0, -90, 0, Space.World);
+		this.enableCafeLaserScript();
     }
+
+	void enableCafeLaserScript(){
+		laserTip1.GetComponent<LaserScript>().enabled = false;
+		laserTip1.GetComponent<CafeLaserScript>().enabled = true;
+		laserTip2.GetComponent<LaserScript>().enabled = false;
+		laserTip2.GetComponent<CafeLaserScript>().enabled = true;
+	}
+	void enableLaserScript(){
+		laserTip1.GetComponent<CafeLaserScript>().enabled = false;
+		laserTip1.GetComponent<LaserScript>().enabled = true;
+		laserTip2.GetComponent<CafeLaserScript>().enabled = false;
+		laserTip2.GetComponent<LaserScript>().enabled = true;
+	}
 }

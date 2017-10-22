@@ -678,18 +678,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 788655700}
     m_Modifications:
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesA.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesB.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: backgrounds.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 22479980, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -763,14 +751,6 @@ Prefab:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: sceneNumber
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: sceneName
-      value: L1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: charA
       value: 
       objectReference: {fileID: 1273749829}
@@ -779,69 +759,14 @@ Prefab:
       value: 
       objectReference: {fileID: 1412434795}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesA.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: d10113678777b1a499baccea534ed8a4,
-        type: 3}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesA.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesB.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesB.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesB.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 612091c08b2055b48afd6d6fab46725b,
-        type: 3}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: anim
       value: 
       objectReference: {fileID: 647558673}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: animDuration
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[0]
-      value: Alright everyone, we have a new transfer student today. Please come in,
-        Stella.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[1]
-      value: Hello everyone, my name is Stella. I just tranferred here from America.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[2]
-      value: Pleased to meet you all!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesA.Array.data[3]
+    - target: {fileID: 9508354, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 21300000, guid: 4d22239da279e4241be8d527372e9073,
-        type: 3}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: imagesB.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[3]
-      value: Let's see... There's a free seat at the back by @, you can sit there.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[4]
-      value: Okay!
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11488462, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-    - {fileID: 11403284, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      objectReference: {fileID: 9100000, guid: ed161713a75263a4d8bac6f8de5cd5c7, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &1934526088 stripped

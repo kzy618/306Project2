@@ -96,6 +96,9 @@ public class LaserScript : MonoBehaviour {
             // checks if a laser receiver was hit
             else if (hitObject.CompareTag("laser receiver"))
             {
+                // activate the BonfireController, used in level three only
+                if(hitObject.GetComponent<BonfireController>() != null)
+                    hitObject.GetComponent<BonfireController>().activate(gameObject.tag);
                 // activate the laser receiver and render laser
 				if(hitObject.GetComponent<LaserReceiverController>() != null)
                 	hitObject.GetComponent<LaserReceiverController>().activate();

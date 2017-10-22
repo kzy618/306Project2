@@ -12,9 +12,12 @@ public class DroppingWallScript : MonoBehaviour {
 	// Use this for initialization
 
 	private float speed;
+	private float antiScale;
 	private float generic;
 	private bool activated = false;
 	void Start () {
+		red.SetActive (false);
+		antiScale = 1f;
 		speed = .1f;
 		generic = 90f;
 	}
@@ -31,8 +34,9 @@ public class DroppingWallScript : MonoBehaviour {
 			back.transform.Rotate (new Vector3 (speed, 0f, 0f));
 			left.transform.Rotate (new Vector3 (0f, 0f, speed));
 			right.transform.Rotate (new Vector3 (0f, 0f, -speed));
-			roof.transform.localScale = roof.transform.localScale/speed;
+			roof.transform.localScale = roof.transform.localScale/(antiScale);
 			speed *= 1.05f;
+			antiScale *= 1.001f;
 			generic -= speed;
 		} else {
 			Destroy (front);

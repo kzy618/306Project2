@@ -53,17 +53,23 @@ public class DoorButtonTranslate : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter (Collider other)
+	void OnTriggerEnter(Collider other)
 	{
-		transform.position = pressedPosition;
-		this.other = other;
-		this.triggered = true;
+		if (other.CompareTag("pickable"))
+		{
+			transform.position = pressedPosition;
+			this.other = other;
+			this.triggered = true;
+		}
 	}
 
 	void OnTriggerExit(Collider other)
 	{
-		transform.position = defaultPosition;
-		triggered = false;
+		if (other.CompareTag("pickable"))
+		{
+			transform.position = defaultPosition;
+			triggered = false;
+		}
 	}
 
 }

@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerLifeController : MonoBehaviour {
 
-    public int maxLives;
+    public int _maxLives = 5;
     public float invincibilityTime;
     public Text _lifeText;
 
@@ -17,6 +17,11 @@ public class PlayerLifeController : MonoBehaviour {
 
     public Animator death;
     public Animator _damaged;
+
+    private bool _crRunning;
+    private Coroutine _cr;
+
+    public int _secondsPerRegen = 3;
 
     private void Start()
     {
@@ -33,7 +38,6 @@ public class PlayerLifeController : MonoBehaviour {
         if (invincible)
         {
             currentInvincibilityTime += Time.deltaTime;
-
             if (currentInvincibilityTime > invincibilityTime)
             {
                 invincible = false;
@@ -52,6 +56,11 @@ public class PlayerLifeController : MonoBehaviour {
             died = true;
             death.SetTrigger("PlayerDeath");
         }
+
+        if (!_crRunning)
+        {
+            _cr = StartCoroutine(startRegen());
+        }
 	}
 
     public int lives()
@@ -64,18 +73,33 @@ public class PlayerLifeController : MonoBehaviour {
         if (!invincible)
         {
             _damaged.SetTrigger("PlayerDamaged");
-			SaveStateController.controller.health--;
-			currentLives = SaveStateController.controller.health;
+            SaveStateController.controller.health--;
+            currentLives = SaveStateController.controller.health;
             invincible = true;
-        }
-        
+            if (_crRunning)
+            {
+                _crRunning = false;
+                StopCoroutine(_cr);
+            }
+        }      
     }
     
     public void healing()
     {
-		Debug.Log (SaveStateController.controller.health);
-        SaveStateController.controller.health++;
-        currentLives = SaveStateController.controller.health;
-		Debug.Log (SaveStateController.controller.health);
+        if (currentLives < _maxLives)
+        {
+            Debug.Log(SaveStateController.controller.health);
+            SaveStateController.controller.health++;
+            currentLives = SaveStateController.controller.health;
+            Debug.Log(SaveStateController.controller.health);
+        }
+    }
+
+    IEnumerator startRegen()
+    {
+        _crRunning = true;
+        yield return new WaitForSeconds(_secondsPerRegen);
+        healing(); 
+        _crRunning = false;
     }
 }

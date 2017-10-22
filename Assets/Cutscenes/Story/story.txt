@@ -4,7 +4,7 @@ Extract memory *Presses Extract Memory*
 
 Intro
 AI: Hello MC,
-You extracted your own memories into this game
+You have extracted your memories into this game
 .... (explanation already in game)
 You can re-experience your memories by gathering the memory fragments that are spread throughout the levels.
 Good Luck!
@@ -13,55 +13,55 @@ Good Luck!
 I am XJ-9 and I will be introducing this world to you.
 Firstly, you are allowed to place blocks of ice with the 'F' key.
 You are also able to throw balls of ice with the 'R' key, which creates a block of ice if it lands on the ground.
-Use the WASD keys to move and the Space button to jump.
-Press the 'C' key to crouch, and the Left Control button to duck.
-Lastly, press the Left Shift button to sprint.
-You have decided to extract your own memories into this game.
-If you are able to conquer this world, your lost memories will be returned to you.
+Use the WASD keys to move and the Space key to jump.
+Press the 'C' key to crouch, and the Left Control key to duck.
+Lastly, press the Left Shift key to sprint.
+Your memories have been lost in this world.
+Should you manage to conquer this world, your memories will be returned to you.
 Good luck!
 
 ======Level 1
 Shed/
 (use current dialogue)
 Teacher: MC! I want you to show Stella around the school.
-	So, that's why Stella and you are going to clean up the shed at the side of the main building.
+	So, that's why Stella and you are going to clean up the shed outside!
 
 Classroom/
-Stella: ... um Mc can I ask you a favour?
+Stella: ... Um @, can I ask you a favour?
 MC: Sure! What is it?
-Stella: The science teacher asked me to carry the textbooks back to the science lab. Can you help me?
+Stella: The science teacher asked me to carry these textbooks back to the science lab. Could you please help me?
 MC: Sure, no problem.
 *Walking towards science lab*
 Stella: *Crunch crunch*
-MC: "Huh what was that noise"
+MC: "Huh what was that noise?"
 
 Science Lab/
 Teacher: ... and that is how reflection works.
-MC: Ahhh I see, so that's how reflection works
-Teacher: So, now you know how reflection works, lets experiment with the materials in front of you.	
-MC: Lets see what we have here ... ice cubes, pencil, mirror.
-Stella: Look!!! the ice cube is reflecting this laser. I knew it! Ice cubes are the best!
+MC: Ahhh I see, so that's how reflection works.
+Teacher: So, now you know how reflection works, let's experiment with the materials in front of you.	
+MC: Lets see what we have here ... ice cubes, pencils and a mirror.
+Stella: Look!!! The ice cube is reflecting this laser. I knew it! Ice cubes are the best!
 MC: Hahaha (Expression, half smile with sweat on his head)
 
 Roof/
-MC: It is a good day to take a nap up in the roof.
+MC: It's a good day to take a nap up on the roof.
 *MC walking up the stairs*
-*crunch crunch*
+*Crunch crunch*
 MC: "Hm, it's that noise again"
-MC: "I wonder where it is coming from?"
-*MC reaches the roof*
+MC: "I wonder where it's coming from?"
+*@ reaches the roof*
 *CRUNCH CRUNCH*
 MC: "It's definitely coming from the roof!"
-*opens door*
+*Opens door*
 MC: Ah so it was you!
-Stella: mmhmm~
-MC: Where is that noise coming from?
-Stella: *with mouth full of ice cubes*
-	I du-don't knu whut youu dalking aboot
+Stella: Mmhmm~
+MC: Where's that noise coming from?
+Stella: *With mouth full of ice cubes*
+	I du-don't knu whut youu dalking aboot..
 MC: Are you eating ice cubes?!
 Stella: Yeah fine, you got me, I have a thing for ice cubes.
-MC: ... ice cubes?
-Stella: Yeah I love them! they are the best thing in the world!
+MC: ... Ice cubes?
+Stella: Yeah I love them! They are the best thing in the world!
 MC: Whaaat?
 Stella: Have you tried any? The crunchiness is divine. 
 MC: Hmm okay...
@@ -70,16 +70,17 @@ MC: Haha, if you really do open an ice cube shop, I'll help you out.
 Stella: That's a promise then.
 
 Park/
-MC: "Hmm.. Stella's late. It's already 10 past 10"
-MC: "She's probably eating ice cubes ..."
-Stella: *puffing puffing*
+MC: "Hmm.. Stella's late. It's already 10 past 10."
+MC: "She's probably eating ice cubes..."
+Stella: *Puffing puffing*
 Stella: Sorry I'm late, I was busy eating ice cubes haha.
 MC: I knew it!
-Stella: As an apology, I will treat you to an ice cube.
-MC: haha ... oh you are serious?
+Stella: As an apology, I'll treat you to an ice cube.
+MC: Haha
+MC: ... Oh you're serious?
 MC: "She looks really pale, is she okay?"
 Stella: Let's go to the cafe now!
-MC: "She's really energetic, I must be overthinking it"
+MC: "She's really energetic, I must be overthinking it."
 
 Cafe/
 Stella: Hey it's my birthday today!
@@ -87,7 +88,7 @@ MC: Really!?
 Stella: Just kidding.
 MC: Ahah, but when's your real birthday?
 Stella: Why do you wanna know?
-MC: I'll be sure to gift you some of tha ice cubes, special MC edition.
+MC: I'll be sure to gift you some of tha ice cubes, special @ edition.
 Stella: If you insist hehe.
 Stella: It's a week before Christmas.
 MC: I'll be sure to remember that.
@@ -97,41 +98,41 @@ Cinema/
 Vincent is doing it
 
 Bus/
-Stella: MC! MC! I brought some ice cubes for the trip! Here, have some!
-MC: Oh are they flavored? why are they all in different colours?
-Stella: Yeah I coloured them according to the lucky colors from today's horoscope?
+Stella: @! @! I brought some ice cubes for the trip! Here, have some!
+MC: Oh are they flavored? Why are they all in different colours?
+Stella: Yeah I coloured them according to the lucky colors from today's horoscope.
 MC: What are the lucky colours?
-Stella: The luckiest is Red, then Blue, Green, Yellow, Purple
-MC: Heh you actually believe in those stuff?
-Stella: It makes your life more colourful like these ice cubes.
-MC: What's my lucky colours then?
+Stella: The luckiest is Red, then Blue, Green, Yellow and last but not least, Purple.
+MC: Heh you actually believe in that kind of stuff?
+Stella: It makes your life more colourful, just like these ice cubes.
+MC: What are my lucky colours then?
 Stella: SE E CRET ~
 
 Last Tower/
 MC: HEYAHHH! *Picks up log*
 Stella: Na-nani?! 
-MC: GORYAHHH! *throws log into the pile*
+MC: GORYAHHH! *Throws log into the pile*
 Stella: Wow you are really pumped for this arent you?
 MC: It's because I'm excited to dance with you.
-MC: *blushes*
-Stella: *blushes even harder*
+MC: *Blushes*
+Stella: *Blushes even harder*
 MC: Well lets go light the bonfire. 
-Stella: waaait for everyone.
+Stella: Waaait for everyone.
 
 Bonfire/
 Stella: That was super tiring.
-Stella: I had the best night of my life, I wouldn't mind if I were to die now. 
+Stella: I had the best night of my life, I wouldn't mind even if I were to die now. 
 MC: I'll pretend that I've only heard the first part of that sentence.
-Stella: Hehe, let me lie on you shoulder, I'm exhausted.
-MC: "I gymed for this night, to let a girl lie on my massive shoulder."
-Stella: *lies on shoulder and closes her eyes*
-*five minutes passes*
-MC: Haha, you really slept.. 
+Stella: Hehe, let me lie on your shoulder, I'm exhausted.
+MC: "I've gymed just for this night, to let a girl lie on my massive shoulder."
+Stella: *Lies on shoulder and closes her eyes*
+*Five minutes pass*
+MC: Haha, she actually went to sleep... 
 MC: Wake up, we needa go back to our tents to sleep now or the teacher's gonna yell at us.
 MC: Wakey wakey~
 MC: Stella?
 MC: Yo wake up!
-Stella: *slips off shoulder* 
+Stella: *Slips off shoulder* 
 MC: "Did she faint?"
 MC: Teacher !!! Come here !!!
 
@@ -139,20 +140,20 @@ MC: Teacher !!! Come here !!!
 
 Bed/
 MC: Stella, I brought you your favorite ice cubes.
-Stella: My doc said that I shouldn't have any more ice cubes :(
-MC: Well their population is gonna grow exponentially
-Stella: I see you have been practicing hard to become my right hand in the future.
-Stella: You remembered our promise :)
-MC: Yeah..
+Stella: My doctor said that I shouldn't have any more ice cubes.
+MC: Well their population is gonna grow exponentially.
+Stella: I see you have been practicing hard to become my right hand man in the future.
+Stella: I'm glad that you remembered our promise.
+MC: Yeah...
 Stella: Do you think you’ll remember me at least a little?
 MC: Don't kid me.
 Stella: You’d better not hit "reset!" Don’t forget me, okay? That’s a promise, okay?
-I'm glad it’s you, after all.
+Stella: I'm glad it’s you, after all.
 MC: I'd never do that!
-MC: We will open our ice cube store in the future.
-Stella: Let's call it "??" then
+MC: We'll open our own ice cube store in the future.
+Stella: Let's call it "yao jian sux" then.
 MC: Sure.
-Stella: Hehe. *smiles*
+Stella: Hehe. *Smiles*
 MC: I'll visit you again tomorrow.
 
 Impossible Puzzle/

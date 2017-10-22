@@ -56,7 +56,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b46574018bec84999f1bd00d45b16a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialBg: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   _backgrounds:
   - {fileID: 21300000, guid: 05796d1bbf21969458b7327990fb7bb2, type: 3}
   - {fileID: 21300000, guid: 1bf270b047571a2428224177caa98e2d, type: 3}
@@ -140,7 +139,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a0c3cab9f871b442b9b9ee5f71dab5e, type: 3}
   - {fileID: 21300000, guid: 9235e2a647b48db4bb42e06eaf7527ca, type: 3}
   - {fileID: 21300000, guid: dca5cf88b73b1724e817809efdf1c78d, type: 3}
-  _framesPerUpdate: 3
+  _framesPerSecond: 30
 --- !u!1101 &110133064
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

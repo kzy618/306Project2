@@ -9,7 +9,7 @@ public class HintTriggerController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _memoryFragmentHintText.text = "Please collect the memory fragment before proceeding";
+            _memoryFragmentHintText.text = "You should collect continue exploring before proceeding";
         }
     }
 

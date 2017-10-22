@@ -290,6 +290,7 @@ GameObject:
   - 95: {fileID: 647558673}
   - 222: {fileID: 847307767}
   - 114: {fileID: 847307766}
+  - 114: {fileID: 847307773}
   m_Layer: 5
   m_Name: MemoryFader
   m_TagString: Untagged
@@ -422,6 +423,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &847307773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847307765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e9f32f38656274e9ed84fbb597cdce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &904018699
 Prefab:
   m_ObjectHideFlags: 0

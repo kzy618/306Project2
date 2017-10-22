@@ -37,6 +37,11 @@ TagManager:
   - LevelThreeController
   - LevelThreeRedStone
   - RouteStarter
+  - LaserR1
+  - LaserR2
+  - LaserR3
+  - LaserR4
+  - LaserR5
   layers:
   - Default
   - TransparentFX

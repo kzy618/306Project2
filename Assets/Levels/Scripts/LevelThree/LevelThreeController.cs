@@ -25,8 +25,10 @@ public class LevelThreeController : MonoBehaviour {
 	public bool R5Inprogress;
 	public bool R5Completed;
 
+	public bool FinaleStarted;
 	public bool LightUpBonfire;
 	public bool FinaleCompleted;
+	public bool AllDone;
 	
 	//Route One, Red
 	public List<GameObject> TorchesFlameR1 = new List<GameObject>();
@@ -159,29 +161,19 @@ public class LevelThreeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!R1Completed)
+		if (R5Completed && !FinaleStarted)
 		{
-			//prepare R1
+			VerticalShooters.SetActive(true);
+			RouteEntrances.SetActive(true);
+			Fences.SetActive(true);
+			//MemoryFragmentBonfire.SetActive(true);
+			FinaleStarted = true;
 		}
-		else if (!R2Completed)
+		else if (FinaleStarted && !FinaleCompleted && AllDone)
 		{
-			//prepare R2
-		}
-		else if (!R3Completed)
-		{
-			//prepare R3
-		}
-		else if (!R4Completed)
-		{
-			//prepare R4
-		}
-		else if (!R5Completed)
-		{
-			//prepare R5
-		}
-		else if (!FinaleCompleted)
-		{
-			
+			Bonfire.SetActive(true);
+			MemoryFragmentOmen.SetActive(true);
+			FinaleCompleted = true;
 		}
 	}
 
@@ -235,30 +227,35 @@ public class LevelThreeController : MonoBehaviour {
 	{
 		if (routeNumber == 1)
 		{
+			R1Inprogress = true;
 			SpecialTorchFlameR1.SetActive(true);
 			ClimbUpR1.SetActive(true);
 			TorchInHand.SetActive(false);
 		}
 		else if (routeNumber == 2)
 		{
+			R2Inprogress = true;
 			SpecialTorchFlameR2.SetActive(true);
 			ClimbUpR2.SetActive(true);
 			TorchInHand.SetActive(false);
 		}
 		else if (routeNumber == 3)
 		{
+			R3Inprogress = true;
 			SpecialTorchFlameR3.SetActive(true);
 			ClimbUpR3.SetActive(true);
 			TorchInHand.SetActive(false);
 		}
 		else if (routeNumber == 4)
 		{
+			R4Inprogress = true;
 			SpecialTorchFlameR4.SetActive(true);
 			ClimbUpR4.SetActive(true);
 			TorchInHand.SetActive(false);
 		}
 		else if (routeNumber == 5)
 		{
+			R5Inprogress = true;
 			SpecialTorchFlameR5.SetActive(true);
 			ClimbUpR5.SetActive(true);
 			TorchInHand.SetActive(false);
@@ -284,6 +281,7 @@ public class LevelThreeController : MonoBehaviour {
 			obj.GetComponent<Torchelight>().IntensityLight = 18;
 			obj.AddComponent<PickUpTorch>();
 			Debug.Log("RNG instantiated at position " + obj.transform.position);
+			R1Completed = true;
 		}
 		else if (routeNumber == 2)
 		{
@@ -302,6 +300,7 @@ public class LevelThreeController : MonoBehaviour {
 			obj.GetComponent<Torchelight>().IntensityLight = 18;
 			obj.AddComponent<PickUpTorch>();
 			Debug.Log("RNG instantiated at position " + obj.transform.position);
+			R2Completed = true;
 		}
 		else if (routeNumber == 3)
 		{
@@ -320,6 +319,7 @@ public class LevelThreeController : MonoBehaviour {
 			obj.GetComponent<Torchelight>().IntensityLight = 18;
 			obj.AddComponent<PickUpTorch>();
 			Debug.Log("RNG instantiated at position " + obj.transform.position);
+			R3Completed = true;
 		}
 		else if (routeNumber == 4)
 		{
@@ -338,6 +338,7 @@ public class LevelThreeController : MonoBehaviour {
 			obj.GetComponent<Torchelight>().IntensityLight = 18;
 			obj.AddComponent<PickUpTorch>();
 			Debug.Log("RNG instantiated at position " + obj.transform.position);
+			R4Completed = true;
 		}
 		else if (routeNumber == 5)
 		{
@@ -356,6 +357,7 @@ public class LevelThreeController : MonoBehaviour {
 			obj.GetComponent<Torchelight>().IntensityLight = 18;
 			obj.AddComponent<PickUpTorch>();
 			Debug.Log("RNG instantiated at position " + obj.transform.position);
+			R5Completed = true;
 		}
 	}
 }

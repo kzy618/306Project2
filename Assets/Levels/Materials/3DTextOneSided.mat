@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Tower Diffuse
-  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: 3DTextOneSided
+  m_Shader: {fileID: 4800000, guid: 5fbb8260af596364b9414cde523be9ef, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 5fa9532a887c3e74ea6e585e3ea21cfa, type: 3}
-          m_Scale: {x: 10, y: 10}
+          m_Texture: {fileID: 2800000, guid: c73df036efa89f64683d181e4c8be43b, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 26eab182946d8b8409d95cf4ce76e1ef, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -38,14 +38,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -93,8 +93,8 @@ Material:
         second: 0.5
       data:
         first:
-          name: _Shininess
-        second: 0.137
+          name: _Metallic
+        second: 0
       data:
         first:
           name: _Parallax
@@ -127,10 +127,6 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _Metallic
-        second: 0
     m_Colors:
       data:
         first:
@@ -139,8 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.6691177, g: 0.6887976, b: 0.6887976, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: 0.9558824, g: 0.9629109, b: 0.9629109, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}

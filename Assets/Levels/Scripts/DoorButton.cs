@@ -53,10 +53,14 @@ public class DoorButton : MonoBehaviour
 				_shedDoor.transform.position = new Vector3 (doorPosition.x, doorPosition.y, doorPosition.z);
 			}
 
-			foreach (Transform childTransform in _links.transform) {
-				GameObject child = childTransform.gameObject;
-				child.GetComponent<Renderer> ().material = untriggerMat;
-			}
+            if (_links != null)
+            {
+                foreach (Transform childTransform in _links.transform)
+                {
+                    GameObject child = childTransform.gameObject;
+                    child.GetComponent<Renderer>().material = untriggerMat;
+                }
+            }
 		}
 	}
 

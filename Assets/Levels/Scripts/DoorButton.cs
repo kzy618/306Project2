@@ -21,6 +21,9 @@ public class DoorButton : MonoBehaviour
 
 	public float doorSpeed = 0.1f;
 
+	// sound to play when door opens
+	public AudioSource _doorSound;
+
 	void Start()
 	{
 		defaultPosition = transform.position;
@@ -70,6 +73,7 @@ public class DoorButton : MonoBehaviour
     {
         if (other.CompareTag("pickable"))
         {
+			openDoorSound ();
             transform.position = pressedPosition;
             this.other = other;
             this.triggered = true;
@@ -80,8 +84,27 @@ public class DoorButton : MonoBehaviour
     {
         if (other.CompareTag("pickable"))
         {
+			stopOpenDoorSound ();
             transform.position = defaultPosition;
             triggered = false;
         }
     }
+
+	// Play door sound if audio source exists 
+	void openDoorSound() {
+		if (_doorSound != null) {
+			// start playuing the door sound as it opens
+			_doorSound.Play();
+		}
+	}
+
+	// Play door sound if audio source exists 
+	void stopOpenDoorSound() {
+		if (_doorSound != null) {
+			// stop the door sound if it's still playing
+			if(_doorSound.isPlaying){
+				_doorSound.Stop();
+			}
+		}
+	}
 }

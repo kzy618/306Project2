@@ -8,6 +8,7 @@ public class MemoryRotator : MonoBehaviour {
     public Animator anim;
     public float animDuration;
     public string memory;
+    public AudioSource _bgm;
 
     // Update is called once per frame
     void Update ()
@@ -37,6 +38,17 @@ public class MemoryRotator : MonoBehaviour {
         scene.allowSceneActivation = false;
         yield return CoroutineUtilities.WaitForRealTime(animDuration);
         scene.allowSceneActivation = true;
+        _bgm.Pause();
+        StartCoroutine(resumeBGM());
+    }
+    IEnumerator resumeBGM()
+    {
+        while(Time.timeScale == 0)
+        {
+            Debug.Log("hello");
+            yield return 0;
+        }
+        _bgm.UnPause();
         this.gameObject.SetActive(false);
     }
 }

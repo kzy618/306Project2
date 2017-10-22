@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f745167f9a4d444a982b56eac08579d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Level01_01_Spawn
+  firstLevel: Intro
 --- !u!1101 &110133064
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

@@ -158,6 +158,9 @@ public class SaveStateController : MonoBehaviour {
 
             // Load the data here
             _collectedMemories = data._collectedMemories;
+        } else
+        {
+            _collectedMemories = new Hashtable();
         }
     }
 

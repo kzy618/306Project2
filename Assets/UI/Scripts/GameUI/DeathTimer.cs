@@ -11,6 +11,7 @@ public class DeathTimer : MonoBehaviour {
 	private float startTime;
 	public float seconds, minutes;
 	public float countDown = 120f;
+	public GameObject deathTrap;
 
     void Start () {
 		active = false;
@@ -25,7 +26,11 @@ public class DeathTimer : MonoBehaviour {
 			minutes = (int)((countDown - (Time.timeSinceLevelLoad - startTime)) / 60f);
 			seconds = (int)((countDown - (Time.timeSinceLevelLoad - startTime)) % 60f);
 			counterText.text = minutes.ToString ("00") + ":" + seconds.ToString ("00");
-
+			if (countDown - (Time.timeSinceLevelLoad - startTime) < 0f) {
+				active = false;
+				counterText.text = "";
+			}
+				
 		} else {
 			startTime = Time.timeSinceLevelLoad;
 		}

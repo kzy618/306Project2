@@ -8,23 +8,26 @@ public class DeathTimer : MonoBehaviour {
     private Text counterText;
 	private bool active;
 
-	private float startS, startM;
-    public float seconds, minutes;
-
+	private float startTime;
+	public float seconds, minutes;
+	public float countDown = 120f;
 
     void Start () {
 		active = false;
-        counterText = GetComponent<Text>() as Text;
+		counterText = GetComponent<Text>() as Text;
+
 	}
 
     // Update is called once per frame
 	void Update() {
-		startM = (int)(Time.timeSinceLevelLoad/60f);
-		startS = (int)(Time.timeSinceLevelLoad % 60f);
+		
 		if (active) {
-			minutes = (int)((Time.timeSinceLevelLoad / 60f) - startM);
-			seconds = (int)((Time.timeSinceLevelLoad % 60f) - startS);
+			minutes = (int)((countDown - (Time.timeSinceLevelLoad - startTime)) / 60f);
+			seconds = (int)((countDown - (Time.timeSinceLevelLoad - startTime)) % 60f);
 			counterText.text = minutes.ToString ("00") + ":" + seconds.ToString ("00");
+
+		} else {
+			startTime = Time.timeSinceLevelLoad;
 		}
 	}
 

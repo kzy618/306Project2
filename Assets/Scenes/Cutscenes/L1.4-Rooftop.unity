@@ -288,7 +288,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cd1cd09442fa29d4f9f30eaed3784494, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09d23b4ba13d9bd4491ed478c33f3e4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -680,19 +680,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.size
-      value: 6
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.size
-      value: 6
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.size
-      value: 6
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: backgrounds.Array.size
-      value: 6
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 22479980, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: m_LocalPosition.x
@@ -784,21 +784,195 @@ Prefab:
       objectReference: {fileID: 9100000, guid: ed161713a75263a4d8bac6f8de5cd5c7, type: 2}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: '@! I want you to show Stella around the school. So, that''s why Stella
-        and you are going to clean up the shed outside!'
+      value: '*Reaches the roof*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[6]
-      value: Okay!
+      value: '*CRUNCH CRUNCH*'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[7]
-      value: Okay!
+      value: '"It''s definitely coming from the roof!"'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[5]
       value: 
       objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[0]
+      value: It's a good day to take a nap up on the roof.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[1]
+      value: '*Walking up the stairs*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[2]
+      value: '*Crunch crunch*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[3]
+      value: '"Hm, it''s that noise again"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[4]
+      value: '"I wonder where it''s coming from?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[8]
+      value: '*Opens door*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[9]
+      value: Ah so it was you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[10]
+      value: Mmhmm~
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[11]
+      value: Where's that noise coming from?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[12]
+      value: '*With mouth full of ice cubes* I du-don''t knu whut youu dalking aboot..'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[13]
+      value: Are you eating ice cubes?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[14]
+      value: Yeah fine, you got me, I have a thing for ice cubes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[15]
+      value: '... Ice cubes?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[16]
+      value: Yeah I love them! They are the best thing in the world!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[17]
+      value: Whaaat?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[18]
+      value: 'Have you tried any? The crunchiness is divine. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[19]
+      value: Hmm okay...
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[20]
+      value: My dream is to open an ice cube shop and sell different flavoured ice
+        cubes. This world is really lacking them!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[21]
+      value: Haha, if you really do open an ice cube shop, I'll help you out.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[22]
+      value: That's a promise then.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[13]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[17]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[18]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[20]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[21]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[22]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: bg
+      value: 
+      objectReference: {fileID: 788655701}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: fd28b280b4c2ca9408710587e93a09ed,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}

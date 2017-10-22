@@ -23,7 +23,7 @@ Good luck!
 ======Level 1
 Shed/
 (use current dialogue)
-Teacher: MC! I want you to show Stella around the school.
+Teacher: @! I want you to show Stella around the school.
 	So, that's why Stella and you are going to clean up the shed outside!
 
 Classroom/
@@ -45,7 +45,7 @@ MC: Hahaha (Expression, half smile with sweat on his head)
 
 Roof/
 MC: It's a good day to take a nap up on the roof.
-*MC walking up the stairs*
+*Walking up the stairs*
 *Crunch crunch*
 MC: "Hm, it's that noise again"
 MC: "I wonder where it's coming from?"
@@ -56,8 +56,7 @@ MC: "It's definitely coming from the roof!"
 MC: Ah so it was you!
 Stella: Mmhmm~
 MC: Where's that noise coming from?
-Stella: *With mouth full of ice cubes*
-	I du-don't knu whut youu dalking aboot..
+Stella: *With mouth full of ice cubes* I du-don't knu whut youu dalking aboot..
 MC: Are you eating ice cubes?!
 Stella: Yeah fine, you got me, I have a thing for ice cubes.
 MC: ... Ice cubes?
@@ -76,7 +75,7 @@ Stella: *Puffing puffing*
 Stella: Sorry I'm late, I was busy eating ice cubes haha.
 MC: I knew it!
 Stella: As an apology, I'll treat you to an ice cube.
-MC: Haha
+MC: Haha.
 MC: ... Oh you're serious?
 MC: "She looks really pale, is she okay?"
 Stella: Let's go to the cafe now!
@@ -100,7 +99,7 @@ Vincent is doing it
 Bus/
 Stella: @! @! I brought some ice cubes for the trip! Here, have some!
 MC: Oh are they flavored? Why are they all in different colours?
-Stella: Yeah I coloured them according to the lucky colors from today's horoscope.
+Stella: Yeah I coloured them according to the lucky colours from today's horoscope.
 MC: What are the lucky colours?
 Stella: The luckiest is Red, then Blue, Green, Yellow and last but not least, Purple.
 MC: Heh you actually believe in that kind of stuff?
@@ -151,7 +150,7 @@ Stella: You’d better not hit "reset!" Don’t forget me, okay? That’s a prom
 Stella: I'm glad it’s you, after all.
 MC: I'd never do that!
 MC: We'll open our own ice cube store in the future.
-Stella: Let's call it "yao jian sux" then.
+Stella: Let's call it "Mon Glaçon" then.
 MC: Sure.
 Stella: Hehe. *Smiles*
 MC: I'll visit you again tomorrow.

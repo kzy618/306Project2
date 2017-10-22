@@ -288,7 +288,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cd1cd09442fa29d4f9f30eaed3784494, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dfcc3c46165591f4d8a1b0b6aea979ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -680,19 +680,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: backgrounds.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 22479980, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: m_LocalPosition.x
@@ -784,19 +784,75 @@ Prefab:
       objectReference: {fileID: 9100000, guid: ed161713a75263a4d8bac6f8de5cd5c7, type: 2}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: '@! I want you to show Stella around the school. So, that''s why Stella
-        and you are going to clean up the shed outside!'
+      value: As an apology, I'll treat you to an ice cube.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[6]
-      value: Okay!
+      value: Haha.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[7]
-      value: Okay!
+      value: '... Oh you''re serious?'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[0]
+      value: '"Hmm.. Stella''s late. It''s already 10 past 10."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[1]
+      value: '"She''s probably eating ice cubes..."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[2]
+      value: '*Puffing puffing*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[3]
+      value: Sorry I'm late, I was busy eating ice cubes haha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[4]
+      value: I knew it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[8]
+      value: '"She looks really pale, is she okay?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[9]
+      value: Let's go to the cafe now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[10]
+      value: '"She''s really energetic, I must be overthinking it."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[10]
       value: 
       objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
         type: 3}

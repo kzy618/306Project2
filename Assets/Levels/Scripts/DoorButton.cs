@@ -92,7 +92,6 @@ public class DoorButton : MonoBehaviour
 
 	// Play door sound if audio source exists 
 	void openDoorSound() {
-		Debug.log ("?");
 		if (_doorSound != null) {
 			// start playuing the door sound as it opens
 			_doorSound.Play();
@@ -101,11 +100,9 @@ public class DoorButton : MonoBehaviour
 
 	// Play door sound if audio source exists 
 	void stopOpenDoorSound() {
-		Debug.log ("?sxczc");
 		if (_doorSound != null) {
-
 			// stop the door sound if it's still playing
-			if(_doorSound.isPlaying()){
+			if(_doorSound.isPlaying){
 				_doorSound.Stop();
 			}
 		}

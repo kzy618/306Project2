@@ -33,6 +33,7 @@ public class LaserReceiverController : MonoBehaviour {
         // move door down
         if (_isClosing)
         {
+			Debug.log ("door close");
 			stopOpenDoorSound ();
             float newY = _door.transform.localPosition.y - (_speed * delta);
 
@@ -54,6 +55,7 @@ public class LaserReceiverController : MonoBehaviour {
         // move door up
         else
         {
+			Debug.log ("door open");
 			openDoorSound();
             float newY = _door.transform.localPosition.y + (_speed * delta);
 
@@ -83,7 +85,6 @@ public class LaserReceiverController : MonoBehaviour {
 	// Play door sound if audio source exists 
 	void openDoorSound() {
 		if (_doorSound != null) {
-			Debug.log ("?");
 			// start playuing the door sound as it opens
 			_doorSound.Play();
 		}
@@ -92,10 +93,8 @@ public class LaserReceiverController : MonoBehaviour {
 	// Play door sound if audio source exists 
 	void stopOpenDoorSound() {
 		if (_doorSound != null) {
-			Debug.log ("?sxczc");
-
 			// stop the door sound if it's still playing
-			if(_doorSound.isPlaying()){
+			if(_doorSound.isPlaying){
 				_doorSound.Stop();
 			}
 		}

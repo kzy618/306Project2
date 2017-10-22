@@ -62,21 +62,23 @@ public class VerticalDoorButton : MonoBehaviour
     }
     
 
-    void OnTriggerEnter (Collider other)
-    {
-		transform.position = pressedPosition;
-        this.other = other;
-        this.triggered = true;
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("pickable"))
+		{
+			transform.position = pressedPosition;
+			this.other = other;
+			this.triggered = true;
+		}
+	}
 
-
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-		transform.position = defaultPosition;
-        triggered = false;
-
-
-    }
+	void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("pickable"))
+		{
+			transform.position = defaultPosition;
+			triggered = false;
+		}
+	}
 
 }

@@ -4,7 +4,11 @@ using System;
 
 public class DoorButton : MonoBehaviour
 {
-    public GameObject _shedDoor;
+	public GameObject _shedDoor;
+	public GameObject _links;
+
+	public Material untriggerMat;
+	public Material triggerMat;
 
     private Boolean triggered = false;
     private Collider other; 
@@ -38,11 +42,21 @@ public class DoorButton : MonoBehaviour
 			if (_shedDoor.transform.position.y <= openDoorHeight) {
 				_shedDoor.transform.position = new Vector3 (doorPosition.x, openDoorHeight-0.01f, doorPosition.z);
 			}
+
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = triggerMat;
+			}
 		} else {
-				_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y + doorSpeed, doorPosition.z);
-				if (_shedDoor.transform.position.y >= doorPosition.y) {
-					_shedDoor.transform.position = new Vector3 (doorPosition.x, doorPosition.y, doorPosition.z);
-				}
+			_shedDoor.transform.position = new Vector3 (doorPosition.x, _shedDoor.transform.position.y + doorSpeed, doorPosition.z);
+			if (_shedDoor.transform.position.y >= doorPosition.y) {
+				_shedDoor.transform.position = new Vector3 (doorPosition.x, doorPosition.y, doorPosition.z);
+			}
+
+			foreach (Transform childTransform in _links.transform) {
+				GameObject child = childTransform.gameObject;
+				child.GetComponent<Renderer> ().material = untriggerMat;
+			}
 		}
 	}
 

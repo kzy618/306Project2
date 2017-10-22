@@ -46,8 +46,6 @@ GameObject:
   - 222: {fileID: 22265994}
   - 114: {fileID: 11454030}
   - 114: {fileID: 11473994}
-  - 114: {fileID: 11488462}
-  - 114: {fileID: 11403284}
   - 114: {fileID: 11414726}
   m_Layer: 5
   m_Name: Cutscene Dialogue
@@ -65,7 +63,7 @@ Animator:
   m_GameObject: {fileID: 156180}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ed161713a75263a4d8bac6f8de5cd5c7, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -73,17 +71,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11403284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c05c3fb9fd6b8447a361066bf7fafe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11414726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,19 +86,36 @@ MonoBehaviour:
   nextText: {fileID: 11474262}
   charA: {fileID: 0}
   charB: {fileID: 0}
+  bg: {fileID: 0}
   blank: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
   dLines:
-  - Welcome
-  - To
-  - School
-  - Hello
-  - Last Text
-  imagesA: []
-  imagesB: []
-  sceneName: 
+  - Alright everyone, we have a new transfer student today. Please come in, Stella.
+  - Hello everyone, my name is Stella. I just tranferred here from America.
+  - Pleased to meet you all!
+  - Let's see... There's a free seat at the back by @, you can sit there.
+  - Okay!
+  imagesA:
+  - {fileID: 21300000, guid: d10113678777b1a499baccea534ed8a4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 4d22239da279e4241be8d527372e9073, type: 3}
+  - {fileID: 0}
+  imagesB:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 612091c08b2055b48afd6d6fab46725b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e, type: 3}
+  backgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  sceneName: L1.1
   delay: 0.04
   anim: {fileID: 0}
-  animDuration: 0
+  animDuration: 0.9
   exitText: Press Any Key to Return...
 --- !u!114 &11454030
 MonoBehaviour:
@@ -125,15 +129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.122, g: 0, b: 0.766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.84313726}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9a32a6cc2cb803443983d45d4a513506, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8a9cf27b78515ad40838fd2292691147, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -160,12 +164,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
-    m_FontSize: 80
+    m_Font: {fileID: 12800000, guid: 1b20d721f85ff8643920589ae6b6c29f, type: 3}
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 90
+    m_MaxSize: 65
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -206,8 +210,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 1b20d721f85ff8643920589ae6b6c29f, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -221,18 +225,6 @@ MonoBehaviour:
   m_Text: 'Press Space to Continue...
 
 '
---- !u!114 &11488462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033475808b5ab2a47b59843622ff5fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: 
 --- !u!222 &22217432
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -266,8 +258,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.05, y: 0.1}
   m_AnchorMax: {x: 0.95, y: 0.9}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 13}
+  m_SizeDelta: {x: 0, y: -27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22472128
 RectTransform:
@@ -284,7 +276,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -46, y: 13}
+  m_AnchoredPosition: {x: -58, y: 14}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!224 &22479980

@@ -13,6 +13,7 @@ public class LaserReceiverController : MonoBehaviour {
     private float _doorOpenPosition;
     private float _doorClosePosition;
     private bool _isClosing;
+    private bool _soundAlreadyPlaying;
 
 	// sound to play when door opens
 	public AudioSource _doorSound;
@@ -20,6 +21,7 @@ public class LaserReceiverController : MonoBehaviour {
     private void Start()
     {
         _isClosing = true;
+        _soundAlreadyPlaying = false;
 
         _doorClosePosition = _door.transform.localPosition.y;
 		_doorOpenPosition = _doorClosePosition + (_door.GetComponent<Renderer>().bounds.size.y);
@@ -33,6 +35,7 @@ public class LaserReceiverController : MonoBehaviour {
         // move door down
         if (_isClosing)
         {
+            stopOpenDoorSound();
             float newY = _door.transform.localPosition.y - (_speed * delta);
 
             // ensures that door doesn't go below a certain position
@@ -53,6 +56,7 @@ public class LaserReceiverController : MonoBehaviour {
         // move door up
         else
         {
+            openDoorSound();
             float newY = _door.transform.localPosition.y + (_speed * delta);
 
             // ensures that door doesn't go above a certain position
@@ -82,7 +86,11 @@ public class LaserReceiverController : MonoBehaviour {
 	void openDoorSound() {
 		if (_doorSound != null) {
 			// start playuing the door sound as it opens
-			_doorSound.Play();
+            if (!_soundAlreadyPlaying) {
+                _doorSound.Play();
+                _soundAlreadyPlaying = true;
+            }
+
 		}
 	}
 
@@ -93,6 +101,7 @@ public class LaserReceiverController : MonoBehaviour {
 			if(_doorSound.isPlaying){
 				_doorSound.Stop();
 			}
-		}
+            _soundAlreadyPlaying = false;
+        }
 	}
 }

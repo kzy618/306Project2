@@ -109,7 +109,7 @@ public class InteractionController : MonoBehaviour {
 			}
 			else if (Input.GetKeyDown(KeyCode.R) && !isLoaded  && Time.time > nextSpawn)
 			{
-				GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+				GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 				capsule.transform.position = new Vector3(throwref.transform.position.x, throwref.transform.position.y, throwref.transform.position.z);
 				capsule.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 				capsule.tag = "Capsule";
@@ -234,12 +234,12 @@ public class InteractionController : MonoBehaviour {
 		if (guipick && canpick)
 		{
 			GUI.color = Color.red;
-			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height/2,Screen.width,Screen.height/2), "Press LMB to pick up"); 
+			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height*3/4,Screen.width,Screen.height/2), "Press LMB to pick up"); 
 		}
 		else if (picked)
 		{
 			GUI.color = Color.red;
-			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height/2,Screen.width,Screen.height/2), "LMB to throw. RMB to drop"); 
+			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height*3/4,Screen.width,Screen.height/2), "LMB to throw. RMB to drop"); 
 		}
 	}
 

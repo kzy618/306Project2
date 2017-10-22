@@ -42,7 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: 
   health: 0
-  startingHealth: 5
+  startingHealth: 3
   lastCheckpoint: 
   clearTime: 0
   masterVol: 0

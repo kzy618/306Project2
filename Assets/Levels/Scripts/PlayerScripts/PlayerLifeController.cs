@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerLifeController : MonoBehaviour {
 
-    public int maxLives = 5;
+    public int _maxLives = 5;
     public float invincibilityTime;
     public Text _lifeText;
 
@@ -86,7 +86,7 @@ public class PlayerLifeController : MonoBehaviour {
     
     public void healing()
     {
-        if (currentLives < maxLives)
+        if (currentLives < _maxLives)
         {
             Debug.Log(SaveStateController.controller.health);
             SaveStateController.controller.health++;

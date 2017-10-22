@@ -100,23 +100,33 @@ public class LevelThreeController : MonoBehaviour {
 		{
 			if (R1Completed)
 			{
-				//prepare R1
+				StartRoute(1, RockR1);
+				ProgressRoute(1);
+				CompleteRoute(1);
 			}
 			if (R2Completed)
 			{
-				//prepare R2
+				StartRoute(2, RockR2);
+				ProgressRoute(2);
+				CompleteRoute(2);
 			}
 			if (R3Completed)
 			{
-				//prepare R3
+				StartRoute(3, RockR3);
+				ProgressRoute(3);
+				CompleteRoute(3);
 			}
 			if (R4Completed)
 			{
-				//prepare R4
+				StartRoute(4, RockR4);
+				ProgressRoute(4);
+				CompleteRoute(4);
 			}
 			if (R5Completed)
 			{
-				//prepare R5
+				StartRoute(5, RockR5);
+				ProgressRoute(5);
+				CompleteRoute(5);
 			}
 		}
 		else
@@ -165,7 +175,7 @@ public class LevelThreeController : MonoBehaviour {
 		{
 			VerticalShooters.SetActive(true);
 			RouteEntrances.SetActive(true);
-			Fences.SetActive(true);
+			//Fences.SetActive(true); No more fence.
 			//MemoryFragmentBonfire.SetActive(true);
 			FinaleStarted = true;
 		}

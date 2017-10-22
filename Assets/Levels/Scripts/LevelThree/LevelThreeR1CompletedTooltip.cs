@@ -48,7 +48,7 @@ public class LevelThreeR1CompletedTooltip : MonoBehaviour {
 		if (showTooltip && !tooltipfinished)
 		{
 			GUI.color = Color.red;
-			GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2, Screen.width, Screen.height / 2),
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"Looks like this ancient cannon is still working... (Mouse LB)");
 		}
 		if (showTooltip && tooltipfinished)

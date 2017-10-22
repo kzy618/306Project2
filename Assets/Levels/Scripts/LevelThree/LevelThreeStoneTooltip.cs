@@ -18,7 +18,7 @@ public class LevelThreeStoneTooltip : MonoBehaviour {
 		RaycastHit hit;
 		if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, 20f))
 		{
-			if (hit.collider.gameObject.CompareTag("LevelThreeRedStone"))
+			if (hit.collider.gameObject.CompareTag("LevelThreeRedStone") || hit.collider.gameObject.CompareTag("RouteStarter"))
 			{
 				stoneTooltip = true;
 			}
@@ -37,9 +37,11 @@ public class LevelThreeStoneTooltip : MonoBehaviour {
 	{
 		if (stoneTooltip)
 		{
-			GUI.color = Color.red;
+			GUI.color = Color.black;
 			GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2, Screen.width, Screen.height / 2),
-				"A magic stone over there. Maybe it can interact with my ice cube.");
+				"A magic stone over there...");
+			GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height / 2 + 20, Screen.width, Screen.height / 2),
+				"Maybe it can interact with my ice cube.");
 		}
 	}
 }

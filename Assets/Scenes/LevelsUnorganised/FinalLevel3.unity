@@ -16329,6 +16329,7 @@ GameObject:
   - 224: {fileID: 711546267}
   - 222: {fileID: 711546269}
   - 114: {fileID: 711546268}
+  - 114: {fileID: 711546270}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -16386,13 +16387,26 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:00
+  m_Text: 
 --- !u!222 &711546269
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711546266}
+--- !u!114 &711546270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711546266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b489eddac975754dabe9ba5ef731ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 0
+  minutes: 0
 --- !u!4 &715232715 stripped
 Transform:
   m_PrefabParentObject: {fileID: 412554, guid: 0b6b50b4d76fa3d4ab5b0507be0e41df, type: 2}
@@ -42811,7 +42825,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+  - {fileID: 2100000, guid: b10366dd6af97ab4bb3ca3a48052e90b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

@@ -9,6 +9,8 @@ public class DroppingWallScript : MonoBehaviour {
 	public GameObject right;
 	public GameObject roof;
 	public GameObject red;
+	public GameObject deathTimer;
+
 	// Use this for initialization
 
 	private float speed;
@@ -45,6 +47,7 @@ public class DroppingWallScript : MonoBehaviour {
 			Destroy (right);
 			Destroy (roof);
 			red.SetActive (true);
+			deathTimer.GetComponent<DeathTimer> ().timerActivate();
 		}
 	}
 

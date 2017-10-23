@@ -2,6 +2,18 @@
 using System.Collections;
 using System;
 
+
+/**
+ * CafeTrampolineRotation is a used in the first cafe puzzle
+ * 
+ * It rotates the angle of the trampolines in the stated directions
+ * 	to make the puzzle solvable
+ * 
+ * 	This rotation of trampoline is rotated on trigger and returns 
+ * 	back to its default location on untrigger
+ * 
+ * 
+ * */
 public class CafeTrampolineRotation : MonoBehaviour {
 
     public GameObject trampoline1; // second level most left trampoline 

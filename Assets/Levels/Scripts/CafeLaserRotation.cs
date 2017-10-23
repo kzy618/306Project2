@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-
+/**
+ * CafeLaserRotation moves the two laser direction by rotating it from its current position.
+ * 		This happens on trigger and returns back to its default position after untriggered
+ * 
+ * */
 public class CafeLaserRotation : MonoBehaviour {
 
     public MovingPlatformScript platform;

@@ -18,7 +18,7 @@ public class ThrowableController : MonoBehaviour
 			makeCube();
 		} else
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 	}
 

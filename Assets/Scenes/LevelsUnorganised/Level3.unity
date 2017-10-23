@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_AmbientIntensity: 8
+  m_AmbientIntensity: 2
   m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 2100000, guid: 88ec9a13802800449aaf825aff3aadc7, type: 2}
   m_HaloStrength: 0.5
@@ -1031,7 +1031,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
 --- !u!1 &95307967 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 118798, guid: ace6d9530452d7443b6cf987e0e33056, type: 2}
@@ -1690,7 +1690,7 @@ Transform:
   - {fileID: 433458143}
   - {fileID: 1854512345}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
 --- !u!1 &215493907 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 110236, guid: d814ac2a2972ead41ab675f56e194978, type: 2}
@@ -2512,7 +2512,7 @@ Transform:
   - {fileID: 1115591765}
   - {fileID: 1679136391}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 15
 --- !u!1 &315891239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,7 +4796,7 @@ Transform:
   - {fileID: 1946891187}
   - {fileID: 1655386545}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
 --- !u!1001 &635795418
 Prefab:
   m_ObjectHideFlags: 0
@@ -4928,7 +4928,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 1e5c742accdc1824fb01f98f446fa63c, type: 2}
       propertyPath: m_Intensity
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 1e5c742accdc1824fb01f98f446fa63c, type: 2}
       propertyPath: m_DrawHalo
@@ -4936,7 +4936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 1e5c742accdc1824fb01f98f446fa63c, type: 2}
       propertyPath: m_Range
-      value: 7
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 1e5c742accdc1824fb01f98f446fa63c, type: 2}
       propertyPath: m_Color.g
@@ -6561,8 +6561,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0.94482756, g: 1, b: 0, a: 1}
-  m_Intensity: 4
-  m_Range: 30
+  m_Intensity: 8
+  m_Range: 80
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -9678,8 +9678,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0, g: 1, b: 0.17241383, a: 1}
-  m_Intensity: 4
-  m_Range: 30
+  m_Intensity: 8
+  m_Range: 80
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -10378,7 +10378,7 @@ Transform:
   - {fileID: 1701269850}
   - {fileID: 723607901}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 14
 --- !u!1001 &1135550847
 Prefab:
   m_ObjectHideFlags: 0
@@ -12181,8 +12181,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0, g: 0.95862055, b: 1, a: 1}
-  m_Intensity: 4
-  m_Range: 30
+  m_Intensity: 8
+  m_Range: 80
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -13535,8 +13535,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0.986207, g: 0, b: 1, a: 1}
-  m_Intensity: 4
-  m_Range: 30
+  m_Intensity: 8
+  m_Range: 80
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -16908,8 +16908,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 4
-  m_Range: 30
+  m_Intensity: 8
+  m_Range: 80
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:

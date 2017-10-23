@@ -546,7 +546,7 @@ GameObject:
   - 222: {fileID: 1273749830}
   - 114: {fileID: 1273749829}
   m_Layer: 5
-  m_Name: Teacher
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,7 +614,7 @@ GameObject:
   - 222: {fileID: 1412434796}
   - 114: {fileID: 1412434795}
   m_Layer: 5
-  m_Name: Girl
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -680,7 +680,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.size
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.size
@@ -784,21 +784,20 @@ Prefab:
       objectReference: {fileID: 9100000, guid: ed161713a75263a4d8bac6f8de5cd5c7, type: 2}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: I see you have been practicing hard to become my right hand man in the
-        future.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[6]
       value: I'm glad that you remembered our promise.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[7]
+      propertyPath: dLines.Array.data[6]
       value: Yeah...
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[7]
+      value: "Do you think you\u2019ll remember me at least a little?"
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: 752ec40fbf1226b4492b546b15ca7649,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
@@ -818,90 +817,87 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[4]
-      value: Well their population is gonna grow exponentially now.
+      value: I see you have been practicing hard to become my right hand ice cube
+        man in the future.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[8]
-      value: "Do you think you\u2019ll remember me at least a little?"
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[9]
+      propertyPath: dLines.Array.data[8]
       value: Don't kid me.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[10]
+      propertyPath: dLines.Array.data[9]
       value: "You\u2019d better not hit \"reset!\" Don\u2019t forget me, okay? That\u2019s
         a promise, okay?"
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[10]
+      value: "I'm glad it\u2019s you, after all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: da9a342f14324d14895f435797898ba0,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: 752ec40fbf1226b4492b546b15ca7649,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[10]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: 7f20e60861a0e7b468c74966e0baf734,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[11]
-      value: "I'm glad it\u2019s you, after all."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[12]
       value: I'd never do that!
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[13]
+      propertyPath: dLines.Array.data[12]
       value: We'll open our own ice cube store in the future.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
-      propertyPath: dLines.Array.data[14]
+      propertyPath: dLines.Array.data[13]
       value: "Let's call it \"Mon Gla\xE7on\" then."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: dLines.Array.data[14]
+      value: Sure.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: 0df86a57d07de234bb636fe945fa4218,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[13]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: f485ae6c8de3cff40a97b33912e1c90c,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[14]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[15]
-      value: Sure.
+      value: Hehe.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[15]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 21300000, guid: f485ae6c8de3cff40a97b33912e1c90c,
         type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: sceneName
@@ -909,17 +905,77 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[16]
-      value: Hehe. *Smiles*
+      value: I'll visit you again tomorrow.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[16]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[17]
       value: I'll visit you again tomorrow.
       objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8398683f72b5cc04798982e31107865e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2633a25386c7cdb459bb8bc881ce06e2,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5567939e199e45f45982b7e010517a46,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6da818d5406daed4e91876d3aeca862c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80a0ceec0cd574347818696f4fcf998e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 72d21b9a30fada045a06afa3b2493272,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[13]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: ac764c74aa1434f41b4c73c09ca71b37,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: d7f6c64e2b8fa164a869ab3cf76637a9,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[14]
+      value: 
+      objectReference: {fileID: 21300000, guid: b90f7c1819c2c3f4ab825ba1e3845577,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
   m_IsPrefabParent: 0

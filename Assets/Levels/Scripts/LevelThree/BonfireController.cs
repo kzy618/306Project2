@@ -2,6 +2,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Enable the fire particle system once this object has been targeted by five lasers.
+/// </summary>
 public class BonfireController : MonoBehaviour
 {
 

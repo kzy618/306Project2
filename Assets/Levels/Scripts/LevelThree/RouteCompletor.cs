@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Informs LevelThreeController that a cannon has been activated.
+/// </summary>
 public class RouteCompletor : MonoBehaviour {
 
 
@@ -45,13 +48,13 @@ public class RouteCompletor : MonoBehaviour {
 	
 	private void OnGUI()
 	{
-		if (interacting && !finished)
+		if (interacting && !finished && Time.timeScale != 0)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"Looks like this ancient cannon is still working... (Mouse LB)");
 		}
-		else if (interacting && finished)
+		else if (interacting && finished && Time.timeScale != 0)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),

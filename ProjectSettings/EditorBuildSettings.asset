@@ -52,6 +52,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/L2.2-Cafe.unity
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/L2.3-Cinema.unity
+  - enabled: 1
     path: Assets/Scenes/Cutscenes/L3.1-Bus.unity
   - enabled: 1
     path: Assets/Scenes/Cutscenes/L3.2-Tower.unity

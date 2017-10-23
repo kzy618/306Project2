@@ -104,6 +104,9 @@ public class LaserScript : MonoBehaviour {
                 	hitObject.GetComponent<LaserReceiverController>().activate();
 				if(hitObject.GetComponent<LaserReceiverControllerTranslate>() != null)
 					hitObject.GetComponent<LaserReceiverControllerTranslate>().activate();
+				if(hitObject.GetComponent<LevelTwoDoorDestroyer>() != null){
+					hitObject.GetComponent<LevelTwoDoorDestroyer>().activate ();
+				}
                 _lineRenderer.SetPosition(reflectCount + 1, hit.point);
                 break;
             }

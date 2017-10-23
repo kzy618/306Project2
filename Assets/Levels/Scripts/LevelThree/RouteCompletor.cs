@@ -45,11 +45,19 @@ public class RouteCompletor : MonoBehaviour {
 	
 	private void OnGUI()
 	{
-		if (interacting)
+		if (interacting && !finished)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"Looks like this ancient cannon is still working... (Mouse LB)");
+		}
+		else if (interacting && finished)
+		{
+			GUI.color = Color.red;
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
+				"I'd better find another torch somewhere along the path");
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 20, Screen.width, Screen.height / 2),
+				"before returning the campsite.");
 		}
 	}
 }

@@ -37,6 +37,7 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# IDE
 **/.idea
 **/*.csproj
 **/*.sln

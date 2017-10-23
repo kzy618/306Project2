@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8baecea4b5851884f9128aee199b77e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Yao Jian
+  playerName: asdf
   health: 0
   startingHealth: 3
   lastCheckpoint: 

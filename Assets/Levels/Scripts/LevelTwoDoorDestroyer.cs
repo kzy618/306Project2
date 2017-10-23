@@ -7,6 +7,8 @@ public class LevelTwoDoorDestroyer : MonoBehaviour {
 
 	private bool done;
 
+	public AudioSource _doorSound;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -23,6 +25,9 @@ public class LevelTwoDoorDestroyer : MonoBehaviour {
 		{
 			Destroy (Door);
 			done = true;
+			if (_doorSound != null) {
+				_doorSound.Play ();
+			}
 		}
 	}
 }

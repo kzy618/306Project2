@@ -16,6 +16,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level01Upgrade/Level01.unity
   - enabled: 1
+    path: Assets/Scenes/Level04/Level04.0.unity
+  - enabled: 1
+    path: Assets/Scenes/Level04/Level04.1.unity
+  - enabled: 1
+    path: Assets/Scenes/Level04/Level04.2.unity
+  - enabled: 1
     path: Assets/Scenes/Level02/Level02.unity
   - enabled: 1
     path: Assets/Scenes/Cutscenes/L0.2-Intro.unity
@@ -59,7 +65,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/LFeelsCutscene.unity
   - enabled: 1
     path: Assets/Scenes/Cutscenes/zEndingScene.unity
-  - enabled: 1
-    path: Assets/Scenes/Level2Park.unity
   - enabled: 1
     path: Assets/Scenes/LevelsUnorganised/Level3.unity

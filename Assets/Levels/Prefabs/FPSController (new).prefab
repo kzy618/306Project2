@@ -4323,7 +4323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLives: 3
-  invincibilityTime: 1
+  invincibilityTime: 0.5
   _lifeText: {fileID: 0}
   death: {fileID: 0}
   _damaged: {fileID: 0}

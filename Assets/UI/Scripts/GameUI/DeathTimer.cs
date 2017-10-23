@@ -29,6 +29,7 @@ public class DeathTimer : MonoBehaviour {
 			if (countDown - (Time.timeSinceLevelLoad - startTime) < 0f) {
 				active = false;
 				counterText.text = "00:00";
+				deathTrap.GetComponent<DeathTrap> ().activate ();
 			}
 				
 		} else {

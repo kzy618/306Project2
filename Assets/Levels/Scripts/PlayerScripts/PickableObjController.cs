@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// PickableObjController determine whether or not the object currently being held is overlapping with other objects.
+/// (Excluding 'Player', 'picked', 'ground', etc.)
+/// If overlapping occurs, throwing or releasing the Cube will not be allowed.
+/// </summary>
 public class PickableObjController : MonoBehaviour 
 {
 

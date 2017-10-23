@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Rotates the potion per frame.
+/// Interact with the player when triggers overlapping.
+/// </summary>
 public class PotionController : MonoBehaviour {
 
 	private bool _healed;

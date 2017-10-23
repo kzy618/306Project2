@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Runtime.Serialization.Formatters;
 
+/// <summary>
+/// Tooltips for interactable stones.
+/// </summary>
 public class LevelThreeStoneTooltip : MonoBehaviour {
 
 	private Camera fpsCam;

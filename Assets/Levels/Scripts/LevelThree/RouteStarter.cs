@@ -2,6 +2,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Informs the LevelThreeController that this object has been interacted with 'pickable' Ice Cube.
+/// </summary>
 public class RouteStarter : MonoBehaviour
 {
 

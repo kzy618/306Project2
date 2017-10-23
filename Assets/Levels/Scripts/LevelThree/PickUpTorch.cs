@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Pick up the torch by re-enabling the torch object held by the Protagonist.
+/// </summary>
 public class PickUpTorch : MonoBehaviour {
 
 	private GameObject LevelThreeController;

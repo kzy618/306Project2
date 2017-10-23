@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Tooltips for non-interactable torches
+/// </summary>
 public class GeneralTorchTooltips : MonoBehaviour {
 
 

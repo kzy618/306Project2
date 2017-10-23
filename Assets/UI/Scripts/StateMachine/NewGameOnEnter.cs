@@ -11,7 +11,7 @@ public class NewGameOnEnter : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        SceneManager.LoadScene(firstLevel);
+        SceneManager.LoadScene("Loading");
         SaveStateController.controller.lastCheckpoint = firstLevel;
         SaveStateController.controller.SavePlayerData();
     }

@@ -21,7 +21,9 @@ public class DoorButtonTranslate : MonoBehaviour
 	public float doorSpeed = 0.1f;
 
 	private AudioSource _doorSound;
-
+	/// <summary>
+	/// Variation to the DoorButton. It translates the specified object to another invisible object when button is activated. Moves the specified object back to the original position when inactive
+	/// </summary>
 	void Start()
 	{
 		_doorSound = GetComponent<AudioSource> ();
@@ -32,7 +34,6 @@ public class DoorButtonTranslate : MonoBehaviour
 		doorPosition = _shedDoor.transform.position;
 		doorTriggered = positionObj.transform.position;
 		direction = (doorTriggered - doorPosition).normalized;
-		//openDoorHeight = doorPosition.y - (_shedDoor.transform.up*_shedDoor.GetComponent<Renderer> ().bounds.size.y).y;
 	}
 
 	void FixedUpdate()

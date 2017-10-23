@@ -23,12 +23,13 @@ public class DoorButton : MonoBehaviour
 
 	// sound to play when door opens
 	private AudioSource _doorSound;
-
+	/// <summary>
+	/// Translates a specified object down a certain distance. Mainly used for opening doors
+	/// </summary>
 	void Start()
 	{
 		_doorSound = GetComponent<AudioSource> ();
 		defaultPosition = transform.position;
-		//pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
 		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y/2);
 
 		doorPosition = _shedDoor.transform.position;

@@ -24,6 +24,7 @@ public class GifScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//sustains frame for until the delay lasts before moving on to next frame
 		j++;
 		int delayIdx = isInDelayFrames (i);
 		if (delayIdx != -1) {

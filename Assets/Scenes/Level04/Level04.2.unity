@@ -8352,7 +8352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posObj: {fileID: 411770097}
-  movementSpeed: 0.05
+  movementSpeed: 0.1
 --- !u!4 &197121737
 Transform:
   m_ObjectHideFlags: 0

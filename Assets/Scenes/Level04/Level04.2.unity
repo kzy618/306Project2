@@ -32711,7 +32711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seconds: 0
   minutes: 0
-  countDown: 120
+  countDown: 1
   deathTrap: {fileID: 197121735}
   bgm: {fileID: 929234061}
   alarm: {fileID: 1052280041}

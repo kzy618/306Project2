@@ -9,6 +9,7 @@ public class TransitionController : MonoBehaviour {
     private List<Sprite> _backgrounds;
     private bool _triggered = false;
 
+    // Loads the next scene once the animation finishes
     private void LoadNextScene()
     {
         Debug.Log("Load");
@@ -18,6 +19,8 @@ public class TransitionController : MonoBehaviour {
             gameObject.GetComponent<Animator>().SetTrigger("StartGame");
         }
     }
+
+    // Used in a coroutine to change images based on the delay
     IEnumerator PlayTransition()
     {
         for (int i = 0; i < _backgrounds.Count; i++)
@@ -28,6 +31,7 @@ public class TransitionController : MonoBehaviour {
         LoadNextScene();
     }
 
+    // Begins playing the set of images as an animation
     public void Play(float delay, List<Sprite> backgrounds)
     {
         _backgrounds = backgrounds;

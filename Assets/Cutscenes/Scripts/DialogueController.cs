@@ -39,18 +39,18 @@ public class DialogueController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // If the dialogue has finished playing, then prepare to close the cutscene
         if (count == dLines.Count && Input.anyKeyDown && !cr_running)
         {
             StartCoroutine(fadeOut());
-            //saveLoader.Load();
-            //loader.LoadByIndex();
-        }else if (Input.GetKeyDown(KeyCode.Space))
+        }else if (Input.GetKeyDown(KeyCode.Space)) // Otherwise continue displaying dialogue
         {
             Debug.Log(count);
             updateText();
         }
 	}
-
+    
+    // Updates the text to show in the textbox, starts a coroutine to display letters of a message in order, if called again, the coroutine finishes early
     private void updateText()
     {
         if (cr_running)
@@ -74,6 +74,7 @@ public class DialogueController : MonoBehaviour {
         }
     }
 
+    // Replaces the special "@" character with the player's name
     private void processText()
     {
         Debug.Log(SaveStateController.controller.playerName + " name");
@@ -81,6 +82,7 @@ public class DialogueController : MonoBehaviour {
         dLines[count] = dLines[count].Replace("@", SaveStateController.controller.playerName);
     }
 
+    // Updates the images of the two characters in a cutscene
     private void updateImages()
     {
         if (backgrounds[count] != null)
@@ -121,6 +123,7 @@ public class DialogueController : MonoBehaviour {
         }
     }
 
+    // Used to create a typewriter effect in text box
     IEnumerator ShowText(string fullText)
     {
         cr_running = true;
@@ -133,6 +136,7 @@ public class DialogueController : MonoBehaviour {
         cr_running = false;
     }
 
+    // Sets a trigger to the animator to play a fading out effect
     IEnumerator fadeOut()
     {
         anim.SetTrigger("FadeToMemory");

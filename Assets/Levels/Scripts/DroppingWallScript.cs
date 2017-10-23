@@ -11,15 +11,16 @@ public class DroppingWallScript : MonoBehaviour {
 	public GameObject red;
 	public GameObject deathTimer;
 	public GameObject sfx;
-
+	public GameObject preBgm;
 	// Use this for initialization
 
 	public float speed;
 	private float antiScale;
 	private float generic;
 	private bool activated = false;
+
 	void Start () {
-		sfx.SetActive (false);
+		preBgm.GetComponent<AudioSource> ().Play ();
 		red.SetActive (false);
 		antiScale = 1f;
 		speed = .05f;
@@ -33,8 +34,10 @@ public class DroppingWallScript : MonoBehaviour {
 		}else if(timerSec > 0f){
 
 			timerSec -= Time.time;
-			if(timerSec<=0f) 
-				sfx.SetActive (true);
+			if (timerSec <= 0f) {
+				preBgm.GetComponent<AudioSource> ().Stop ();
+				sfx.GetComponent<AudioSource> ().Play ();
+			}
 		} else if (generic >= 0) {
 			front.transform.Rotate (new Vector3 (-speed, 0f, 0f));
 			back.transform.Rotate (new Vector3 (speed, 0f, 0f));

@@ -10,7 +10,3 @@ Tower of Babel is a first person puzzle game that promotes critical thinking in 
 4. Go Files -> Build Settings... -> Build, to build to a desired directory
 5. Launch the created executable for the game and have fun !
 
-### To be implemented
-* Add more levels, only the first level has been completely implemented as of now
-* Improve game's visual aspects, we are currently using primitive materials and textures as we are still in the early prototyping stage
-

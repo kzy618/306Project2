@@ -41,7 +41,7 @@ public class SaveStateController : MonoBehaviour {
             hintTextToggle = true;
 			health = startingHealth;
             masterVol = 0.75F;
-            lastCheckpoint = "Prologue";
+            lastCheckpoint = "L0.1-Prologue";
             _collectedMemories = new Hashtable();
             LoadPlayerPref(); // loads player preferences at the start
             LoadPlayerMemories();
@@ -94,7 +94,7 @@ public class SaveStateController : MonoBehaviour {
             File.Delete(PLAYER_DATA_FILENAME);
             health = 0;
             clearTime = 0f;
-            lastCheckpoint = "Prologue";
+            lastCheckpoint = "L0.1-Prologue";
             
         }
         if (File.Exists(PLAYER_MEMORIES_FILENAME))

@@ -8,22 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/Prologue.unity
+    path: Assets/Scenes/Cutscenes/L0.2-Intro.unity
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-  - enabled: 1
-    path: Assets/Scenes/L1.1.unity
-  - enabled: 1
-    path: Assets/Scenes/L1.2.unity
-  - enabled: 1
-    path: Assets/Scenes/L1.3.unity
-  - enabled: 1
-    path: Assets/Scenes/Level01/Level01_01_Spawn.unity
-  - enabled: 1
-    path: Assets/Scenes/Level01/Level01_02_FirstFloor.unity
-  - enabled: 1
-    path: Assets/Scenes/Level01/Level01_03_SecondFloor.unity
-  - enabled: 1
-    path: Assets/Scenes/Intro.unity
+    path: Assets/Scenes/Cutscenes/L0.1-Prologue.unity
   - enabled: 1
     path: Assets/Scenes/Level01Upgrade/Level01.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L0.2-Intro.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.1-Classroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.2-Classroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.3-ScienceLab.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.4-Rooftop.unity

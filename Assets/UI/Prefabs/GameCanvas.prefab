@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneNames:
-  - L1.1
+  - L1.1-Classroom
   - L1.2-Classroom
   - L1.3-ScienceLab
   - L1.4-Rooftop
@@ -2137,6 +2137,7 @@ MonoBehaviour:
   - yao
   - jian
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
+  _bgm: {fileID: 0}
 --- !u!114 &11421500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3453,6 +3454,7 @@ MonoBehaviour:
   - Bed 2
   - Impossible
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
+  _bgm: {fileID: 0}
 --- !u!114 &11463464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3473,6 +3475,7 @@ MonoBehaviour:
   - Tower
   - Bonfire
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
+  _bgm: {fileID: 0}
 --- !u!114 &11465792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4372,6 +4375,7 @@ MonoBehaviour:
   - Cafe
   - Cinema
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
+  _bgm: {fileID: 0}
 --- !u!114 &11493476
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,9 +11,12 @@ public class TrampolineScript : MonoBehaviour
 
 	public float bouncingForce;
 
+	private AudioSource sfx;
+
 	// Use this for initialization
 	void Start ()
 	{
+		sfx = GetComponent<AudioSource> ();
 		mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 	}
 	
@@ -32,6 +35,7 @@ public class TrampolineScript : MonoBehaviour
 			//player.GetComponent<FirstPersonController>().resetVertical();
 			player.GetComponent<ImpactReceiver> ().AddImpact (transform.up, bouncingForce);
 			Debug.Log ("add force on player");
+			sfx.Play ();
 		} else {
 
 			Rigidbody rb = col.gameObject.GetComponent<Rigidbody> ();

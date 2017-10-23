@@ -12,9 +12,13 @@ public class DeathTimer : MonoBehaviour {
 	public float seconds, minutes;
 	public float countDown = 120f;
 	public GameObject deathTrap;
+	public GameObject bgm;
+	public GameObject alarm;
 
     void Start () {
 		active = false;
+		bgm.SetActive (false);
+		alarm.SetActive (false);
 		counterText = GetComponent<Text>() as Text;
 
 	}
@@ -39,5 +43,8 @@ public class DeathTimer : MonoBehaviour {
 
 	public void timerActivate(){
 		active = true;
+
+		bgm.SetActive (true);
+		alarm.SetActive (true);
 	}
 }

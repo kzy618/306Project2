@@ -26,4 +26,38 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/L1.4-Rooftop.unity
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/L0.1-Prologue.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L0.2-Intro.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.1-Classroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.2-Classroom.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.3-ScienceLab.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L1.4-Rooftop.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L2.1-Park.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L2.2-Cafe.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L3.1-Bus.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L3.2-Tower.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L3.3-Bonfire.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L4.1-BedBlurred.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L4.2-Bed.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/L4.3-Impossible.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/LFeelsCutscene.unity
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/zEndingScene.unity
+  - enabled: 1
     path: Assets/Scenes/Level2Park.unity
+  - enabled: 1
+    path: Assets/Scenes/LevelsUnorganised/Level3.unity

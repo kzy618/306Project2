@@ -5,6 +5,7 @@ public class RouteProgressor : MonoBehaviour {
 
 	public int RouteNumber;
 
+	private bool hasTorch;
 	private bool interacting;
 	private bool finished;
 	private GameObject LevelThreeController;
@@ -15,8 +16,10 @@ public class RouteProgressor : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (interacting)
+	void Update ()
+	{
+		hasTorch = LevelThreeController.GetComponent<LevelThreeController>().TorchInHand.activeInHierarchy;
+		if (interacting && hasTorch)
 		{
 			if (Input.GetKeyDown(KeyCode.Mouse0) && !finished)
 			{
@@ -44,11 +47,16 @@ public class RouteProgressor : MonoBehaviour {
 	
 	private void OnGUI()
 	{
-		if (interacting)
+		if (interacting && hasTorch)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"Maybe I can light it up with my torch... (Mouse LB)");
+		}else if (interacting && !hasTorch)
+		{
+			GUI.color = Color.red;
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
+				"I can't light it up without a torch...");
 		}
 	}
 

@@ -61,12 +61,22 @@ public class PermanentDoorButton : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
+		openDoorSound ();
 		this.other = other;
 		this.triggered = true;
 
 		foreach (Transform childTransform in _links.transform) {
 			GameObject child = childTransform.gameObject;
 			child.GetComponent<Renderer> ().material = triggerMat;
+		}
+	}
+
+
+	void openDoorSound() {
+		AudioSource _doorSound = GetComponent<AudioSource> ();
+		if (_doorSound != null) {
+			// start playuing the door sound as it opens
+			_doorSound.Play();
 		}
 	}
 }

@@ -1,4 +1,4 @@
-Prologue
+﻿Prologue
 Argh... I can't take this anymore
 *Press Extract Memory*
 
@@ -95,6 +95,21 @@ Stella: *Smiles*
 
 Cinema/
 Vincent is doing it
+//Stella: Have you bought the tickets?
+//MC: Yeah, I got them!
+Stella: What movie are we watching? 
+MC: Power Rangers!!
+Stella: ........
+MC: hmm? what is wrong?
+Stella: Power rangers?!
+MC: Yeah!
+Stella: ohh welll, i wanted to watch that ice cube movie though
+MC: Are you talking about Transformers?
+Stella: Yeah they are basically different colored ice cubes stuck together!
+MC: ... okay, let's go watch that then
+** few seconds later*
+MC: Got the tickets! It is theatre 3!
+
 
 Bus/
 Stella: @! @! I brought some ice cubes for the trip! Here, have some!
@@ -164,9 +179,20 @@ MC: Huh, Why am I crying?
 AI: Congratulations, you have completed the game.
 MC: Completed? But I died!
 AI: Yes you have. 
+	The ending was constructed from your last wish after experiencing through your memory.
+MC: Na-nani?! did you just memory
+	
+
+Final/
+MC: *tears*
+MC: Huh, Why am I crying?
+AI: Congratulations, you have completed the game.
+MC: Completed? But I died!
+AI: Yes you have. 
 	The ending was constructed from your strong feelings after experiencing that memory.
 AI: It was fun right? Thanks for playing this the 100th time.
-AI: To avoid unhealthy player lifestyle. The developer of "Tower of Babel" has decided that the game should go on cooldown for a day every 100 runs.
+AI: To avoid unhealthy player lifestyle. The developer of "Tower of Babel" has decided that 
+the game should go on cooldown for a day every 100 runs.
 MC: Wha what no!
 AI: Goodbye @!
 *shuts down*
@@ -181,7 +207,7 @@ MC: *Rushes out to the mailbox*
 MC: "What's this? Stella had something for me?"
 MC: *Unwraps parcel*
 
-"ICE CUBE MOLD OF A SHOP"
+ICE CUBE MOLD OF A SHOP~~~
 
 ~THE END~
 PLAYER GET THE FEELS YEAH

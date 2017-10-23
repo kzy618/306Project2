@@ -243,12 +243,12 @@ public class InteractionController : MonoBehaviour {
 	
 	void OnGUI()
 	{
-		if (guipick && canpick)
+		if (guipick && canpick && Time.timeScale != 0)
 		{
 			GUI.color = Color.red;
 			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height*3/4,Screen.width,Screen.height/2), "Press LMB to pick up"); 
 		}
-		else if (picked)
+		else if (picked && Time.timeScale != 0)
 		{
 			GUI.color = Color.red;
 			GUI.Label (new Rect (Screen.width/2 - 50,Screen.height*3/4,Screen.width,Screen.height/2), "LMB to throw. RMB to drop"); 

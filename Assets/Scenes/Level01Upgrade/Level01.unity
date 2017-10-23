@@ -9120,7 +9120,6 @@ GameObject:
   - 65: {fileID: 475201101}
   - 23: {fileID: 475201100}
   - 114: {fileID: 475201104}
-  - 114: {fileID: 475201099}
   - 114: {fileID: 475201103}
   m_Layer: 0
   m_Name: NextLevelTemp
@@ -9142,21 +9141,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1985522447}
   m_RootOrder: 3
---- !u!114 &475201099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11453276, guid: 61c6e1c2fb60f0b4da03420c6cd337a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 475201097}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9a83f397bbe45f4f85bee59ee676d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _nextScene: Credits
-  _memoryFound: 0
-  fpsController: {fileID: 711047561}
 --- !u!23 &475201100
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9168,7 +9152,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: ae4a5f26f63a8a74797875a067003f91, type: 2}
+  - {fileID: 2100000, guid: e38065f277bd7534c9415eaff28d91c6, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9228,7 +9212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9ef1e7fe49dd94d83e73ba76fab0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextScene: Level2Park
+  _nextScene: Level02
   _memoryFound: 0
 --- !u!1 &475284041
 GameObject:
@@ -12424,6 +12408,7 @@ GameObject:
   - 23: {fileID: 710322176}
   - 54: {fileID: 710322175}
   - 114: {fileID: 710322174}
+  - 114: {fileID: 710322179}
   m_Layer: 0
   m_Name: MemoryFragment
   m_TagString: memoryFragment
@@ -12525,6 +12510,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 710322172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &710322179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710322172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dbeaf994ce07446ad9ddc4b4b0ba58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _background: {fileID: 2800000, guid: fd28b280b4c2ca9408710587e93a09ed, type: 3}
 --- !u!4 &710624369 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 49bfd2e7a273e7a4ca574b30808dd0b4, type: 2}
@@ -12961,6 +12958,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.49999994
       objectReference: {fileID: 0}
+    - target: {fileID: 11414082, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
+      propertyPath: _background
+      value: 
+      objectReference: {fileID: 2800000, guid: cd1cd09442fa29d4f9f30eaed3784494, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_IsPrefabParent: 0
@@ -14761,6 +14762,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.49999994
       objectReference: {fileID: 0}
+    - target: {fileID: 11414082, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
+      propertyPath: _background
+      value: 
+      objectReference: {fileID: 2800000, guid: 35962a9e9396cb2449346041feaaaa20, type: 3}
     m_RemovedComponents:
     - {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
@@ -26184,6 +26189,10 @@ Prefab:
       propertyPath: animDuration
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 11414082, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
+      propertyPath: _background
+      value: 
+      objectReference: {fileID: 2800000, guid: ca1d75985d7d89f4a8cec34aaacbca2e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_IsPrefabParent: 0

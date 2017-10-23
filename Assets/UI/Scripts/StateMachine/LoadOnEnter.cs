@@ -10,6 +10,6 @@ public class LoadOnEnter : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        SceneManager.LoadScene(SaveStateController.controller.lastCheckpoint);
+        SceneManager.LoadSceneAsync(SaveStateController.controller.lastCheckpoint);
     }
 }

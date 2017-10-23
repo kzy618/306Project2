@@ -24,7 +24,7 @@ public class NextSceneMemory : MonoBehaviour
             SaveStateController.controller.SavePlayerData();
             SaveStateController.controller.SavePlayerMemories();
 
-            SceneManager.LoadSceneAsync(_nextScene);
+            SceneManager.LoadSceneAsync("Loading");
             _loaded = true;
         }
     }

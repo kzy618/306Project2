@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -9119,6 +9119,7 @@ GameObject:
   - 33: {fileID: 475201102}
   - 65: {fileID: 475201101}
   - 23: {fileID: 475201100}
+  - 114: {fileID: 475201104}
   - 114: {fileID: 475201099}
   - 114: {fileID: 475201103}
   m_Layer: 0
@@ -9148,7 +9149,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 475201097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9a83f397bbe45f4f85bee59ee676d7b, type: 3}
   m_Name: 
@@ -9216,6 +9217,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _memoryFragmentHintText: {fileID: 2119080387}
+--- !u!114 &475201104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475201097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9ef1e7fe49dd94d83e73ba76fab0dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextScene: Level2Park
+  _memoryFound: 0
 --- !u!1 &475284041
 GameObject:
   m_ObjectHideFlags: 0
@@ -12442,7 +12456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b297a5ddd80604da4eb27c72a933d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _memoryChecker: {fileID: 475201099}
+  _memoryChecker: {fileID: 475201104}
   anim: {fileID: 639147936}
   animDuration: 0.9
   memory: L1.4-Rooftop

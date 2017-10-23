@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Tooltips for the First Torch in Route One, Level Three
+/// </summary>
 public class LevelThreeFirstTorchTooltip : MonoBehaviour
 {
 

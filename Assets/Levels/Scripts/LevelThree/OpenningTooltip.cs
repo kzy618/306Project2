@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Shows tooltips at the beginning of level three
+/// </summary>
 public class OpenningTooltip : MonoBehaviour
 {
 
@@ -30,7 +33,7 @@ public class OpenningTooltip : MonoBehaviour
 
 	private void OnGUI()
 	{
-		if (showTooltip)
+		if (showTooltip && Time.timeScale != 0)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),

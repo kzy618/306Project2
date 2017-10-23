@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Controls the interactions around this object (the special torch).
+/// Informs LevelThreeController if this object is interacted in a particular way.
+/// </summary>
 public class RouteProgressor : MonoBehaviour {
 
 	public int RouteNumber;

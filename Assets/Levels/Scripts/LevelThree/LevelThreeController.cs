@@ -2,6 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// LevelThreeController controls the game progress in level three.
+/// Game objects are activated in a specific order to suit the gameplay.
+/// </summary>
 public class LevelThreeController : MonoBehaviour {
 	
 	//States
@@ -39,6 +43,7 @@ public class LevelThreeController : MonoBehaviour {
 	public GameObject CannonShooterR1;
 	public GameObject GeneratorR1;
 	public List<GameObject> RngPosR1 = new List<GameObject>();
+	public GameObject MemoryFragmentBus;
 	
 	//Route Two, Blue
 	public List<GameObject> TorchesFlameR2 = new List<GameObject>();
@@ -93,6 +98,11 @@ public class LevelThreeController : MonoBehaviour {
 	
 	//Torch prefab
 	public GameObject TorchPrefab;
+
+	private void Awake()
+	{
+		MemoryFragmentBus.SetActive(true);
+	}
 
 	// Use this for initialization
 	void Start () {

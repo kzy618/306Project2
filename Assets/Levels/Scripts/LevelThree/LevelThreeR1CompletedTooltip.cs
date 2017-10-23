@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Controls the First Cannon in Route One, Level Three
+/// </summary>
 public class LevelThreeR1CompletedTooltip : MonoBehaviour {
 
 

@@ -797,8 +797,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: d7f6c64e2b8fa164a869ab3cf76637a9,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
       value: HEYAHHH! *Picks up log*
@@ -822,7 +821,8 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[6]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: d7f6c64e2b8fa164a869ab3cf76637a9,
+        type: 3}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[8]
       value: Waaait for everyone.
@@ -885,8 +885,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesA.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: afcf791450d9a4244addb378a59147f1,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[1]
       value: 
@@ -900,6 +899,11 @@ Prefab:
       propertyPath: imagesB.Array.data[3]
       value: 
       objectReference: {fileID: 21300000, guid: 752ec40fbf1226b4492b546b15ca7649,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: afcf791450d9a4244addb378a59147f1,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}

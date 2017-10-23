@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneNames:
-  - L1.1
+  - L1.1-Classroom
   - L1.2-Classroom
   - L1.3-ScienceLab
   - L1.4-Rooftop

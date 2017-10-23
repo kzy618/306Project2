@@ -13,14 +13,14 @@ public class DroppingWallScript : MonoBehaviour {
 
 	// Use this for initialization
 
-	private float speed;
+	public float speed;
 	private float antiScale;
 	private float generic;
 	private bool activated = false;
 	void Start () {
 		red.SetActive (false);
 		antiScale = 1f;
-		speed = .1f;
+		speed = .05f;
 		generic = 90f;
 	}
 	

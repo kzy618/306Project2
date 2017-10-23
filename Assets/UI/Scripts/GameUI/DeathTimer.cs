@@ -28,7 +28,8 @@ public class DeathTimer : MonoBehaviour {
 			counterText.text = minutes.ToString ("00") + ":" + seconds.ToString ("00");
 			if (countDown - (Time.timeSinceLevelLoad - startTime) < 0f) {
 				active = false;
-				counterText.text = "";
+				counterText.text = "00:00";
+				deathTrap.GetComponent<DeathTrap> ().activate ();
 			}
 				
 		} else {

@@ -21,8 +21,11 @@ public class VerticalDoorButton : MonoBehaviour
 
 	public float doorSpeed = 0.1f;
 
+	private AudioSource _doorSound;
+
 	void Start()
 	{
+		_doorSound = GetComponent<AudioSource> ();
 		defaultPosition = transform.position;
 		pressedPosition = new Vector3(defaultPosition.x+(GetComponent<Renderer>().bounds.size.x/2), defaultPosition.y,defaultPosition.z);
 
@@ -66,6 +69,7 @@ public class VerticalDoorButton : MonoBehaviour
 	{
 		if (other.CompareTag("pickable"))
 		{
+			openDoorSound ();
 			transform.position = pressedPosition;
 			this.other = other;
 			this.triggered = true;
@@ -76,9 +80,27 @@ public class VerticalDoorButton : MonoBehaviour
 	{
 		if (other.CompareTag("pickable"))
 		{
+			openDoorSound ();
 			transform.position = defaultPosition;
 			triggered = false;
 		}
 	}
 
+	// Play door sound if audio source exists 
+	void openDoorSound() {
+		if (_doorSound != null) {
+			// start playuing the door sound as it opens
+			_doorSound.Play();
+		}
+	}
+
+	// Play door sound if audio source exists 
+	void stopOpenDoorSound() {
+		if (_doorSound != null) {
+			// stop the door sound if it's still playing
+			if(_doorSound.isPlaying){
+				_doorSound.Stop();
+			}
+		}
+	}
 }

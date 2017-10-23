@@ -10,7 +10,6 @@ public class NextSceneMemory : MonoBehaviour
 
     void Start()
     {
-        _memoryFound = false;
         _loaded = false;
     }
     public virtual void OnTriggerEnter(Collider other)

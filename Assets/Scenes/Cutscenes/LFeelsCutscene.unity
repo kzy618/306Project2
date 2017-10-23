@@ -567,8 +567,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 0, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273749829
 MonoBehaviour:
@@ -589,7 +589,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80a0ceec0cd574347818696f4fcf998e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -798,8 +798,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[0]
       value: '@: *tears*'
@@ -824,8 +823,7 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[6]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[8]
       value: Goodbye @!
@@ -841,23 +839,19 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[7]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[10]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[11]
       value: '*Daydreams while looking out the window*'
@@ -868,41 +862,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[13]
-      value: '*Mailman spotted inserting a parcel into mail box*'
+      value: '"The mailman is putting a parcel into the mail box"'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[14]
-      value: '*Zooms in on parcel* '
+      value: '"That parcel ...."'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[11]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[12]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[13]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[14]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[15]
-      value: '"Ice cube patterns on wrapping, Stella!?"'
+      value: '"There is Ice cube patterns on that wrapping, ... Stella?!"'
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[15]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: sceneName
       value: LFeelsCutscene
@@ -926,22 +915,133 @@ Prefab:
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[16]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[17]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[18]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: imagesB.Array.data[19]
       value: 
-      objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 21883198e15f11d45988818da98587da,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesB.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 59674a9bf61690841886e51f20d8c9ec,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[11]
+      value: 
+      objectReference: {fileID: 21300000, guid: 21883198e15f11d45988818da98587da,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[12]
+      value: 
+      objectReference: {fileID: 21300000, guid: 72d21b9a30fada045a06afa3b2493272,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[15]
+      value: 
+      objectReference: {fileID: 21300000, guid: 59674a9bf61690841886e51f20d8c9ec,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[19]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6da818d5406daed4e91876d3aeca862c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9ad640dbb8133428bec033df179c9c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9ad640dbb8133428bec033df179c9c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9ad640dbb8133428bec033df179c9c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9ad640dbb8133428bec033df179c9c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9ad640dbb8133428bec033df179c9c,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 745db93334a404f4c8d3e139b4bb7731,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 745db93334a404f4c8d3e139b4bb7731,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 745db93334a404f4c8d3e139b4bb7731,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: bg
+      value: 
+      objectReference: {fileID: 788655701}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[10]
+      value: 
+      objectReference: {fileID: 21300000, guid: 80a0ceec0cd574347818696f4fcf998e,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: 72d21b9a30fada045a06afa3b2493272,
+        type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: imagesA.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}

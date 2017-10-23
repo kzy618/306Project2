@@ -38,6 +38,10 @@ public class CafeCheckDate : MonoBehaviour {
 
     public float doorSpeed = 0.1f;
 
+
+	// sound to play when door opens
+	public AudioSource _doorSound;
+
     void Start()
     {
         defaultHintText = hint.text;
@@ -85,6 +89,7 @@ public class CafeCheckDate : MonoBehaviour {
             {
                 this.triggered = true;
                 this.removeText();
+				openDoorSound();
             }
             else
             {
@@ -152,4 +157,22 @@ public class CafeCheckDate : MonoBehaviour {
         hint.text = defaultHintText;
         wrong.text = "";
     }
+
+	// Play door sound if audio source exists 
+	void openDoorSound() {
+		if (_doorSound != null) {
+			// start playuing the door sound as it opens
+			_doorSound.Play();
+		}
+	}
+
+	// Play door sound if audio source exists 
+	void stopOpenDoorSound() {
+		if (_doorSound != null) {
+			// stop the door sound if it's still playing
+			if(_doorSound.isPlaying){
+				_doorSound.Stop();
+			}
+		}
+	}
 }

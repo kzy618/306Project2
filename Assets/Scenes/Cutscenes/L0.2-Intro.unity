@@ -813,11 +813,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[5]
-      value: Press the 'C' key to crouch, and the Left Control button to duck.
+      value: Press the 'C' key to crawl, and the Left Control button to crouch.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[6]
-      value: Lastly, press the Left Shift button to sprint.
+      value: hift button to sprint. Shift button to sprint.
       objectReference: {fileID: 0}
     - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
       propertyPath: dLines.Array.data[7]

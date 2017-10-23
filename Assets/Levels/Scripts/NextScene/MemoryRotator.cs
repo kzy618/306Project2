@@ -25,7 +25,10 @@ public class MemoryRotator : MonoBehaviour {
                 _memoryChecker._memoryFound = true;
             }
             Time.timeScale = 0;
-            SaveStateController.controller._collectedMemories.Add(memory, true);
+            if (!SaveStateController.controller._collectedMemories.ContainsKey(memory))
+            {
+                SaveStateController.controller._collectedMemories.Add(memory, true);
+            }
             StartCoroutine(playFade(memory));
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DroppingWallScript : MonoBehaviour {
-	public float timerSec = 0f;
+	public float timerSec = 180f;
 	public GameObject front;
 	public GameObject back;
 	public GameObject left;

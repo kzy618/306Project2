@@ -22,10 +22,11 @@ public class DoorButton : MonoBehaviour
 	public float doorSpeed = 0.1f;
 
 	// sound to play when door opens
-	public AudioSource _doorSound;
+	private AudioSource _doorSound;
 
 	void Start()
 	{
+		_doorSound = GetComponent<AudioSource> ();
 		defaultPosition = transform.position;
 		//pressedPosition = new Vector3(defaultPosition.x, defaultPosition.y-(GetComponent<Renderer>().bounds.size.y/2),defaultPosition.z);
 		pressedPosition = transform.position - (transform.up*GetComponent<Renderer>().bounds.size.y/2);
@@ -84,7 +85,7 @@ public class DoorButton : MonoBehaviour
     {
         if (other.CompareTag("pickable"))
         {
-			stopOpenDoorSound ();
+			openDoorSound ();
             transform.position = defaultPosition;
             triggered = false;
         }

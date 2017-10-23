@@ -54,8 +54,12 @@ public class LevelThreeR1CompletedTooltip : MonoBehaviour {
 		if (showTooltip && tooltipfinished)
 		{
 			GUI.color = Color.red;
-			GUI.Label(new Rect(Screen.width / 2 - 250, Screen.height / 2, Screen.width, Screen.height / 2),
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"What... There are other towers in this forest.");
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 20, Screen.width, Screen.height / 2),
+				"I'd better find another torch somewhere along the path");
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 40, Screen.width, Screen.height / 2),
+				"before returning the campsite.");
 		}
 	}
 }

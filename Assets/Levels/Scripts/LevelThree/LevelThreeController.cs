@@ -96,7 +96,7 @@ public class LevelThreeController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (R1Completed || R2Completed || R3Completed || R4Completed || R5Completed)
+		if (R1Completed || R2Completed || R3Completed || R4Completed || R5Completed || FinaleStarted) //when switching back from the cutscene, set them all to be true.
 		{
 			if (R1Completed)
 			{
@@ -127,6 +127,11 @@ public class LevelThreeController : MonoBehaviour {
 				StartRoute(5, RockR5);
 				ProgressRoute(5);
 				CompleteRoute(5);
+			}
+			if (FinaleStarted)
+			{
+				VerticalShooters.SetActive(true);
+				RouteEntrances.SetActive(true);
 			}
 		}
 		else

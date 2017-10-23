@@ -47,12 +47,21 @@ public class RouteProgressor : MonoBehaviour {
 	
 	private void OnGUI()
 	{
-		if (interacting && hasTorch)
+		if (interacting && finished)
+		{
+			GUI.color = Color.red;
+			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
+				"This magic torch has been activated.");
+			GUI.Label(new Rect(Screen.width / 2 - 120, Screen.height / 2, Screen.width, Screen.height / 2),
+				"... Looks like something up there on the tower.");
+		}
+		else if (interacting && hasTorch)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),
 				"Maybe I can light it up with my torch... (Mouse LB)");
-		}else if (interacting && !hasTorch)
+		}
+		else if (interacting && !hasTorch)
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, Screen.width, Screen.height / 2),

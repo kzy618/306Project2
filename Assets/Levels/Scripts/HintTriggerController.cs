@@ -2,6 +2,10 @@
 using UnityEngine.UI;
 using System.Collections;
 
+/**
+ * Sets a warning text to the player
+ *  if they attempt to enter an area without having collected a required fragment yet
+ */
 public class HintTriggerController : MonoBehaviour {
     public Text _memoryFragmentHintText;
 

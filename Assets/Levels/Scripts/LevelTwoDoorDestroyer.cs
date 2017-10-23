@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Destroys the last door of level 2
 public class LevelTwoDoorDestroyer : MonoBehaviour {
 
 	public GameObject Door;
@@ -19,12 +20,15 @@ public class LevelTwoDoorDestroyer : MonoBehaviour {
 	
 	}
 
+    // start destruction of door to next level
 	public void activate()
 	{
 		if (!done)
 		{
+            // make door and button invisible after laser hit
 			Destroy (Door);
-			done = true;
+            GetComponent<Renderer>().enabled = !GetComponent<Renderer>().enabled;
+            done = true;
 			if (_doorSound != null) {
 				_doorSound.Play ();
 			}

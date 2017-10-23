@@ -23,6 +23,7 @@ public class MemoryRotator : MonoBehaviour {
             if (_memoryChecker != null)
             {
                 _memoryChecker._memoryFound = true;
+                _memoryChecker.gameObject.GetComponent<HintTriggerController>()._memoryFragmentHintText.enabled = false;
             }
             Time.timeScale = 0;
             if (!SaveStateController.controller._collectedMemories.ContainsKey(memory))

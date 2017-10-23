@@ -33,11 +33,23 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf6f7892668219341b97b2e40d82c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11450494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b95a2ed7566f5543849fbf09d6c6ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneName: Loading
 --- !u!1101 &110123578
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -116,6 +128,7 @@ AnimatorState:
   m_Transitions: []
   m_StateMachineBehaviours:
   - {fileID: 11448088}
+  - {fileID: 11450494}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

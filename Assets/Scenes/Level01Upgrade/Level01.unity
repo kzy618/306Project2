@@ -27142,6 +27142,26 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 84.96965
       objectReference: {fileID: 0}
+    - target: {fileID: 11419094, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: _buttonNames.Array.data[0]
+      value: Classroom 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419094, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: _buttonNames.Array.data[1]
+      value: Classroom 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419094, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: _buttonNames.Array.data[2]
+      value: Science Lab
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419094, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: _buttonNames.Array.data[3]
+      value: Rooftop
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493200, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
+      propertyPath: _sceneNames.Array.data[2]
+      value: L2.3-Cinema
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 192df43c5d2209249b7e0e2e649a54b6, type: 2}
   m_IsPrefabParent: 0

@@ -32,7 +32,7 @@ public class GeneralTorchTooltips : MonoBehaviour {
 		{
 			GUI.color = Color.red;
 			GUI.Label(new Rect(Screen.width / 2 - 125, Screen.height / 2, Screen.width, Screen.height / 2),
-				"Seems like this one does not resonate with my magic...");
+				"Seems like this one does not resonate with my torch light...");
 		}
 	}
 }

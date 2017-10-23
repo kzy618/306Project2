@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-
+/**
+ *	CafeButtonNumber changes the date according to the button pressed by the user using blocks
+ *	The num is the number set on the variable num
+ *	There are 0-9 numbers available to enter the date
+ *	It also behaves like a normal button in terms of animation
+ * 
+ **/
 public class CafeButtonNumber : MonoBehaviour {
 
     public string num;

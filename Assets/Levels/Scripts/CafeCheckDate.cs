@@ -2,6 +2,15 @@
 using System;
 using System.Collections;
 
+/**
+ * CafeCheckDate class is attached a button which checks for the required date for a puzzle
+ * 		The required date is 18/12 which is the answer to the puzzle
+ * 		When the correct date is given, it opens the door (which also plays an opening sound)
+ * 		and can proceed on
+ * 		However if the date is wrong, the position of the player is sent to the stated location 
+ * 		in the variable sendPlayerIfWrong
+ * */
+
 public class CafeCheckDate : MonoBehaviour {
 
     public GameObject player;
@@ -9,10 +18,10 @@ public class CafeCheckDate : MonoBehaviour {
 
     public string notOccupied = "_";
 
-    public string dayText1 = "0";
-    public string dayText2 = "1";
-    public string monthText1 = "0";
-    public string monthText2 = "1";
+    public string dayText1 = "1";
+    public string dayText2 = "8";
+    public string monthText1 = "1";
+    public string monthText2 = "2";
 
     public TextMesh day1;
     public TextMesh day2;
@@ -95,7 +104,6 @@ public class CafeCheckDate : MonoBehaviour {
             {
                 this.setTextWrong();
                 StartCoroutine(this.sendPlayerDown());
-                //this.putTextBack();
             }
         }
     }

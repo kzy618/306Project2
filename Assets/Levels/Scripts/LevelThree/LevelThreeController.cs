@@ -98,7 +98,11 @@ public class LevelThreeController : MonoBehaviour {
 	
 	//Torch prefab
 	public GameObject TorchPrefab;
+	
+	//Jump to next level
+	public GameObject LevelTransitionObject;
 
+	
 	private void Awake()
 	{
 		MemoryFragmentBus.SetActive(true);
@@ -198,6 +202,7 @@ public class LevelThreeController : MonoBehaviour {
 		{
 			Bonfire.SetActive(true);
 			MemoryFragmentOmen.SetActive(true);
+			LevelTransitionObject.SetActive(true);
 			FinaleCompleted = true;
 		}
 	}

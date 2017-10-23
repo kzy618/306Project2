@@ -15,7 +15,13 @@ public class DamageArea : MonoBehaviour {
 	
 	}
 
+	/// <summary>
+	/// Damages the player when they touch the invisible damage area
+	/// </summary>
+	/// <param name="Col">Col.</param>
 	void OnTriggerStay(Collider Col){
-		plController.takeDamage ();
+		if(Col.gameObject.CompareTag("Player")){
+			plController.takeDamage ();
+		}
 	}
 }

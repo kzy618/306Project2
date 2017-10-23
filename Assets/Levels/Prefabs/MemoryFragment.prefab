@@ -107,7 +107,8 @@ MonoBehaviour:
   _memoryChecker: {fileID: 0}
   anim: {fileID: 0}
   animDuration: 0
-  memory: 
+  memory: L1.1-Classroom
+  _bgm: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

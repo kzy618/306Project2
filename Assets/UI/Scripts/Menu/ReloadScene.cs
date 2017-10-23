@@ -12,6 +12,7 @@ public class ReloadScene : MonoBehaviour
     {
         Debug.Log("ts1");
         Time.timeScale = 1;
+        SaveStateController.controller.health = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

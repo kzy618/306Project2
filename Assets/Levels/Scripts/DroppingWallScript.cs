@@ -10,6 +10,7 @@ public class DroppingWallScript : MonoBehaviour {
 	public GameObject roof;
 	public GameObject red;
 	public GameObject deathTimer;
+	public GameObject sfx;
 
 	// Use this for initialization
 
@@ -18,6 +19,7 @@ public class DroppingWallScript : MonoBehaviour {
 	private float generic;
 	private bool activated = false;
 	void Start () {
+		sfx.SetActive (false);
 		red.SetActive (false);
 		antiScale = 1f;
 		speed = .05f;
@@ -31,6 +33,8 @@ public class DroppingWallScript : MonoBehaviour {
 		}else if(timerSec > 0f){
 
 			timerSec -= Time.time;
+			if(timerSec<=0f) 
+				sfx.SetActive (true);
 		} else if (generic >= 0) {
 			front.transform.Rotate (new Vector3 (-speed, 0f, 0f));
 			back.transform.Rotate (new Vector3 (speed, 0f, 0f));

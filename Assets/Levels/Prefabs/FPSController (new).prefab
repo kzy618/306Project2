@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c692112111be474bb1d7be768a5dfc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxLives: 3
+  _maxLives: 5
   invincibilityTime: 0.5
   _lifeText: {fileID: 0}
   death: {fileID: 0}

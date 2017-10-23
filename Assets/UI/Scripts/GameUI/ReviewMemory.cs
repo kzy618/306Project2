@@ -8,6 +8,7 @@ public class ReviewMemory : MonoBehaviour {
     public List<string> _sceneNames;
     public List<string> _buttonNames;
     public Button _buttonPrefab;
+    public AudioSource _bgm;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class ReviewMemory : MonoBehaviour {
             // Set the scene linked to the button, and rename the button to a more descriptive name
             btn.GetComponent<ButtonMemoryController>()._sceneName = _sceneNames[i];
             btn.GetComponentInChildren<Text>().text = _buttonNames[i];
+            btn.GetComponent<ButtonMemoryController>()._bgm = _bgm;
         }
 	}
 }

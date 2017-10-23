@@ -2447,10 +2447,10 @@ MonoBehaviour:
   - L1.3-ScienceLab
   - L1.4-Rooftop
   _buttonNames:
-  - fuck
-  - 'you '
-  - yao
-  - jian
+  - Classroom 1
+  - Classroom 2
+  - Science Lab
+  - Rooftop
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
   _bgm: {fileID: 0}
 --- !u!114 &11421500
@@ -5001,7 +5001,7 @@ MonoBehaviour:
   _sceneNames:
   - L2.1-Park
   - L2.2-Cafe
-  - L2.3
+  - L2.3-Cinema
   _buttonNames:
   - Park
   - Cafe

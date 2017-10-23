@@ -1051,6 +1051,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 3d1c9ecd0d902e342b0fcee191444b2a,
         type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: backgrounds.Array.data[16]
+      value: 
+      objectReference: {fileID: 21300000, guid: e0a7ecd07fd3e464f95f8a52202d1e11,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
   m_IsPrefabParent: 0

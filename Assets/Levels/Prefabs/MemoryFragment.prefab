@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2322878}
   - 114: {fileID: 11404966}
   - 54: {fileID: 5472242}
+  - 114: {fileID: 11414082}
   m_Layer: 0
   m_Name: MemoryFragment
   m_TagString: memoryFragment
@@ -109,6 +110,18 @@ MonoBehaviour:
   animDuration: 0
   memory: L1.1-Classroom
   _bgm: {fileID: 0}
+--- !u!114 &11414082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4dbeaf994ce07446ad9ddc4b4b0ba58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _background: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

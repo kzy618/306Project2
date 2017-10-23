@@ -17,9 +17,9 @@ public class DeathTimer : MonoBehaviour {
 
     void Start () {
 		active = false;
+		counterText = GetComponent<Text>() as Text;
 		bgm.SetActive (false);
 		alarm.SetActive (false);
-		counterText = GetComponent<Text>() as Text;
 
 	}
 

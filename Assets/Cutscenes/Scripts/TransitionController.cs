@@ -7,15 +7,12 @@ public class TransitionController : MonoBehaviour {
 
     private float _delay;
     private List<Sprite> _backgrounds;
-    private bool _triggered = false;
 
     // Loads the next scene once the animation finishes
     private void LoadNextScene()
     {
         Debug.Log("Load");
-        if (!_triggered)
         {
-            _triggered = true;
             gameObject.GetComponent<Animator>().SetTrigger("StartGame");
         }
     }

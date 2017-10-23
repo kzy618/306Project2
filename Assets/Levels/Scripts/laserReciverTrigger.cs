@@ -7,14 +7,24 @@ public class laserReciverTrigger : MonoBehaviour {
 	public GameObject StopingMovingPlat;
 	public Sprite movieImage;
 
-	// Update is called once per frame
-	void Update () {
-		StopingMovingPlat.SetActive (true);
+	void start(){
+		
+	}
+
+	void update(){
+		Debug.Log("aaaaaaaa");
+
+		var bc = StopingMovingPlat.GetComponent<StopingMovingPlat> ();
+		bc.enabled = true;
+
 		screen = GetComponent<Image>();
 		screen.sprite = movieImage;
 	}
-
-	public void activate(){
 		
+	public void activate(){
+		Debug.Log("aaaaaaaa");
+
+		var bc = StopingMovingPlat.GetComponent<StopingMovingPlat> ();
+		bc.enabled = true;
 	}
 }

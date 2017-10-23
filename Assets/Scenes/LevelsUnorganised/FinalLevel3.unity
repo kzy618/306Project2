@@ -36940,7 +36940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seconds: 0
   minutes: 0
-  countDown: 60
+  countDown: 120
   deathTrap: {fileID: 197121735}
 --- !u!4 &712038527 stripped
 Transform:
@@ -70509,6 +70509,7 @@ MonoBehaviour:
   - Chapter 4.2
   - Chapter 4.3
   _buttonPrefab: {fileID: 11401254, guid: 56415c94a95b66d44b75e16ec0205a5c, type: 2}
+  _bgm: {fileID: 0}
 --- !u!114 &1362586056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75665,6 +75666,30 @@ Prefab:
       propertyPath: timerSec
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2344842, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+    - target: {fileID: 2320704, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+    - target: {fileID: 2321742, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+    - target: {fileID: 2342660, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+    - target: {fileID: 2313546, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
+    - target: {fileID: 2391256, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: daf499d74fad16243a4fef0e070ef2f7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf1a177ab5269e44b93f310721c7a65, type: 2}
   m_IsPrefabParent: 0

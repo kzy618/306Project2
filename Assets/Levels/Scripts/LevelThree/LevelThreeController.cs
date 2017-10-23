@@ -98,7 +98,13 @@ public class LevelThreeController : MonoBehaviour {
 	
 	//Torch prefab
 	public GameObject TorchPrefab;
+	
+	//Jump to next level
+	public GameObject LevelTransitionObject;
 
+	//Is omen cutscene played
+	private bool omenPlayed;
+	
 	private void Awake()
 	{
 		MemoryFragmentBus.SetActive(true);
@@ -199,6 +205,11 @@ public class LevelThreeController : MonoBehaviour {
 			Bonfire.SetActive(true);
 			MemoryFragmentOmen.SetActive(true);
 			FinaleCompleted = true;
+		}
+		else if (FinaleCompleted && !omenPlayed && !MemoryFragmentOmen.activeInHierarchy && Time.timeScale == 0)
+		{
+			LevelTransitionObject.SetActive(true);
+			omenPlayed = true;
 		}
 	}
 

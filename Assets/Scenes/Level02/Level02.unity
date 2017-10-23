@@ -26468,6 +26468,14 @@ Prefab:
       propertyPath: _door
       value: 
       objectReference: {fileID: 254610048}
+    - target: {fileID: 11495822, guid: 757f9f292eb60ca4badb6cd757269c38, type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2006405372}
+    - target: {fileID: 11495822, guid: 757f9f292eb60ca4badb6cd757269c38, type: 2}
+      propertyPath: _bgm
+      value: 
+      objectReference: {fileID: 523067914}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 757f9f292eb60ca4badb6cd757269c38, type: 2}
   m_IsPrefabParent: 0
@@ -27586,6 +27594,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998452908}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &2006405372 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9533254, guid: d627c0092a32e074aa5b9c02f7b60d00,
+    type: 2}
+  m_PrefabInternal: {fileID: 639147935}
 --- !u!1 &2007344262
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * CafeLaserScript class is the same as the LaserScript class in terms of functionality
+ * 		The only difference is that when player is damaged by the laser,
+ * 		the player is transported 2 y below the current position.
+ * 		
+ * 
+ * */
+
 public class CafeLaserScript : MonoBehaviour {
 
 	private LineRenderer _lineRenderer;

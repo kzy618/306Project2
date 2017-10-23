@@ -288,7 +288,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bd7497aceb1024e43a1b6d358bcdf3ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2418c6520bf3f4644ac4db8958a1e8bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -909,6 +909,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: efbcf3cc28c84f54b83ba4fa27b3044e,
         type: 3}
+    - target: {fileID: 11414726, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
+      propertyPath: sceneName
+      value: L4.1-BedBlurred
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11be3bc9da7d5724699798540e501dc0, type: 2}
   m_IsPrefabParent: 0

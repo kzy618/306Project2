@@ -45,6 +45,8 @@ GameObject:
   - 23: {fileID: 2335574}
   - 65: {fileID: 6546492}
   - 65: {fileID: 6529866}
+  - 114: {fileID: 11401914}
+  - 114: {fileID: 11465440}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -86,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.480835, y: -0.74933964, z: 119.31079}
+  m_LocalPosition: {x: 0, y: -0.74934345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -160,8 +162,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0.7164179, g: 0.27307776, b: 0.06950322, a: 1}
-  m_Intensity: 2
-  m_Range: 25
+  m_Intensity: 4
+  m_Range: 30
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -183,6 +185,28 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11401914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6e12c51952c9046a721962eff7b5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11465440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6e12c51952c9046a721962eff7b5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &19851090
 ParticleSystem:
   m_ObjectHideFlags: 1

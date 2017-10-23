@@ -104,4 +104,9 @@ public class PlayerLifeController : MonoBehaviour {
         healing(); 
         _crRunning = false;
     }
+
+	public void Death(){
+		death.SetTrigger("PlayerDeath");
+		currentLives = 0;
+	}
 }

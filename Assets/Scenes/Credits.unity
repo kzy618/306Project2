@@ -261,7 +261,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Clear Time: 00:00'
+  m_Text: 'Clear Time: 17319:96'
 --- !u!222 &808082292
 CanvasRenderer:
   m_ObjectHideFlags: 0

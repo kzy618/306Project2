@@ -1946,7 +1946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 161668, guid: d627c0092a32e074aa5b9c02f7b60d00, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d627c0092a32e074aa5b9c02f7b60d00, type: 2}
@@ -19687,7 +19687,7 @@ Transform:
   - {fileID: 506880017}
   - {fileID: 577988843}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &419361071
 GameObject:
   m_ObjectHideFlags: 0
@@ -85653,7 +85653,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 405398, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -0.173
       objectReference: {fileID: 0}
     - target: {fileID: 405398, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: m_LocalPosition.y
@@ -85661,7 +85661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405398, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: -3.382
       objectReference: {fileID: 0}
     - target: {fileID: 405398, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: m_LocalRotation.x
@@ -85709,7 +85709,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 173780, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: anim
@@ -85721,12 +85721,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: memory
-      value: L1.1
+      value: L4.2-Bed
       objectReference: {fileID: 0}
     - target: {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
       propertyPath: _memoryChecker
       value: 
-      objectReference: {fileID: 451533556}
+      objectReference: {fileID: 0}
+    - target: {fileID: 11404966, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
+      propertyPath: _bgm
+      value: 
+      objectReference: {fileID: 929234063}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22410db1037b3c6489a87ad3e885b381, type: 2}
   m_IsPrefabParent: 0

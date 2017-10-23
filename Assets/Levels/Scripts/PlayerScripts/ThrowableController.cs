@@ -2,6 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// Spawning a Cube at the position where this throwable object hits the ground.
+/// Any game object whose tag is included inside the IF-Statement will be considered as 'ground'.
+/// </summary>
 public class ThrowableController : MonoBehaviour
 {
 

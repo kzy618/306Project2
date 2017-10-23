@@ -4,6 +4,17 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
 
+/// <summary>
+/// PlayerLifeController manages the Health System for the game.
+/// It implements the following features for the player:
+/// 1. taking damage (health deduction)
+/// 2. healing
+/// 3. health regenerating
+/// Health System is also reponsible for in-game display of:
+/// 1. health point
+/// 2. damage notifier
+/// 3. corresponding sound effects
+/// </summary>
 public class PlayerLifeController : MonoBehaviour {
 
     public int _maxLives = 5;

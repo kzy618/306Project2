@@ -6,7 +6,7 @@
 </p>
 
 ### Execution Instructions 
-1. Clone the PROTOTYPE branch onto a local directory.
+1. Clone the master branch onto a local directory.
 2. Make sure that Unity version 5.3.5 is installed
 3. Open the cloned project in Unity 5.3.5
 4. Go Files -> Build Settings... -> Build, to build to a desired directory

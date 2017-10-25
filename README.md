@@ -1,4 +1,5 @@
 # Tower of Babel
+![alt text](https://user-images.githubusercontent.com/22648344/31980891-15dfb7cc-b9ac-11e7-82e3-477621368a1c.png)
 **By Team Rocket**
 
 Tower of Babel is a first person puzzle game that promotes critical thinking in the player.
